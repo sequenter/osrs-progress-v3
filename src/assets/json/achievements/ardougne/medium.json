@@ -1,0 +1,10 @@
+[
+  {
+    "task": "Pickpocket the master farmer north of East Ardougne",
+    "requirements": {
+      "skills": {
+        "thieving": 38
+      }
+    }
+  }
+]
