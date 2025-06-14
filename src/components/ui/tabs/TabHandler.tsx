@@ -4,6 +4,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
@@ -24,7 +25,7 @@ const TabHandler = () => {
       {
         label: 'Achievements',
         icon: AchievementsIcon,
-        unlocked: 0
+        unlocked: 2
       },
       {
         label: 'Quests',
@@ -70,7 +71,11 @@ const TabHandler = () => {
                 label={
                   <Stack alignItems="center" direction="row" gap={2}>
                     <Typography variant="h6">{label}</Typography>
-                    {unlocked > 0 && <Chip color="warning" size="small" label={<Typography variant="subtitle1">{unlocked}</Typography>} />}
+                    {unlocked > 0 && (
+                      <Tooltip placement="top" title={<Typography>Tasks to complete</Typography>} arrow>
+                        <Chip color="warning" size="small" label={<Typography variant="subtitle1">{unlocked}</Typography>} />
+                      </Tooltip>
+                    )}
                   </Stack>
                 }
                 maxWidth="100%"

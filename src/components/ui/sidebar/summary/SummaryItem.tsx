@@ -1,6 +1,7 @@
 import LinearProgress from '@mui/material/LinearProgress';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 interface SummaryItemProps {
@@ -26,43 +27,49 @@ const SummaryItem = ({ complete, title, total }: SummaryItemProps) => {
       />
 
       <Stack direction="row" justifyContent="space-between" gap={1}>
-        <Typography
-          alignItems="center"
-          fontWeight="bold"
-          component={Stack}
-          flexGrow={1}
-          sx={(theme) => ({
-            backgroundColor: theme.palette.background.default,
-            borderRadius: '4px 0 0 4px',
-            color: theme.palette.success.light
-          })}
-        >
-          {complete}
-        </Typography>
+        <Tooltip title={<Typography>Complete</Typography>} arrow>
+          <Typography
+            alignItems="center"
+            fontWeight="bold"
+            component={Stack}
+            flexGrow={1}
+            sx={(theme) => ({
+              backgroundColor: theme.palette.background.default,
+              borderRadius: '4px 0 0 4px',
+              color: theme.palette.success.light
+            })}
+          >
+            {complete}
+          </Typography>
+        </Tooltip>
 
-        <Typography
-          alignItems="center"
-          fontWeight="bold"
-          component={Stack}
-          flexGrow={1}
-          sx={(theme) => ({ backgroundColor: theme.palette.background.default, color: theme.palette.neutral.main })}
-        >
-          {total}
-        </Typography>
+        <Tooltip title={<Typography>Total</Typography>} arrow>
+          <Typography
+            alignItems="center"
+            fontWeight="bold"
+            component={Stack}
+            flexGrow={1}
+            sx={(theme) => ({ backgroundColor: theme.palette.background.default, color: theme.palette.neutral.main })}
+          >
+            {total}
+          </Typography>
+        </Tooltip>
 
-        <Typography
-          alignItems="center"
-          fontWeight="bold"
-          component={Stack}
-          flexGrow={1}
-          sx={(theme) => ({
-            backgroundColor: theme.palette.background.default,
-            borderRadius: '0 4px 4px 0',
-            color: theme.palette.error.light
-          })}
-        >
-          {total - complete}
-        </Typography>
+        <Tooltip title={<Typography>Incomplete</Typography>} arrow>
+          <Typography
+            alignItems="center"
+            fontWeight="bold"
+            component={Stack}
+            flexGrow={1}
+            sx={(theme) => ({
+              backgroundColor: theme.palette.background.default,
+              borderRadius: '0 4px 4px 0',
+              color: theme.palette.error.light
+            })}
+          >
+            {total - complete}
+          </Typography>
+        </Tooltip>
       </Stack>
     </Stack>
   );
