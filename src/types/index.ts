@@ -1,29 +1,29 @@
-import type { SKILLS } from '@utils/constants';
+import type { ACHIEVEMENT_DIFFICULTY, ACHIEVEMENT_DIARIES, QUEST_DIFFICULTY, SKILLS } from '@utils/constants';
 
-export type Diary = 'ardougne';
-
-export type Difficulty = 'easy' | 'medium' | 'hard' | 'elite';
+/* TYPES */
 
 export type Skill = (typeof SKILLS)[number];
+export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
+export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
+export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
+
+/* ACHIEVEMENTS */
+
+interface SkillsRequirements {
+  all?: Array<PartialRecord<Skill, number>>;
+  any?: Array<PartialRecord<Skill, number>>;
+}
 
 interface Requirements {
-  quests: Array<string>;
+  type: 'ironman' | 'main';
+  description?: string;
+  quests?: Array<string>;
+  skills?: SkillsRequirements;
 }
 
 export interface Achievement {
-  diary: Diary;
-  difficulty: Difficulty;
+  diary: AchievementDiary;
+  difficulty: AchievementDifficulty;
   task: string;
-  requirements: Requirements;
+  requirements: Array<Requirements>;
 }
-
-/* STORAGE */
-export type SkillStore = {
-  [key in Skill]: {
-    level: number;
-    locked: boolean;
-  };
-};
-
-/* FUNCTIONS */
-export type Consumer<T> = (T: T) => void;

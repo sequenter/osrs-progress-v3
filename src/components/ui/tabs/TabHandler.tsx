@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
@@ -8,8 +9,9 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
-import Chip from '@mui/material/Chip';
+
 import { useMemo, useState } from 'react';
+import { AchievementsTab } from '@components';
 
 interface TabDetail {
   icon: string;
@@ -65,6 +67,7 @@ const TabHandler = () => {
             {tabs.map(({ label, icon, unlocked }) => (
               <Tab
                 component={Stack}
+                flexBasis={0}
                 flexGrow={1}
                 icon={<Box component="img" src={icon} width="2rem" height="2rem" paddingRight={1} />}
                 iconPosition="start"
@@ -86,7 +89,7 @@ const TabHandler = () => {
         </Box>
 
         <TabPanel value="Achievements" sx={{ paddingX: 0 }}>
-          Item One
+          <AchievementsTab />
         </TabPanel>
 
         <TabPanel value="Quests" sx={{ paddingX: 0 }}>

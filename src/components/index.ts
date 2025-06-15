@@ -1,5 +1,6 @@
 export { default as Header } from './ui/Header';
 
+export { default as AchievementsTab } from './ui/tabs/AchievementsTab';
 export { default as TabHandler } from './ui/tabs/TabHandler';
 
 export { default as SkillDrawer } from './ui/sidebar/skill/SkillDrawer';

@@ -9,7 +9,7 @@ type SkillDetail = {
   };
 };
 
-export type SkillsInitialState = {
+type SkillsInitialState = {
   detail: SkillDetail;
 };
 

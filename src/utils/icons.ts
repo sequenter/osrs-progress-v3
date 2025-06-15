@@ -1,3 +1,16 @@
+import { default as ArdougneIcon } from '@assets/icons/diaries/ardougne.png';
+import { default as DesertIcon } from '@assets/icons/diaries/desert.png';
+import { default as FaladorIcon } from '@assets/icons/diaries/falador.png';
+import { default as FremennikIcon } from '@assets/icons/diaries/fremennik.png';
+import { default as LumbridgeIcon } from '@assets/icons/diaries/lumbridge.png';
+import { default as KandarinIcon } from '@assets/icons/diaries/kandarin.png';
+import { default as KaramjaIcon } from '@assets/icons/diaries/karamja.png';
+import { default as KourendIcon } from '@assets/icons/diaries/kourend.png';
+import { default as MorytaniaIcon } from '@assets/icons/diaries/morytania.png';
+import { default as VarrockIcon } from '@assets/icons/diaries/varrock.png';
+import { default as WesternProvincesIcon } from '@assets/icons/diaries/westernprovinces.png';
+import { default as WildernessIcon } from '@assets/icons/diaries/wilderness.png';
+
 import { default as AgilityIcon } from '@assets/icons/skills/agility.png';
 import { default as AttackIcon } from '@assets/icons/skills/attack.png';
 import { default as ConstructionIcon } from '@assets/icons/skills/construction.png';
@@ -22,7 +35,7 @@ import { default as StrengthIcon } from '@assets/icons/skills/strength.png';
 import { default as ThievingIcon } from '@assets/icons/skills/thieving.png';
 import { default as WoodcuttingIcon } from '@assets/icons/skills/woodcutting.png';
 
-import type { Skill } from '@types';
+import type { AchievementDiary, Skill } from '@types';
 
 export { default as StatsIcon } from '@assets/icons/stats.png';
 export { default as ProgressIcon } from '@assets/icons/progress.png';
@@ -30,6 +43,21 @@ export { default as AchievementsIcon } from '@assets/icons/achievements.png';
 export { default as QuestsIcon } from '@assets/icons/quests.png';
 export { default as CollectionsIcon } from '@assets/icons/collections.png';
 export { default as PetsIcon } from '@assets/icons/pets.png';
+
+export const achievementDiaryMap: Record<AchievementDiary, string> = {
+  Ardougne: ArdougneIcon,
+  Desert: DesertIcon,
+  Falador: FaladorIcon,
+  Fremennik: FremennikIcon,
+  Kandarin: KandarinIcon,
+  Karamja: KaramjaIcon,
+  'Kourend & Kebos': KourendIcon,
+  'Lumbridge & Draynor': LumbridgeIcon,
+  Morytania: MorytaniaIcon,
+  Varrock: VarrockIcon,
+  'Western Provinces': WesternProvincesIcon,
+  Wilderness: WildernessIcon
+};
 
 export const skillIconMap: Record<Skill, string> = {
   Agility: AgilityIcon,

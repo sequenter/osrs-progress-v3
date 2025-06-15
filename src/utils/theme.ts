@@ -1,4 +1,5 @@
 import { createTheme, type ThemeOptions } from '@mui/material/styles';
+import type { AchievementDifficulty } from '@types';
 
 interface SimplePaletteOptions {
   light: string;
@@ -8,15 +9,17 @@ interface SimplePaletteOptions {
 declare module '@mui/material/styles' {
   interface Palette {
     neutral: Palette['primary'];
-    summary: {
-      skills: Palette['primary'];
+    summary: Record<'skills', SimplePaletteOptions>;
+    difficulty: {
+      achievements: Record<AchievementDifficulty, string>;
     };
   }
 
   interface PaletteOptions {
     neutral?: PaletteOptions['primary'];
-    summary?: {
-      skills: SimplePaletteOptions;
+    summary?: Record<'skills', SimplePaletteOptions>;
+    difficulty?: {
+      achievements: Record<AchievementDifficulty, string>;
     };
   }
 }
@@ -53,10 +56,18 @@ export const themeDark: ThemeOptions = createTheme({
       main: '#6CCFF6'
     },
     secondary: {
-      main: '#E2EF70'
+      main: '#FACC15'
     },
     summary: {
       skills: { dark: '#FFA400', light: '#FFE0AE' }
+    },
+    difficulty: {
+      achievements: {
+        Easy: '#4CAF50',
+        Medium: '#009688',
+        Hard: '#673AB7',
+        Elite: '#FFC107'
+      }
     }
   },
   typography: {

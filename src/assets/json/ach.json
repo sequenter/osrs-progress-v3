@@ -85,10 +85,18 @@
     "requirements": {
       "main": [
         {
-          "description": "Obtain a Rusty Sword",
+          "description": "Obtain a rusty sword",
           "required": [
             {
-              "items": ["Rusty Sword"]
+              "combat": true
+            },
+            {
+              "skills": {
+                "anyOf": {
+                  "Fishing": 15,
+                  "Thieving": 15
+                }
+              }
             }
           ]
         }
@@ -168,7 +176,22 @@
           "description": "Obtain a mithril grapple",
           "required": [
             {
-              "items": ["Mithril Grapple"]
+              "combat": true
+            },
+            {
+              "skills": {
+                "allOf": {
+                  "Fletching": 59,
+                  "Smithing": 59
+                }
+              }
+            },
+            {
+              "skills": {
+                "allOf": {
+                  "Fletching": 99
+                }
+              }
             }
           ]
         }
@@ -200,7 +223,15 @@
           "description": "Obtain some strawberry seeds",
           "required": [
             {
-              "items": ["Strawberry Seed"]
+              "combat": true
+            },
+            {
+              "skills": {
+                "anyOf": {
+                  "Thieving": 27,
+                  "Farming": 45
+                }
+              }
             }
           ]
         }
@@ -5465,13 +5496,11 @@
           "description": "Mandatory",
           "required": [
             {
-              "quests": [],
               "skills": {
                 "allOf": {
                   "Firemaking": 85,
                   "Crafting": 85
-                },
-                "anyOf": {}
+                }
               }
             }
           ]
@@ -6154,10 +6183,9 @@
     "requirements": {
       "ironman": [
         {
-          "description": "Obtain an oomlie wrap",
+          "description": "Mandatory",
           "required": [
             {
-              "items": ["Oomlie Wrap"],
               "skills": {
                 "allOf": {
                   "Cooking": 50

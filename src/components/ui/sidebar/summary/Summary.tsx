@@ -24,7 +24,7 @@ const Summary = () => {
           </Typography>
         </Stack>
 
-        <SummaryItem title="Skills Maxed" complete={completedSkillCount} total={SKILLS.length} />
+        <SummaryItem title="Maxed Skills" complete={completedSkillCount} total={SKILLS.length} />
       </Stack>
     </Paper>
   );
