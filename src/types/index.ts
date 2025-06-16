@@ -1,29 +1,55 @@
-import type { ACHIEVEMENT_DIFFICULTY, ACHIEVEMENT_DIARIES, QUEST_DIFFICULTY, SKILLS } from '@utils/constants';
+import type {
+  ACHIEVEMENT_DIFFICULTY,
+  ACHIEVEMENT_DIARIES,
+  QUEST_DIFFICULTY,
+  SKILLS,
+  SUMMARY_ITEMS
+} from '@utils/constants';
 
-/* TYPES */
+/* UNIONS */
 
-export type Skill = (typeof SKILLS)[number];
 export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
 export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
 export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
+export type Skill = (typeof SKILLS)[number];
+export type Summary = (typeof SUMMARY_ITEMS)[number];
+
+export type Completion = 'unlocked' | 'locked' | 'completed';
+
+/* SKILLS */
+
+interface SkillDetail {
+  level: number;
+  isLocked: boolean;
+}
+
+export type SkillState = Record<Skill, SkillDetail>;
+
+export type PartialSkillState = PartialRecord<Skill, SkillDetail>;
 
 /* ACHIEVEMENTS */
 
-interface SkillsRequirements {
-  all?: Array<PartialRecord<Skill, number>>;
-  any?: Array<PartialRecord<Skill, number>>;
+export interface SkillsRequirement {
+  all?: PartialRecord<Skill, number>;
+  any?: PartialRecord<Skill, number>;
 }
 
-interface Requirements {
+export interface Requirement {
   type: 'ironman' | 'main';
   description?: string;
   quests?: Array<string>;
-  skills?: SkillsRequirements;
+  skills?: SkillsRequirement;
 }
 
 export interface Achievement {
   diary: AchievementDiary;
   difficulty: AchievementDifficulty;
   task: string;
-  requirements: Array<Requirements>;
+  requirements: Array<Requirement>;
 }
+
+export type AchievementState = Array<
+  Achievement & {
+    isComplete: boolean;
+  }
+>;

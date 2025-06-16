@@ -7,24 +7,22 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 
+import { memo, useEffect, useState } from 'react';
+import { setIsLocked, setLevel } from '@redux/reducers/SkillsReducer';
 import type { Skill } from '@types';
 import { skillIconMap } from '@utils/icons';
-import { useDispatch, useSelector } from 'react-redux';
-import type { RootState } from '@redux';
-import { getIsLocked, getLevel, setIsLocked, setLevel } from '@redux/reducers/SkillsReducer';
-import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 interface SkillItemProps {
+  isLocked: boolean;
+  level: number;
   maxLevel: number;
   minLevel: number;
   skill: Skill;
 }
 
-const SkillItem = ({ maxLevel, minLevel, skill }: SkillItemProps) => {
+const SkillItem = ({ isLocked, level, maxLevel, minLevel, skill }: SkillItemProps) => {
   const [pressed, setPressed] = useState(false);
-
-  const level = useSelector((state: RootState) => getLevel(state, skill));
-  const isLocked = useSelector((state: RootState) => getIsLocked(state, skill));
 
   const dispatch = useDispatch();
 
@@ -153,4 +151,4 @@ const SkillItem = ({ maxLevel, minLevel, skill }: SkillItemProps) => {
   );
 };
 
-export default SkillItem;
+export default memo(SkillItem);

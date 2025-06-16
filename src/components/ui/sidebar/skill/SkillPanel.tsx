@@ -6,12 +6,16 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { SkillItem } from '@components';
-import { SKILLS } from '@utils/constants';
 import { StatsIcon } from '@utils/icons';
 import { useState } from 'react';
 
+import type { Skill } from '@types';
+import { useActions } from '@hooks/useActions';
+
 const SkillDrawer = () => {
   const [isOpen, setIsOpen] = useState(true);
+
+  const { skills } = useActions();
 
   return (
     <Drawer
@@ -50,8 +54,15 @@ const SkillDrawer = () => {
 
       <Box width="32rem" flexGrow={1} padding={2}>
         <Grid direction="row" spacing={2} sx={{ alignItems: 'stretch', height: '100%' }} container>
-          {SKILLS.map((skill) => (
-            <SkillItem key={skill} minLevel={skill === 'Hitpoints' ? 10 : 1} maxLevel={99} skill={skill} />
+          {Object.entries(skills).map(([skill, { isLocked, level }]) => (
+            <SkillItem
+              key={skill}
+              isLocked={isLocked}
+              level={level}
+              minLevel={skill === 'Hitpoints' ? 10 : 1}
+              maxLevel={99}
+              skill={skill as Skill}
+            />
           ))}
         </Grid>
       </Box>

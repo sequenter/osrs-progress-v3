@@ -44,7 +44,7 @@ export { default as QuestsIcon } from '@assets/icons/quests.png';
 export { default as CollectionsIcon } from '@assets/icons/collections.png';
 export { default as PetsIcon } from '@assets/icons/pets.png';
 
-export const achievementDiaryMap: Record<AchievementDiary, string> = {
+export const diaryIconMap: Record<AchievementDiary, string> = {
   Ardougne: ArdougneIcon,
   Desert: DesertIcon,
   Falador: FaladorIcon,

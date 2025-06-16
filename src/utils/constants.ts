@@ -14,6 +14,11 @@ export const ACHIEVEMENTS = AchievementsJson as Array<Achievement>;
 
 /* UNIONS */
 
+export const SUMMARY_ITEMS = [
+  'skills',
+  'achievements'
+] as const;
+
 export const ACHIEVEMENT_DIFFICULTY = [
   'Easy',
   'Medium',

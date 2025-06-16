@@ -1,5 +1,5 @@
 import { createTheme, type ThemeOptions } from '@mui/material/styles';
-import type { AchievementDifficulty } from '@types';
+import type { AchievementDifficulty, Summary } from '@types';
 
 interface SimplePaletteOptions {
   light: string;
@@ -9,7 +9,7 @@ interface SimplePaletteOptions {
 declare module '@mui/material/styles' {
   interface Palette {
     neutral: Palette['primary'];
-    summary: Record<'skills', SimplePaletteOptions>;
+    summary: Record<Summary, SimplePaletteOptions>;
     difficulty: {
       achievements: Record<AchievementDifficulty, string>;
     };
@@ -17,10 +17,16 @@ declare module '@mui/material/styles' {
 
   interface PaletteOptions {
     neutral?: PaletteOptions['primary'];
-    summary?: Record<'skills', SimplePaletteOptions>;
+    summary?: Record<Summary, SimplePaletteOptions>;
     difficulty?: {
       achievements: Record<AchievementDifficulty, string>;
     };
+  }
+}
+
+declare module '@mui/material/Chip' {
+  interface ChipPropsColorOverrides {
+    neutral: true;
   }
 }
 
@@ -59,7 +65,8 @@ export const themeDark: ThemeOptions = createTheme({
       main: '#FACC15'
     },
     summary: {
-      skills: { dark: '#FFA400', light: '#FFE0AE' }
+      skills: { dark: '#FFA400', light: '#FFE0AE' },
+      achievements: { dark: '#00A3FF', light: '#B7DEFF' }
     },
     difficulty: {
       achievements: {

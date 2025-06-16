@@ -3,16 +3,13 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { getCompletedSkillCount } from '@redux/reducers/SkillsReducer';
-import type { RootState } from '@redux';
-
+import { ACHIEVEMENTS, SKILLS } from '@utils/constants';
 import { ProgressIcon } from '@utils/icons';
-import { SKILLS } from '@utils/constants';
 import { SummaryItem } from '@components';
-import { useSelector } from 'react-redux';
+import { useActions } from '@hooks/useActions';
 
 const Summary = () => {
-  const completedSkillCount = useSelector((state: RootState) => getCompletedSkillCount(state));
+  const { completedAchievements, completedSkills } = useActions();
 
   return (
     <Paper elevation={2} sx={{ height: '100%' }} square>
@@ -24,7 +21,8 @@ const Summary = () => {
           </Typography>
         </Stack>
 
-        <SummaryItem title="Maxed Skills" complete={completedSkillCount} total={SKILLS.length} />
+        <SummaryItem item="skills" complete={Object.keys(completedSkills).length} total={SKILLS.length} />
+        <SummaryItem item="achievements" complete={completedAchievements.length} total={ACHIEVEMENTS.length} />
       </Stack>
     </Paper>
   );

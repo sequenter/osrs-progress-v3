@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
 
 import { useMemo, useState } from 'react';
-import { AchievementsTab } from '@components';
+import { AchievementTab } from '@components';
 
 interface TabDetail {
   icon: string;
@@ -89,7 +89,7 @@ const TabHandler = () => {
         </Box>
 
         <TabPanel value="Achievements" sx={{ paddingX: 0 }}>
-          <AchievementsTab />
+          <AchievementTab />
         </TabPanel>
 
         <TabPanel value="Quests" sx={{ paddingX: 0 }}>

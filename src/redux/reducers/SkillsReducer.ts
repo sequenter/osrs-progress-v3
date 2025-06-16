@@ -1,20 +1,9 @@
+import { initialSkillsState } from '@redux/initialState';
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import type { Skill } from '@types';
-import { SKILLS } from '@utils/constants';
 
-type SkillDetail = {
-  [key in Skill]: {
-    level: number;
-    isLocked: boolean;
-  };
-};
-
-type SkillsInitialState = {
-  detail: SkillDetail;
-};
-
-const initialState: SkillsInitialState = {
-  detail: SKILLS.reduce((acc, skill) => ({ ...acc, [skill]: { level: skill === 'Hitpoints' ? 10 : 1, isLocked: true } }), {} as SkillDetail)
+const initialState = {
+  detail: initialSkillsState
 };
 
 export const skillsSlice = createSlice({
@@ -29,23 +18,11 @@ export const skillsSlice = createSlice({
     }
   },
   selectors: {
-    getIsLocked: (state, skill: Skill) => state.detail[skill].isLocked,
-    getLevel: (state, skill: Skill) => state.detail[skill].level,
-    getCompletedSkillCount: (state) => Object.entries(state.detail).filter(([, { isLocked, level }]) => !isLocked && level === 99).length,
-    getUnlockedSkills: (state) =>
-      Object.entries(state.detail).reduce(
-        (acc, [skill, detail]) => (detail.isLocked ? acc : { ...acc, [skill]: detail }),
-        {} as {
-          [key in Skill]?: {
-            level: number;
-            isLocked: boolean;
-          };
-        }
-      )
+    getSkills: (state) => state.detail
   }
 });
 
 export const { setIsLocked, setLevel } = skillsSlice.actions;
-export const { getIsLocked, getLevel, getCompletedSkillCount, getUnlockedSkills } = skillsSlice.selectors;
+export const { getSkills } = skillsSlice.selectors;
 
 export default skillsSlice.reducer;

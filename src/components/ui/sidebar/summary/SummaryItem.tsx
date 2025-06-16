@@ -3,26 +3,30 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import type { Summary } from '@types';
+import { memo } from 'react';
 
 interface SummaryItemProps {
+  item: Summary;
   complete: number;
-  title: string;
   total: number;
 }
 
-const SummaryItem = ({ complete, title, total }: SummaryItemProps) => {
+const SummaryItem = ({ complete, item, total }: SummaryItemProps) => {
   return (
     <Stack direction="column" component={Paper} elevation={4} gap={2} padding={2}>
-      <Typography variant="h5">{title}</Typography>
+      <Typography color="neutral" variant="h5" textTransform="capitalize">
+        {item}
+      </Typography>
 
       <LinearProgress
         variant="determinate"
         value={(complete / total) * 100}
         sx={(theme) => ({
-          backgroundColor: theme.palette.summary.skills.light,
+          backgroundColor: theme.palette.summary[item].light,
           borderRadius: 5,
           height: 10,
-          '& .MuiLinearProgress-bar': { backgroundColor: theme.palette.summary.skills.dark }
+          '& .MuiLinearProgress-bar': { backgroundColor: theme.palette.summary[item].dark }
         })}
       />
 
@@ -75,4 +79,4 @@ const SummaryItem = ({ complete, title, total }: SummaryItemProps) => {
   );
 };
 
-export default SummaryItem;
+export default memo(SummaryItem);
