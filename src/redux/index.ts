@@ -1,6 +1,7 @@
-import { configureStore } from '@reduxjs/toolkit';
 import AchievementsReducer from '@redux/reducers/AchievementsReducer';
 import SkillsReducer from '@redux/reducers/SkillsReducer';
+import { configureStore } from '@reduxjs/toolkit';
+
 import { getItem } from '@utils/storage';
 
 const preloadedState = (getItem('store') as object) ?? undefined;

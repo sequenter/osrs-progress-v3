@@ -6,11 +6,10 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { SkillItem } from '@components';
+import { useActions } from '@hooks/useActions';
+import type { Skill } from '@types';
 import { StatsIcon } from '@utils/icons';
 import { useState } from 'react';
-
-import type { Skill } from '@types';
-import { useActions } from '@hooks/useActions';
 
 const SkillDrawer = () => {
   const [isOpen, setIsOpen] = useState(true);

@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+
 import type { Summary } from '@types';
 import { memo } from 'react';
 

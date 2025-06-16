@@ -3,10 +3,10 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { ACHIEVEMENTS, SKILLS } from '@utils/constants';
-import { ProgressIcon } from '@utils/icons';
 import { SummaryItem } from '@components';
 import { useActions } from '@hooks/useActions';
+import { ACHIEVEMENTS, SKILLS } from '@utils/constants';
+import { ProgressIcon } from '@utils/icons';
 
 const Summary = () => {
   const { completedAchievements, completedSkills } = useActions();

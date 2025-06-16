@@ -1,17 +1,19 @@
-import './index.css';
-import { createRoot } from 'react-dom/client';
-import { StrictMode } from 'react';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import { ThemeProvider } from '@emotion/react';
+
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
-import { ActionProvider, Header, SkillDrawer, Summary, TabHandler } from '@components';
-import { themeDark } from '@utils/theme';
+import Stack from '@mui/material/Stack';
 
-import { Provider } from 'react-redux';
 import { store } from '@redux';
+import { Provider } from 'react-redux';
+
+import { ActionProvider, Header, SkillDrawer, Summary, TabHandler } from '@components';
 import { setItem } from '@utils/storage';
+import { themeDark } from '@utils/theme';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
 store.subscribe(() => {
   setItem('store', store.getState());

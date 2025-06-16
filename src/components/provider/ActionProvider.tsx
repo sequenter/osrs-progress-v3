@@ -1,10 +1,10 @@
-import { ActionsContext } from '@hooks/useActions';
 import type { RootState } from '@redux';
 import { getAchievements } from '@redux/reducers/AchievementsReducer';
 import { getSkills } from '@redux/reducers/SkillsReducer';
-import type { Achievement, AchievementState, PartialSkillState } from '@types';
-import { bifilter, isRequirementsFulfilled, trifilter } from '@utils/common';
-import { ACHIEVEMENTS } from '@utils/constants';
+
+import { ActionsContext } from '@hooks/useActions';
+import type { PartialSkillState } from '@types';
+import { isRequirementsFulfilled, trifilter } from '@utils/common';
 import { useMemo, type ReactNode } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -15,8 +15,6 @@ interface ActionsProps {
 const ActionsProvider = ({ children }: ActionsProps) => {
   const achievements = useSelector((state: RootState) => getAchievements(state));
   const skills = useSelector((state: RootState) => getSkills(state));
-
-  console.log(achievements);
 
   const unlockedSkills = useMemo(
     () =>

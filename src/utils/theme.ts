@@ -1,4 +1,5 @@
 import { createTheme, type ThemeOptions } from '@mui/material/styles';
+
 import type { AchievementDifficulty, Summary } from '@types';
 
 interface SimplePaletteOptions {

@@ -2,16 +2,17 @@ import { AddCircle, Lock, RemoveCircle } from '@mui/icons-material';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 
-import { memo, useEffect, useState } from 'react';
 import { setIsLocked, setLevel } from '@redux/reducers/SkillsReducer';
+import { useDispatch } from 'react-redux';
+
 import type { Skill } from '@types';
 import { skillIconMap } from '@utils/icons';
-import { useDispatch } from 'react-redux';
+import { memo, useEffect, useState } from 'react';
 
 interface SkillItemProps {
   isLocked: boolean;
@@ -77,7 +78,9 @@ const SkillItem = ({ isLocked, level, maxLevel, minLevel, skill }: SkillItemProp
         direction="column"
         height="100%"
         component={Paper}
-        sx={(theme) => ({ ...(!isLocked && { cursor: 'pointer', '&:hover': { outline: `solid ${theme.palette.primary.main}` } }) })}
+        sx={(theme) => ({
+          ...(!isLocked && { cursor: 'pointer', '&:hover': { outline: `solid ${theme.palette.primary.main}` } })
+        })}
         onMouseDown={() => handlePress(true)}
         onMouseUp={() => handlePress(false)}
       >

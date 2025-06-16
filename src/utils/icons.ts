@@ -2,10 +2,10 @@ import { default as ArdougneIcon } from '@assets/icons/diaries/ardougne.png';
 import { default as DesertIcon } from '@assets/icons/diaries/desert.png';
 import { default as FaladorIcon } from '@assets/icons/diaries/falador.png';
 import { default as FremennikIcon } from '@assets/icons/diaries/fremennik.png';
-import { default as LumbridgeIcon } from '@assets/icons/diaries/lumbridge.png';
 import { default as KandarinIcon } from '@assets/icons/diaries/kandarin.png';
 import { default as KaramjaIcon } from '@assets/icons/diaries/karamja.png';
 import { default as KourendIcon } from '@assets/icons/diaries/kourend.png';
+import { default as LumbridgeIcon } from '@assets/icons/diaries/lumbridge.png';
 import { default as MorytaniaIcon } from '@assets/icons/diaries/morytania.png';
 import { default as VarrockIcon } from '@assets/icons/diaries/varrock.png';
 import { default as WesternProvincesIcon } from '@assets/icons/diaries/westernprovinces.png';
@@ -37,12 +37,12 @@ import { default as WoodcuttingIcon } from '@assets/icons/skills/woodcutting.png
 
 import type { AchievementDiary, Skill } from '@types';
 
-export { default as StatsIcon } from '@assets/icons/stats.png';
-export { default as ProgressIcon } from '@assets/icons/progress.png';
 export { default as AchievementsIcon } from '@assets/icons/achievements.png';
-export { default as QuestsIcon } from '@assets/icons/quests.png';
 export { default as CollectionsIcon } from '@assets/icons/collections.png';
 export { default as PetsIcon } from '@assets/icons/pets.png';
+export { default as ProgressIcon } from '@assets/icons/progress.png';
+export { default as QuestsIcon } from '@assets/icons/quests.png';
+export { default as StatsIcon } from '@assets/icons/stats.png';
 
 export const diaryIconMap: Record<AchievementDiary, string> = {
   Ardougne: ArdougneIcon,

@@ -6,5 +6,5 @@
   "trailingComma": "none",
   "bracketSpacing": true,
   "multilineArraysWrapThreshold": 3,
-  "plugins": ["prettier-plugin-multiline-arrays"]
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-multiline-arrays"]
 }

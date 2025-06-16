@@ -9,11 +9,12 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
+import { setIsComplete } from '@redux/reducers/AchievementsReducer';
+import { useDispatch } from 'react-redux';
+
 import type { AchievementDiary, AchievementDifficulty, Completion } from '@types';
 import { diaryIconMap } from '@utils/icons';
 import { memo } from 'react';
-import { setIsComplete } from '@redux/reducers/AchievementsReducer';
-import { useDispatch } from 'react-redux';
 
 interface AchievementItemProps {
   completion: Completion;

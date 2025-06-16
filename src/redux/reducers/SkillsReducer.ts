@@ -1,5 +1,6 @@
 import { initialSkillsState } from '@redux/initialState';
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+
 import type { Skill } from '@types';
 
 const initialState = {

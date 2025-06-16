@@ -1,15 +1,15 @@
 import { ExpandCircleDown } from '@mui/icons-material';
 
+import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import type { AchievementState, Completion } from '@types';
 import { AchievementItem } from '@components';
+import type { AchievementState, Completion } from '@types';
 import { useState } from 'react';
-import Tooltip from '@mui/material/Tooltip';
-import Chip from '@mui/material/Chip';
 
 interface AchievementSectionProps {
   achievements: AchievementState;

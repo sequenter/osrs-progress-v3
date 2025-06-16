@@ -1,5 +1,5 @@
-import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { initialAchievementsState } from '@redux/initialState';
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
 const initialState = {
   detail: initialAchievementsState
