@@ -2,20 +2,19 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
-import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Tab from '@mui/material/Tab';
-import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { AchievementTab } from '@components';
+import Paper from '@mui/material/Paper';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
 
 interface TabDetail {
+  component: ReactNode;
   icon: string;
   label: string;
-  unlocked: number;
 }
 
 const TabHandler = () => {
@@ -24,24 +23,24 @@ const TabHandler = () => {
   const tabs: Array<TabDetail> = useMemo(
     () => [
       {
+        component: <AchievementTab />,
         label: 'Achievements',
-        icon: AchievementsIcon,
-        unlocked: 2
+        icon: AchievementsIcon
       },
       {
+        component: null,
         label: 'Quests',
-        icon: QuestsIcon,
-        unlocked: 0
+        icon: QuestsIcon
       },
       {
+        component: null,
         label: 'Collections',
-        icon: CollectionsIcon,
-        unlocked: 0
+        icon: CollectionsIcon
       },
       {
+        component: null,
         label: 'Pets',
-        icon: PetsIcon,
-        unlocked: 0
+        icon: PetsIcon
       }
     ],
     []
@@ -54,36 +53,43 @@ const TabHandler = () => {
   return (
     <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={activeTab}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider', '& .MuiTabs-root': { minHeight: 0 } }}>
+        <Box
+          component={Paper}
+          elevation={3}
+          sx={{
+            borderBottom: 1,
+            borderColor: 'divider',
+            borderTopLeftRadius: 0,
+            borderTopRightRadius: 0,
+            top: '64px',
+            overflow: 'hidden',
+            position: 'sticky',
+            'z-index': 999,
+            '& .MuiTabs-root': { minHeight: 0 }
+          }}
+        >
           <TabList
-            aria-label="lab API tabs example"
             flexDirection="row"
             flexGrow={1}
             component={Stack}
             onChange={handleChange}
-            sx={{ '& .MuiTab-root': { minHeight: 0, maxWidth: '100%', padding: '16px 0 16px 0' } }}
+            sx={{
+              '& .MuiTab-root': {
+                minHeight: 0,
+                maxWidth: '100%',
+                padding: '16px 0 16px 0'
+              }
+            }}
           >
-            {tabs.map(({ label, icon, unlocked }) => (
+            {tabs.map(({ label, icon }) => (
               <Tab
+                key={label}
                 component={Stack}
                 flexBasis={0}
                 flexGrow={1}
                 icon={<Box component="img" src={icon} width="2rem" height="2rem" paddingRight={1} />}
                 iconPosition="start"
-                label={
-                  <Stack alignItems="center" direction="row" gap={2}>
-                    <Typography variant="h6">{label}</Typography>
-                    {unlocked > 0 && (
-                      <Tooltip placement="top" title={<Typography>Tasks to complete</Typography>} arrow>
-                        <Chip
-                          color="warning"
-                          size="small"
-                          label={<Typography variant="subtitle1">{unlocked}</Typography>}
-                        />
-                      </Tooltip>
-                    )}
-                  </Stack>
-                }
+                label={<Typography variant="h6">{label}</Typography>}
                 maxWidth="100%"
                 value={label}
               />
@@ -91,17 +97,11 @@ const TabHandler = () => {
           </TabList>
         </Box>
 
-        <TabPanel value="Achievements" sx={{ paddingX: 0 }}>
-          <AchievementTab />
-        </TabPanel>
-
-        <TabPanel value="Quests" sx={{ paddingX: 0 }}>
-          Item Two
-        </TabPanel>
-
-        <TabPanel value="Collections" sx={{ paddingX: 0 }}>
-          Item Three
-        </TabPanel>
+        {tabs.map(({ component, label }) => (
+          <TabPanel key={label} value={label} sx={{ paddingX: 0 }}>
+            {component}
+          </TabPanel>
+        ))}
       </TabContext>
     </Box>
   );

@@ -1,4 +1,4 @@
-type PartialRecord<K extends keyof any, T> = Partial<Record<K, T>>;
+type PartialRecord<K, T> = Partial<Record<K, T>>;
 
 /* FUNCTIONS */
 

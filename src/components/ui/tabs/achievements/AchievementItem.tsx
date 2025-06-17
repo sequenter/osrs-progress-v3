@@ -1,4 +1,4 @@
-import { Cancel, CheckCircle } from '@mui/icons-material';
+import { Cancel, CheckCircle, Info } from '@mui/icons-material';
 
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -31,7 +31,12 @@ const AchievementItem = ({ completion, diary, difficulty, task }: AchievementIte
   };
 
   return (
-    <Grid key={task} component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
+    <Grid
+      key={task}
+      component={Stack}
+      size={{ xs: 12, md: 6, lg: 4 }}
+      sx={{ ...(completion === 'locked' && { opacity: '60%' }) }}
+    >
       <Stack direction="column" component={Paper} elevation={2} flexGrow={1} gap={1} padding={2}>
         <Stack alignItems="center" direction="row" justifyContent="space-between">
           <Stack alignItems="center" direction="row" gap={1}>
@@ -54,7 +59,7 @@ const AchievementItem = ({ completion, diary, difficulty, task }: AchievementIte
 
         <Divider />
 
-        <Stack direction="row">
+        <Stack alignItems="center" justifyContent={completion === 'locked' ? 'end' : 'space-between'} direction="row">
           {completion === 'unlocked' && (
             <Tooltip placement="top" title={<Typography>Mark as complete</Typography>} arrow>
               <IconButton
@@ -82,6 +87,12 @@ const AchievementItem = ({ completion, diary, difficulty, task }: AchievementIte
               </IconButton>
             </Tooltip>
           )}
+
+          <Tooltip placement="top" title={<Typography>Requirements</Typography>} arrow>
+            <IconButton color="neutral" sx={{ padding: 0 }} onClick={() => {}}>
+              <Info />
+            </IconButton>
+          </Tooltip>
         </Stack>
       </Stack>
     </Grid>

@@ -24,14 +24,22 @@ createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
       <ActionProvider>
         <ThemeProvider theme={themeDark}>
-          <Stack direction="column" height="100vh">
+          <Stack direction="column" minHeight="100vh">
             <Header />
-            <Stack component={Paper} direction="row" flexGrow={1}>
-              <Box component="aside" width="24rem" flexShrink={0}>
+
+            <Stack component={Paper} direction="row" flexGrow={1} square>
+              <Box
+                component="aside"
+                width="24rem"
+                flexShrink={0}
+                sx={{ position: 'sticky', height: 'calc(100vh - 64px)', top: '64px' }}
+              >
                 <Summary />
               </Box>
+
               <Container component="main" maxWidth={false}>
                 <TabHandler />
+
                 <SkillDrawer />
               </Container>
             </Stack>

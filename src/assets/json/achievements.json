@@ -24,5 +24,45 @@
         }
       }
     ]
+  },
+  {
+    "diary": "Ardougne",
+    "difficulty": "Easy",
+    "task": "Sell silk to the Silk trader in East Ardougne for 60 coins each",
+    "requirements": []
+  },
+  {
+    "diary": "Ardougne",
+    "difficulty": "Easy",
+    "task": "Use the altar in East Ardougne's church",
+    "requirements": []
+  },
+  {
+    "diary": "Ardougne",
+    "difficulty": "Easy",
+    "task": "Go out fishing on the Fishing Trawler",
+    "requirements": []
+  },
+  {
+    "diary": "Ardougne",
+    "difficulty": "Easy",
+    "task": "Enter the Combat Training Camp north of West Ardougne",
+    "requirements": [
+      {
+        "type": "main",
+        "quests": ["Biohazard"]
+      }
+    ]
+  },
+  {
+    "diary": "Ardougne",
+    "difficulty": "Easy",
+    "task": "Have Tindel Marchant identify a rusty sword for you",
+    "requirements": [
+      {
+        "type": "main",
+        "items": ["Rusty sword"]
+      }
+    ]
   }
 ]

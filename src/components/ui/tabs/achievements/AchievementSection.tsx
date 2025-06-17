@@ -29,26 +29,28 @@ const AchievementSection = ({ achievements, completion }: AchievementSectionProp
         <Stack alignItems="center" direction="row" gap={1}>
           <Tooltip placement="top" title={<Typography>Tasks {completion}</Typography>} arrow>
             <Chip
-              color={completion === 'unlocked' ? 'neutral' : completion === 'locked' ? 'error' : 'success'}
+              color="neutral"
               size="small"
               label={<Typography variant="subtitle1">{achievements.length}</Typography>}
             />
           </Tooltip>
 
-          <IconButton
-            color="neutral"
-            sx={{ transform: `rotate(${isExpanded ? 180 : 0}deg)` }}
-            onClick={() => {
-              setIsExpanded(!isExpanded);
-            }}
-          >
-            <ExpandCircleDown />
-          </IconButton>
+          <Tooltip placement="top" title={<Typography>{isExpanded ? 'Collapse' : 'Expand'}</Typography>} arrow>
+            <IconButton
+              color="neutral"
+              sx={{ transform: `rotate(${isExpanded ? 180 : 0}deg)` }}
+              onClick={() => {
+                setIsExpanded(!isExpanded);
+              }}
+            >
+              <ExpandCircleDown />
+            </IconButton>
+          </Tooltip>
         </Stack>
       </Stack>
 
       {isExpanded && (
-        <Grid spacing={2} container sx={{ visibility: isExpanded ? 'visible' : 'hidden' }}>
+        <Grid spacing={2} container>
           {achievements.map(({ diary, difficulty, task }) => (
             <AchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
           ))}

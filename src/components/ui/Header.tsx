@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'var(--AppBar-background)', color: 'var(--AppBar-color)' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: 'var(--AppBar-background)', color: 'var(--AppBar-color)' }}>
       <Toolbar>
         <Typography variant="h6" component="div">
           OSRS Progress Tracker

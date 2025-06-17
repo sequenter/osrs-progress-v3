@@ -1,6 +1,14 @@
-body,
-#root {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
 }
