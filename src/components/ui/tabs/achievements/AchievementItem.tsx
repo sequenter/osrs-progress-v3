@@ -31,12 +31,7 @@ const AchievementItem = ({ completion, diary, difficulty, task }: AchievementIte
   };
 
   return (
-    <Grid
-      key={task}
-      component={Stack}
-      size={{ xs: 12, md: 6, lg: 4 }}
-      sx={{ ...(completion === 'locked' && { opacity: '60%' }) }}
-    >
+    <Grid key={task} component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
       <Stack direction="column" component={Paper} elevation={2} flexGrow={1} gap={1} padding={2}>
         <Stack alignItems="center" direction="row" justifyContent="space-between">
           <Stack alignItems="center" direction="row" gap={1}>

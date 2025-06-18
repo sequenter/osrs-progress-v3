@@ -98,7 +98,7 @@ const TabHandler = () => {
         </Box>
 
         {tabs.map(({ component, label }) => (
-          <TabPanel key={label} value={label} sx={{ paddingX: 0 }}>
+          <TabPanel key={label} value={label} sx={{ paddingX: 0 }} keepMounted>
             {component}
           </TabPanel>
         ))}

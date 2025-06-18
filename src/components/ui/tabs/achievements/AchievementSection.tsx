@@ -49,13 +49,11 @@ const AchievementSection = ({ achievements, completion }: AchievementSectionProp
         </Stack>
       </Stack>
 
-      {isExpanded && (
-        <Grid spacing={2} container>
-          {achievements.map(({ diary, difficulty, task }) => (
-            <AchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
-          ))}
-        </Grid>
-      )}
+      <Grid display={isExpanded ? 'flex' : 'none'} spacing={2} container>
+        {achievements.map(({ diary, difficulty, task }) => (
+          <AchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
+        ))}
+      </Grid>
     </Stack>
   );
 };

@@ -30,22 +30,30 @@ export type PartialSkillState = PartialRecord<Skill, SkillDetail>;
 /* ACHIEVEMENTS */
 
 export interface SkillsRequirement {
-  all?: PartialRecord<Skill, number>;
-  any?: PartialRecord<Skill, number>;
+  all?: Partial<Record<Skill, number>>;
+  any?: Partial<Record<Skill, number>>;
+}
+
+interface Required {
+  quests?: Array<string>;
+  skills?: SkillsRequirement;
 }
 
 export interface Requirement {
-  type: 'ironman' | 'main';
   description?: string;
-  quests?: Array<string>;
-  skills?: SkillsRequirement;
+  required: Array<Required>;
+}
+
+export interface Requirements {
+  main?: Array<Requirement>;
+  ironman?: Array<Requirement>;
 }
 
 export interface Achievement {
   diary: AchievementDiary;
   difficulty: AchievementDifficulty;
   task: string;
-  requirements: Array<Requirement>;
+  requirements: Requirements;
 }
 
 export type AchievementState = Array<

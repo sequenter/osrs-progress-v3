@@ -1,4 +1,4 @@
-import type { PartialSkillState, Requirement, Skill, SkillsRequirement } from '@types';
+import type { PartialSkillState, Requirement, Requirements, Skill, SkillsRequirement } from '@types';
 
 /* COMMON */
 
@@ -44,9 +44,10 @@ const isSkillsRequirementFulfilled = (unlockedSkills: PartialSkillState, require
         isSkillLevelMet(unlockedSkills, skill, level)
       )));
 
-export const isRequirementsFulfilled = (unlockedSkills: PartialSkillState, requirements: Array<Requirement>) =>
-  requirements.every(
-    (requirement) =>
-      !('skills' in requirement) ||
-      (hasProperty(requirement, 'skills') && isSkillsRequirementFulfilled(unlockedSkills, requirement.skills))
+const isRequirementFulfilled = (unlockedSkills: PartialSkillState, requirement: Array<Requirement>) =>
+  requirement.every(({ required }) =>
+    required.some((req) => req.skills && isSkillsRequirementFulfilled(unlockedSkills, req.skills))
   );
+
+export const isRequirementsFulfilled = (unlockedSkills: PartialSkillState, requirements: Requirements) =>
+  !Object.keys(requirements).length || (requirements.main && isRequirementFulfilled(unlockedSkills, requirements.main));

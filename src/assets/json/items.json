@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rusty Sword",
+    "requirements": {
+      "main": [
+        [
+          {
+            "combat": true
+          },
+          {
+            "skills": {
+              "any": {
+                "Fishing": 15,
+                "Thieving": 15
+              }
+            }
+          }
+        ]
+      ]
+    }
+  }
+]
