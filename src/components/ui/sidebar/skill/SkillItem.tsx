@@ -12,7 +12,7 @@ import { useDispatch } from 'react-redux';
 
 import type { Skill } from '@types';
 import { skillIconMap } from '@utils/icons';
-import { memo, useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 
 interface SkillItemProps {
   isLocked: boolean;
@@ -27,33 +27,42 @@ const SkillItem = ({ isLocked, level, maxLevel, minLevel, skill }: SkillItemProp
 
   const dispatch = useDispatch();
 
-  /**
-   * On skill increment/decrement level press, increment the skill level.
-   * @param increment Value to increment skill level by
-   */
-  const handleIncrement = (increment: number) => {
-    const incrementedLevel = Math.min(maxLevel, Math.max(minLevel, level + increment));
+  const handleIncrement = useCallback(
+    /**
+     * On skill increment/decrement level press, increment the skill level.
+     * @param increment Value to increment skill level by
+     */
+    (increment: number) => {
+      const incrementedLevel = Math.min(maxLevel, Math.max(minLevel, level + increment));
 
-    dispatch(setLevel({ skill, level: incrementedLevel }));
-  };
+      dispatch(setLevel({ skill, level: incrementedLevel }));
+    },
+    [level, maxLevel, minLevel, skill, dispatch]
+  );
 
-  /**
-   * On skill lock clicked which is only visible when the skill is locked, toggle the skill locked state.
-   */
-  const handleLock = () => {
-    dispatch(setIsLocked({ skill, isLocked: !isLocked }));
-  };
+  const handleLock = useCallback(
+    /**
+     * On skill lock clicked, toggle the skill locked state.
+     */
+    () => {
+      dispatch(setIsLocked({ skill, isLocked: !isLocked }));
+    },
+    [isLocked, skill, dispatch]
+  );
 
-  /**
-   * On skill item mouse down, set the skill press state for the long press timer to begin.
-   * @param pressed Whether or not the skill is being pressed
-   */
-  const handlePress = (pressed: boolean) => {
-    // Only allow the skill to be pressed and therefore lock when it is unlocked
-    if (!isLocked) {
-      setPressed(pressed);
-    }
-  };
+  const handlePress = useCallback(
+    /**
+     * On skill item mouse down, set the skill press state for the long press timer to begin.
+     * @param pressed Whether or not the skill is being pressed
+     */
+    (pressed: boolean) => {
+      // Only allow the skill to be pressed and therefore lock when it is unlocked
+      if (!isLocked) {
+        setPressed(pressed);
+      }
+    },
+    [isLocked]
+  );
 
   // Effect to handle long press for locking skills
   useEffect(() => {

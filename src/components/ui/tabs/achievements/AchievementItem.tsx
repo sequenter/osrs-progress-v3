@@ -14,7 +14,7 @@ import { useDispatch } from 'react-redux';
 
 import type { AchievementDiary, AchievementDifficulty, Completion } from '@types';
 import { diaryIconMap } from '@utils/icons';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 
 interface AchievementItemProps {
   completion: Completion;
@@ -26,9 +26,12 @@ interface AchievementItemProps {
 const AchievementItem = ({ completion, diary, difficulty, task }: AchievementItemProps) => {
   const dispatch = useDispatch();
 
-  const handleCompletion = (isComplete: boolean) => {
-    dispatch(setIsComplete({ task, isComplete }));
-  };
+  const handleCompletion = useCallback(
+    (isComplete: boolean) => {
+      dispatch(setIsComplete({ task, isComplete }));
+    },
+    [task, dispatch]
+  );
 
   return (
     <Grid key={task} component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>

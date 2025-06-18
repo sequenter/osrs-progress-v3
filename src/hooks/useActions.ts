@@ -10,6 +10,8 @@ interface Actions {
   completedAchievements: AchievementState;
   unlockedAchievements: AchievementState;
   lockedAchievements: AchievementState;
+  combat: boolean;
+  combatLevel: number;
 }
 
 export const ActionsContext = createContext<Actions>({
@@ -18,7 +20,9 @@ export const ActionsContext = createContext<Actions>({
   unlockedSkills: {},
   completedAchievements: [],
   unlockedAchievements: [],
-  lockedAchievements: []
+  lockedAchievements: [],
+  combat: false,
+  combatLevel: 3
 });
 
 export const useActions = () => useContext(ActionsContext);

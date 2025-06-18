@@ -7,9 +7,10 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { AchievementItem } from '@components';
 import type { AchievementState, Completion } from '@types';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
+const LazyAchievementItem = React.lazy(() => import('@components/ui/tabs/achievements/AchievementItem'));
 
 interface AchievementSectionProps {
   achievements: AchievementState;
@@ -51,7 +52,7 @@ const AchievementSection = ({ achievements, completion }: AchievementSectionProp
 
       <Grid display={isExpanded ? 'flex' : 'none'} spacing={2} container>
         {achievements.map(({ diary, difficulty, task }) => (
-          <AchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
+          <LazyAchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
         ))}
       </Grid>
     </Stack>

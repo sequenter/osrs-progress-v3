@@ -7,8 +7,8 @@ export { default as AchievementSection } from './ui/tabs/achievements/Achievemen
 export { default as AchievementTab } from './ui/tabs/achievements/AchievementTab';
 export { default as TabHandler } from './ui/tabs/TabHandler';
 
-export { default as SkillDrawer } from './ui/sidebar/skill/SkillPanel';
 export { default as SkillItem } from './ui/sidebar/skill/SkillItem';
+export { default as SkillDrawer } from './ui/sidebar/skill/SkillPanel';
 
-export { default as Summary } from './ui/sidebar/summary/SummaryPanel';
 export { default as SummaryItem } from './ui/sidebar/summary/SummaryItem';
+export { default as Summary } from './ui/sidebar/summary/SummaryPanel';

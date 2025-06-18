@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "prettier . --check && eslint .",
+    "preview": "vite preview",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -31,7 +32,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "prettier-plugin-multiline-arrays": "^4.0.3",
     "prettier-plugin-organize-imports": "^4.1.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",

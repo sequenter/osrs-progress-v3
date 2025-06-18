@@ -8,9 +8,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Rune Mysteries"
-              ]
+              "quests": ["Rune Mysteries"]
             }
           ]
         }
@@ -64,9 +62,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Biohazard"
-              ]
+              "quests": ["Biohazard"]
             }
           ]
         }
@@ -126,9 +122,7 @@
           "description": "Started 'Fairytale II - Cure a Queen'",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -236,9 +230,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Plague City"
-              ],
+              "quests": ["Plague City"],
               "skills": {
                 "all": {
                   "Magic": 51
@@ -259,9 +251,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Enlightened Journey"
-              ],
+              "quests": ["Enlightened Journey"],
               "skills": {
                 "all": {
                   "Firemaking": 50
@@ -307,9 +297,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Hand in the Sand"
-              ]
+              "quests": ["The Hand in the Sand"]
             }
           ]
         }
@@ -403,9 +391,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Tower of Life"
-              ]
+              "quests": ["Tower of Life"]
             }
           ]
         }
@@ -433,9 +419,7 @@
               }
             },
             {
-              "quests": [
-                "Bone Voyage"
-              ],
+              "quests": ["Bone Voyage"],
               "skills": {
                 "all": {
                   "Hunter": 44,
@@ -457,9 +441,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Underground Pass"
-              ]
+              "quests": ["Underground Pass"]
             }
           ]
         }
@@ -476,9 +458,7 @@
           "description": "Started Fairytale II - Cure a Queen",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -501,9 +481,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Legends' Quest"
-              ]
+              "quests": ["Legends' Quest"]
             }
           ]
         }
@@ -575,10 +553,7 @@
           "description": "Partial completion of 'Monkey Madness I'",
           "required": [
             {
-              "quests": [
-                "The Grand Tree",
-                "Tree Gnome Village"
-              ]
+              "quests": ["The Grand Tree", "Tree Gnome Village"]
             }
           ]
         }
@@ -594,9 +569,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Watchtower"
-              ],
+              "quests": ["Watchtower"],
               "skills": {
                 "all": {
                   "Magic": 58
@@ -753,9 +726,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Legends' Quest"
-              ],
+              "quests": ["Legends' Quest"],
               "skills": {
                 "all": {
                   "Smithing": 60
@@ -786,9 +757,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Mourning's End Part II"
-              ],
+              "quests": ["Mourning's End Part II"],
               "skills": {
                 "all": {
                   "Runecraft": 65
@@ -939,9 +908,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Haunted Mine"
-              ]
+              "quests": ["Haunted Mine"]
             }
           ]
         }
@@ -1018,9 +985,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Desert Treasure I"
-              ],
+              "quests": ["Desert Treasure I"],
               "skills": {
                 "all": {
                   "Magic": 85
@@ -1122,9 +1087,7 @@
           "description": "Obtain some pyramid plunder",
           "required": [
             {
-              "quests": [
-                "Gertrude's Cat"
-              ],
+              "quests": ["Gertrude's Cat"],
               "skills": {
                 "all": {
                   "Thieving": 21
@@ -1157,9 +1120,7 @@
           "description": "Started 'Icthlarin's Little Helper'",
           "required": [
             {
-              "quests": [
-                "Gertrude's Cat"
-              ]
+              "quests": ["Gertrude's Cat"]
             }
           ]
         }
@@ -1268,9 +1229,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Golem"
-              ]
+              "quests": ["The Golem"]
             }
           ]
         }
@@ -1286,9 +1245,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Eagles' Peak"
-              ]
+              "quests": ["Eagles' Peak"]
             }
           ]
         }
@@ -1304,9 +1261,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Spirits of the Elid"
-              ]
+              "quests": ["Spirits of the Elid"]
             }
           ]
         }
@@ -1354,9 +1309,7 @@
               }
             },
             {
-              "quests": [
-                "Prince Ali Rescue"
-              ]
+              "quests": ["Prince Ali Rescue"]
             }
           ]
         },
@@ -1380,9 +1333,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Enakhra's Lament"
-              ]
+              "quests": ["Enakhra's Lament"]
             }
           ]
         }
@@ -1516,9 +1467,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Dream Mentor"
-              ],
+              "quests": ["Dream Mentor"],
               "skills": {
                 "all": {
                   "Magic": 68
@@ -1639,9 +1588,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Desert Treasure I"
-              ]
+              "quests": ["Desert Treasure I"]
             }
           ]
         }
@@ -1671,10 +1618,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Prince Ali Rescue",
-                "Icthlarin's Little Helper"
-              ]
+              "quests": ["Prince Ali Rescue", "Icthlarin's Little Helper"]
             }
           ]
         }
@@ -1837,9 +1781,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Desert Treasure I"
-              ],
+              "quests": ["Desert Treasure I"],
               "skills": {
                 "all": {
                   "Magic": 94
@@ -1860,9 +1802,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tourist Trap"
-              ],
+              "quests": ["Tourist Trap"],
               "skills": {
                 "all": {
                   "Fletching": 95
@@ -1913,9 +1853,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -1984,9 +1922,7 @@
           "description": "Started 'Icthlarin's Little Helper'",
           "required": [
             {
-              "quests": [
-                "Gertrude's Cat"
-              ]
+              "quests": ["Gertrude's Cat"]
             }
           ]
         }
@@ -2014,9 +1950,7 @@
           "description": "Started 'Icthlarin's Little Helper'",
           "required": [
             {
-              "quests": [
-                "Gertrude's Cat"
-              ]
+              "quests": ["Gertrude's Cat"]
             }
           ]
         }
@@ -2172,9 +2106,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Knight's Sword"
-              ],
+              "quests": ["The Knight's Sword"],
               "skills": {
                 "all": {
                   "Mining": 10,
@@ -2226,9 +2158,7 @@
               }
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ]
+              "quests": ["Death to the Dorgeshuun"]
             }
           ]
         }
@@ -2305,9 +2235,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Skippy and the Mogres"
-              ],
+              "quests": ["Skippy and the Mogres"],
               "skills": {
                 "all": {
                   "Slayer": 32
@@ -2329,9 +2257,7 @@
           "description": "Partial completion of 'Ratcatchers",
           "required": [
             {
-              "quests": [
-                "Icthlarin's Little Helper"
-              ],
+              "quests": ["Icthlarin's Little Helper"],
               "skills": {
                 "all": {
                   "Crafting": 12,
@@ -2422,9 +2348,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Recruitment Drive"
-              ],
+              "quests": ["Recruitment Drive"],
               "skills": {
                 "all": {
                   "Prayer": 10,
@@ -2730,9 +2654,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Heroes' Quest"
-              ]
+              "quests": ["Heroes' Quest"]
             }
           ]
         }
@@ -2796,9 +2718,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Slug Menace"
-              ],
+              "quests": ["The Slug Menace"],
               "skills": {
                 "all": {
                   "Defence": 30,
@@ -2841,9 +2761,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Grim Tales"
-              ],
+              "quests": ["Grim Tales"],
               "skills": {
                 "all": {
                   "Defence": 50
@@ -2884,9 +2802,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Wanted!"
-              ]
+              "quests": ["Wanted!"]
             }
           ]
         }
@@ -3104,9 +3020,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ]
+              "quests": ["The Fremennik Trials"]
             }
           ]
         }
@@ -3138,9 +3052,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Crafting": 23,
@@ -3234,10 +3146,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Troll Stronghold",
-                "Death Plateau"
-              ]
+              "quests": ["Troll Stronghold", "Death Plateau"]
             }
           ]
         }
@@ -3287,9 +3196,7 @@
           "description": "Partial completion of 'Olaf's Quest'",
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Firemaking": 40,
@@ -3327,9 +3234,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Eagles' Peak"
-              ]
+              "quests": ["Eagles' Peak"]
             }
           ]
         }
@@ -3345,9 +3250,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Mining": 30
@@ -3368,9 +3271,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Thieving": 42
@@ -3391,9 +3292,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ]
+              "quests": ["The Fremennik Trials"]
             }
           ]
         },
@@ -3401,9 +3300,7 @@
           "description": "Started 'Fairytale II - Cure a Queen'",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -3483,9 +3380,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Horror from the Deep"
-              ]
+              "quests": ["Horror from the Deep"]
             }
           ]
         }
@@ -3513,10 +3408,7 @@
           "description": "Partial completion of 'Between a Rock...'",
           "required": [
             {
-              "quests": [
-                "Dwarf Cannon",
-                "Fishing Contest"
-              ],
+              "quests": ["Dwarf Cannon", "Fishing Contest"],
               "skills": {
                 "all": {
                   "Defence": 30,
@@ -3539,9 +3431,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Eadgar's Ruse"
-              ],
+              "quests": ["Eadgar's Ruse"],
               "skills": {
                 "all": {
                   "Magic": 61
@@ -3675,9 +3565,7 @@
           "description": "Partial completion of 'The Fremennik Isles'",
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Construction": 20
@@ -3710,9 +3598,7 @@
           "description": "Started 'The Fremennik Isles'",
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Construction": 20
@@ -3748,10 +3634,7 @@
           "description": "Partial completion of 'Throne of Miscellania'",
           "required": [
             {
-              "quests": [
-                "Heroes' Quest",
-                "The Fremennik Trials"
-              ]
+              "quests": ["Heroes' Quest", "The Fremennik Trials"]
             }
           ]
         }
@@ -3767,9 +3650,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lunar Diplomacy"
-              ],
+              "quests": ["Lunar Diplomacy"],
               "skills": {
                 "all": {
                   "Magic": 72
@@ -3889,9 +3770,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lunar Diplomacy"
-              ],
+              "quests": ["Lunar Diplomacy"],
               "skills": {
                 "all": {
                   "Runecraft": 82
@@ -3924,9 +3803,7 @@
           "description": "Started 'The Fremennik Isles'",
           "required": [
             {
-              "quests": [
-                "The Fremennik Trials"
-              ],
+              "quests": ["The Fremennik Trials"],
               "skills": {
                 "all": {
                   "Construction": 20
@@ -3987,9 +3864,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Troll Stronghold"
-              ],
+              "quests": ["Troll Stronghold"],
               "skills": {
                 "all": {
                   "Agility": 70,
@@ -4077,9 +3952,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Troll Stronghold"
-              ],
+              "quests": ["Troll Stronghold"],
               "skills": {
                 "all": {
                   "Slayer": 83
@@ -4250,9 +4123,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Alfred Grimhand's Barcrawl"
-              ],
+              "quests": ["Alfred Grimhand's Barcrawl"],
               "skills": {
                 "all": {
                   "Agility": 35
@@ -4477,9 +4348,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Elemental Workshop II "
-              ]
+              "quests": ["Elemental Workshop II "]
             }
           ]
         }
@@ -4548,9 +4417,7 @@
           "description": "Started 'Fairytale II - Cure a Queen'",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -4674,10 +4541,7 @@
         {
           "required": [
             {
-              "quests": [
-                "King's Ransom",
-                "Knight Waves Training Grounds"
-              ],
+              "quests": ["King's Ransom", "Knight Waves Training Grounds"],
               "skills": {
                 "all": {
                   "Prayer": 70,
@@ -4716,9 +4580,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 52
@@ -4948,9 +4810,7 @@
           "description": "Access to Barbarian Smithing",
           "required": [
             {
-              "quests": [
-                "Tai Bwo Wannai Trio"
-              ],
+              "quests": ["Tai Bwo Wannai Trio"],
               "skills": {
                 "all": {
                   "Firemaking": 35,
@@ -4959,9 +4819,7 @@
               }
             },
             {
-              "quests": [
-                "Tai Bwo Wannai Trio"
-              ],
+              "quests": ["Tai Bwo Wannai Trio"],
               "skills": {
                 "all": {
                   "Fishing": 55,
@@ -5026,9 +4884,7 @@
               }
             },
             {
-              "quests": [
-                "Sleeping Giants"
-              ],
+              "quests": ["Sleeping Giants"],
               "skills": {
                 "all": {
                   "Smithing": 70
@@ -5112,9 +4968,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Family Crest"
-              ],
+              "quests": ["Family Crest"],
               "skills": {
                 "all": {
                   "Fishing": 76,
@@ -5161,9 +5015,7 @@
             },
             {
               "combat": true,
-              "quests": [
-                "Bone Voyage"
-              ]
+              "quests": ["Bone Voyage"]
             }
           ]
         }
@@ -5191,9 +5043,7 @@
           "description": "Access to Barbarian Smithing",
           "required": [
             {
-              "quests": [
-                "Tai Bwo Wannai Trio"
-              ],
+              "quests": ["Tai Bwo Wannai Trio"],
               "skills": {
                 "all": {
                   "Firemaking": 35,
@@ -5202,9 +5052,7 @@
               }
             },
             {
-              "quests": [
-                "Tai Bwo Wannai Trio"
-              ],
+              "quests": ["Tai Bwo Wannai Trio"],
               "skills": {
                 "all": {
                   "Fishing": 55,
@@ -5357,9 +5205,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lunar Diplomacy"
-              ],
+              "quests": ["Lunar Diplomacy"],
               "skills": {
                 "all": {
                   "Magic": 87
@@ -5560,9 +5406,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Shilo Village"
-              ]
+              "quests": ["Shilo Village"]
             }
           ]
         }
@@ -5578,9 +5422,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ],
+              "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
                   "Woodcutting": 10
@@ -5631,9 +5473,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Shilo Village"
-              ]
+              "quests": ["Shilo Village"]
             }
           ]
         }
@@ -5649,9 +5489,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ],
+              "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
                   "Woodcutting": 35
@@ -5672,9 +5510,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ],
+              "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
                   "Woodcutting": 50
@@ -5707,9 +5543,7 @@
           "description": "Partial completion of 'Tai Bwo Wannai Trio'",
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ],
+              "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
                   "Agility": 15,
@@ -5732,9 +5566,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ]
+              "quests": ["Jungle Potion"]
             }
           ]
         }
@@ -5750,9 +5582,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Grand Tree"
-              ]
+              "quests": ["The Grand Tree"]
             }
           ]
         }
@@ -5869,9 +5699,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Grand Tree"
-              ]
+              "quests": ["The Grand Tree"]
             }
           ]
         }
@@ -5887,9 +5715,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Jungle Potion"
-              ],
+              "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
                   "Mining": 40
@@ -5956,13 +5782,7 @@
             {
               "combat": true,
               "QP": 107,
-              "quests": [
-                "Family Crest",
-                "Heroes' Quest",
-                "Shilo Village",
-                "Underground Pass",
-                "Waterfall Quest"
-              ],
+              "quests": ["Family Crest", "Heroes' Quest", "Shilo Village", "Underground Pass", "Waterfall Quest"],
               "skills": {
                 "all": {
                   "Agility": 50,
@@ -6012,9 +5832,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tai Bwo Wannai Trio"
-              ],
+              "quests": ["Tai Bwo Wannai Trio"],
               "skills": {
                 "all": {
                   "Cooking": 30
@@ -6044,13 +5862,7 @@
           "required": [
             {
               "QP": 107,
-              "quests": [
-                "Family Crest",
-                "Heroes' Quest",
-                "Shilo Village",
-                "Underground Pass",
-                "Waterfall Quest"
-              ],
+              "quests": ["Family Crest", "Heroes' Quest", "Shilo Village", "Underground Pass", "Waterfall Quest"],
               "skills": {
                 "all": {
                   "Agility": 50,
@@ -6129,13 +5941,7 @@
           "required": [
             {
               "QP": 107,
-              "quests": [
-                "Family Crest",
-                "Heroes' Quest",
-                "Shilo Village",
-                "Underground Pass",
-                "Waterfall Quest"
-              ],
+              "quests": ["Family Crest", "Heroes' Quest", "Shilo Village", "Underground Pass", "Waterfall Quest"],
               "skills": {
                 "all": {
                   "Agility": 50,
@@ -6166,9 +5972,7 @@
           "required": [
             {
               "combatLevel": 100,
-              "quests": [
-                "Shilo Village"
-              ],
+              "quests": ["Shilo Village"],
               "skills": {
                 "all": {
                   "Slayer": 50
@@ -6294,9 +6098,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Underground Pass"
-              ],
+              "quests": ["Underground Pass"],
               "skills": {
                 "all": {
                   "Ranged": 1,
@@ -6361,9 +6163,7 @@
               }
             },
             {
-              "quests": [
-                "Bone Voyage"
-              ],
+              "quests": ["Bone Voyage"],
               "skills": {
                 "all": {
                   "Hunter": 5,
@@ -6527,9 +6327,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Druidic Ritual"
-              ],
+              "quests": ["Druidic Ritual"],
               "skills": {
                 "all": {
                   "Herblore": 12
@@ -6616,9 +6414,7 @@
           "description": "Started 'Fairytale II - Cure a Queen'",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -6824,9 +6620,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Eagles' Peak"
-              ],
+              "quests": ["Eagles' Peak"],
               "skills": {
                 "all": {
                   "Hunter": 53
@@ -6887,9 +6681,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Forsaken Tower"
-              ],
+              "quests": ["The Forsaken Tower"],
               "skills": {
                 "all": {
                   "Smithing": 70
@@ -6925,9 +6717,7 @@
               }
             },
             {
-              "quests": [
-                "Sleeping Giants"
-              ]
+              "quests": ["Sleeping Giants"]
             }
           ]
         }
@@ -7095,9 +6885,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Dream Mentor"
-              ],
+              "quests": ["Dream Mentor"],
               "skills": {
                 "all": {
                   "Magic": 66
@@ -7387,9 +7175,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Rune Mysteries"
-              ]
+              "quests": ["Rune Mysteries"]
             }
           ]
         }
@@ -7508,9 +7294,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Cook's Assistant"
-              ],
+              "quests": ["Cook's Assistant"],
               "skills": {
                 "all": {
                   "Cooking": 1
@@ -7639,9 +7423,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Animal Magnetism"
-              ],
+              "quests": ["Animal Magnetism"],
               "skills": {
                 "all": {
                   "Ranged": 50
@@ -7663,9 +7445,7 @@
           "description": "Started 'Fairytale II - Cure a Queen'",
           "required": [
             {
-              "quests": [
-                "Fairytale I - Growing Pains"
-              ],
+              "quests": ["Fairytale I - Growing Pains"],
               "skills": {
                 "all": {
                   "Thieving": 40,
@@ -7789,9 +7569,7 @@
           "required": [
             {
               "combatLevel": 70,
-              "quests": [
-                "Lost City"
-              ]
+              "quests": ["Lost City"]
             }
           ]
         }
@@ -7807,9 +7585,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lost City"
-              ],
+              "quests": ["Lost City"],
               "skills": {
                 "all": {
                   "Hunter": 42
@@ -7854,9 +7630,7 @@
               }
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 52
@@ -7864,9 +7638,7 @@
               }
             },
             {
-              "quests": [
-                "Guardians of the Rift"
-              ],
+              "quests": ["Guardians of the Rift"],
               "skills": {
                 "all": {
                   "Mining": 1,
@@ -7909,9 +7681,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lost City"
-              ],
+              "quests": ["Lost City"],
               "skills": {
                 "all": {
                   "Agility": 46
@@ -7932,9 +7702,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Lost City"
-              ],
+              "quests": ["Lost City"],
               "skills": {
                 "all": {
                   "Runecraft": 59
@@ -7975,9 +7743,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tears of Guthix"
-              ]
+              "quests": ["Tears of Guthix"]
             }
           ]
         }
@@ -7993,9 +7759,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Another Slice of H.A.M."
-              ]
+              "quests": ["Another Slice of H.A.M."]
             }
           ]
         }
@@ -8011,9 +7775,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Recipe for Disaster: Defeating the Culinaromancer"
-              ]
+              "quests": ["Recipe for Disaster: Defeating the Culinaromancer"]
             }
           ]
         }
@@ -8082,9 +7844,7 @@
           "description": "Obtain a mining helmet",
           "required": [
             {
-              "quests": [
-                "The Lost Tribe"
-              ]
+              "quests": ["The Lost Tribe"]
             }
           ]
         }
@@ -8161,9 +7921,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Goblin Diplomacy"
-              ]
+              "quests": ["Goblin Diplomacy"]
             },
             {
               "skills": {
@@ -8218,9 +7976,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 78
@@ -8241,10 +7997,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Death to the Dorgeshuun",
-                "Temple of Ikov"
-              ],
+              "quests": ["Death to the Dorgeshuun", "Temple of Ikov"],
               "skills": {
                 "all": {
                   "Thieving": 42,
@@ -8352,9 +8105,7 @@
               }
             },
             {
-              "quests": [
-                "Sleeping Giants"
-              ],
+              "quests": ["Sleeping Giants"],
               "skills": {
                 "all": {
                   "Smithing": 70
@@ -8411,9 +8162,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Crafting": 15
@@ -8444,9 +8193,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Cooking": 12
@@ -8478,9 +8225,7 @@
           "required": [
             {
               "combatLevel": 20,
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -8497,9 +8242,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Slayer": 15
@@ -8520,9 +8263,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -8548,9 +8289,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         },
@@ -8558,10 +8297,7 @@
           "description": "Partial completion of 'Nature Spirit'",
           "required": [
             {
-              "quests": [
-                "Priest in Peril",
-                "The Restless Ghost"
-              ]
+              "quests": ["Priest in Peril", "The Restless Ghost"]
             }
           ]
         }
@@ -8578,9 +8314,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -8596,9 +8330,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Farming": 23
@@ -8633,9 +8365,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -8652,9 +8382,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         }
@@ -8670,9 +8398,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Nature Spirit"
-              ]
+              "quests": ["Nature Spirit"]
             }
           ]
         }
@@ -8688,9 +8414,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Hunter": 29
@@ -8711,9 +8435,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Agility": 40
@@ -8734,9 +8456,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Woodcutting": 45
@@ -8757,10 +8477,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril",
-                "The Restless Ghost"
-              ]
+              "quests": ["Priest in Peril", "The Restless Ghost"]
             }
           ]
         }
@@ -8776,10 +8493,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Haunted Mine",
-                "Lair of Tarn Razorlor"
-              ],
+              "quests": ["Haunted Mine", "Lair of Tarn Razorlor"],
               "skills": {
                 "all": {
                   "Slayer": 40
@@ -8800,9 +8514,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Cabin Fever"
-              ],
+              "quests": ["Cabin Fever"],
               "skills": {
                 "all": {
                   "Cooking": 40
@@ -8823,9 +8535,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Nature Spirit"
-              ]
+              "quests": ["Nature Spirit"]
             }
           ]
         }
@@ -8841,10 +8551,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril",
-                "Dwarf Cannon"
-              ],
+              "quests": ["Priest in Peril", "Dwarf Cannon"],
               "skills": {
                 "all": {
                   "Smithing": 35
@@ -8865,9 +8572,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Slayer": 42
@@ -8880,10 +8585,7 @@
           "description": "Started 'Rum Deal'",
           "required": [
             {
-              "quests": [
-                "Priest in Peril",
-                "Zogre Flesh Eaters"
-              ],
+              "quests": ["Priest in Peril", "Zogre Flesh Eaters"],
               "skills": {
                 "all": {
                   "Crafting": 42,
@@ -8908,9 +8610,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Ghosts Ahoy"
-              ]
+              "quests": ["Ghosts Ahoy"]
             }
           ]
         }
@@ -8926,9 +8626,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Herblore": 22
@@ -8941,9 +8639,7 @@
           "description": "Partial completion of 'In Aid of the Myreque'",
           "required": [
             {
-              "quests": [
-                "In Search of the Myreque"
-              ],
+              "quests": ["In Search of the Myreque"],
               "skills": {
                 "all": {
                   "Agility": 25,
@@ -8967,9 +8663,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Desert Treasure I"
-              ],
+              "quests": ["Desert Treasure I"],
               "skills": {
                 "all": {
                   "Magic": 66,
@@ -9017,9 +8711,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Agility": 71
@@ -9040,9 +8732,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Farming": 47
@@ -9055,11 +8745,7 @@
           "description": "Started 'The Great Brain Robbery'",
           "required": [
             {
-              "quests": [
-                "Creature of Fenkenstrain",
-                "Cabin Fever",
-                "Recipe for Disaster: Freeing Pirate Pete"
-              ],
+              "quests": ["Creature of Fenkenstrain", "Cabin Fever", "Recipe for Disaster: Freeing Pirate Pete"],
               "skills": {
                 "all": {
                   "Crafting": 16,
@@ -9108,9 +8794,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Cabin Fever"
-              ],
+              "quests": ["Cabin Fever"],
               "skills": {
                 "all": {
                   "Woodcutting": 50,
@@ -9132,9 +8816,7 @@
         {
           "required": [
             {
-              "quests": [
-                "In Aid of the Myreque"
-              ]
+              "quests": ["In Aid of the Myreque"]
             }
           ]
         }
@@ -9151,9 +8833,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Cabin Fever"
-              ],
+              "quests": ["Cabin Fever"],
               "skills": {
                 "all": {
                   "Slayer": 58
@@ -9198,9 +8878,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Farming": 53
@@ -9218,9 +8896,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "any": {
                   "Farming": 45,
@@ -9242,10 +8918,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Nature Spirit",
-                "Knight Waves Training Grounds"
-              ],
+              "quests": ["Nature Spirit", "Knight Waves Training Grounds"],
               "skills": {
                 "all": {
                   "Prayer": 70,
@@ -9267,9 +8940,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Agility": 65
@@ -9290,9 +8961,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Haunted Mine"
-              ],
+              "quests": ["Haunted Mine"],
               "skills": {
                 "all": {
                   "Mining": 55
@@ -9313,9 +8982,7 @@
         {
           "required": [
             {
-              "quests": [
-                "In Aid of the Myreque"
-              ],
+              "quests": ["In Aid of the Myreque"],
               "skills": {
                 "all": {
                   "Fishing": 96,
@@ -9351,9 +9018,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Shades of Mort'ton"
-              ],
+              "quests": ["Shades of Mort'ton"],
               "skills": {
                 "all": {
                   "Firemaking": 80
@@ -9400,10 +9065,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril",
-                "Lunar Diplomacy"
-              ],
+              "quests": ["Priest in Peril", "Lunar Diplomacy"],
               "skills": {
                 "all": {
                   "Magic": 83
@@ -9424,9 +9086,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Crafting": 84
@@ -9465,9 +9125,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ],
+              "quests": ["Priest in Peril"],
               "skills": {
                 "all": {
                   "Slayer": 85
@@ -9489,9 +9147,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Priest in Peril"
-              ]
+              "quests": ["Priest in Peril"]
             }
           ]
         },
@@ -9546,9 +9202,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Rune Mysteries"
-              ]
+              "quests": ["Rune Mysteries"]
             }
           ]
         }
@@ -9687,13 +9341,7 @@
           "description": "Obtain 50 Kudos",
           "required": [
             {
-              "quests": [
-                "Rune Mysteries",
-                "Shield of Arrav",
-                "Hazeel Cult",
-                "Observatory Quest",
-                "Below Ice Mountain"
-              ],
+              "quests": ["Rune Mysteries", "Shield of Arrav", "Hazeel Cult", "Observatory Quest", "Below Ice Mountain"],
               "skills": {
                 "all": {
                   "Mining": 14,
@@ -9702,9 +9350,7 @@
               }
             },
             {
-              "quests": [
-                "The Dig Site"
-              ]
+              "quests": ["The Dig Site"]
             }
           ]
         }
@@ -9824,9 +9470,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Gertrude's Cat"
-              ]
+              "quests": ["Gertrude's Cat"]
             }
           ]
         },
@@ -9834,9 +9478,7 @@
           "description": "Partial completion of 'Garden of Tranquillity'",
           "required": [
             {
-              "quests": [
-                "Creature of Fenkenstrain"
-              ],
+              "quests": ["Creature of Fenkenstrain"],
               "skills": {
                 "all": {
                   "Farming": 25
@@ -9857,9 +9499,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tree Gnome Village"
-              ]
+              "quests": ["Tree Gnome Village"]
             }
           ]
         }
@@ -9881,9 +9521,7 @@
         {
           "required": [
             {
-              "quests": [
-                "A Soul's Bane"
-              ]
+              "quests": ["A Soul's Bane"]
             }
           ]
         }
@@ -9899,9 +9537,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Dig Site"
-              ]
+              "quests": ["The Dig Site"]
             }
           ]
         }
@@ -9918,9 +9554,7 @@
               }
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 20
@@ -10061,9 +9695,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Garden of Tranquillity"
-              ],
+              "quests": ["Garden of Tranquillity"],
               "skills": {
                 "all": {
                   "Farming": 25
@@ -10084,9 +9716,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Enlightened Journey"
-              ],
+              "quests": ["Enlightened Journey"],
               "skills": {
                 "all": {
                   "Farming": 30,
@@ -10163,10 +9793,7 @@
           "description": "Obtain 153 Kudos",
           "required": [
             {
-              "quests": [
-                "The Dig Site",
-                "Bone Voyage"
-              ]
+              "quests": ["The Dig Site", "Bone Voyage"]
             }
           ]
         }
@@ -10202,9 +9829,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Desert Treasure I"
-              ],
+              "quests": ["Desert Treasure I"],
               "skills": {
                 "all": {
                   "Magic": 54
@@ -10371,9 +9996,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Druidic Ritual"
-              ],
+              "quests": ["Druidic Ritual"],
               "skills": {
                 "all": {
                   "Herblore": 90
@@ -10431,9 +10054,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Dream Mentor"
-              ],
+              "quests": ["Dream Mentor"],
               "skills": {
                 "all": {
                   "Magic": 86
@@ -10534,9 +10155,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Tourist Trap"
-              ],
+              "quests": ["The Tourist Trap"],
               "skills": {
                 "all": {
                   "Smithing": 89,
@@ -10714,9 +10333,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Big Chompy Bird Hunting"
-              ]
+              "quests": ["Big Chompy Bird Hunting"]
             }
           ]
         }
@@ -10754,9 +10371,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Rune Mysteries"
-              ]
+              "quests": ["Rune Mysteries"]
             }
           ]
         }
@@ -10833,10 +10448,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tree Gnome Village",
-                "The Grand Tree"
-              ],
+              "quests": ["Tree Gnome Village", "The Grand Tree"],
               "skills": {
                 "all": {
                   "Agility": 37
@@ -10857,9 +10469,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Tree Gnome Village"
-              ]
+              "quests": ["Tree Gnome Village"]
             }
           ]
         }
@@ -10907,10 +10517,7 @@
           "description": "Partial completion of 'Monkey Madness I'",
           "required": [
             {
-              "quests": [
-                "The Grand Tree",
-                "Tree Gnome Village"
-              ]
+              "quests": ["The Grand Tree", "Tree Gnome Village"]
             }
           ]
         }
@@ -10939,10 +10546,7 @@
           "description": "Partial completion of 'Monkey Madness I'",
           "required": [
             {
-              "quests": [
-                "The Grand Tree",
-                "Tree Gnome Village"
-              ]
+              "quests": ["The Grand Tree", "Tree Gnome Village"]
             }
           ]
         }
@@ -10974,9 +10578,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Grand Tree"
-              ]
+              "quests": ["The Grand Tree"]
             }
           ]
         },
@@ -10984,10 +10586,7 @@
           "description": "Partial completion of 'One Small Favour'",
           "required": [
             {
-              "quests": [
-                "Rune Mysteries",
-                "Shilo Village"
-              ],
+              "quests": ["Rune Mysteries", "Shilo Village"],
               "skills": {
                 "all": {
                   "Agility": 36,
@@ -11012,9 +10611,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Big Chompy Bird Hunting"
-              ]
+              "quests": ["Big Chompy Bird Hunting"]
             }
           ]
         }
@@ -11030,9 +10627,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Eagles' Peak"
-              ]
+              "quests": ["Eagles' Peak"]
             }
           ]
         }
@@ -11088,9 +10683,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Eyes of Glouphrie"
-              ]
+              "quests": ["The Eyes of Glouphrie"]
             }
           ]
         }
@@ -11106,9 +10699,7 @@
         {
           "required": [
             {
-              "quests": [
-                "The Grand Tree"
-              ],
+              "quests": ["The Grand Tree"],
               "skills": {
                 "all": {
                   "Mining": 40
@@ -11130,9 +10721,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Roving Elves"
-              ],
+              "quests": ["Roving Elves"],
               "skills": {
                 "all": {
                   "Ranged": 70
@@ -11153,9 +10742,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Swan Song"
-              ],
+              "quests": ["Swan Song"],
               "skills": {
                 "all": {
                   "Fishing": 62,
@@ -11225,10 +10812,7 @@
           "description": "Partial completion of 'Monkey Madness I'",
           "required": [
             {
-              "quests": [
-                "The Grand Tree",
-                "Tree Gnome Village"
-              ]
+              "quests": ["The Grand Tree", "Tree Gnome Village"]
             }
           ]
         }
@@ -11257,10 +10841,7 @@
           "description": "Partial completion of 'Monkey Madness I'",
           "required": [
             {
-              "quests": [
-                "The Grand Tree",
-                "Tree Gnome Village"
-              ]
+              "quests": ["The Grand Tree", "Tree Gnome Village"]
             }
           ]
         }
@@ -11288,9 +10869,7 @@
           "description": "Started 'Regicide'",
           "required": [
             {
-              "quests": [
-                "Underground Pass"
-              ],
+              "quests": ["Underground Pass"],
               "skills": {
                 "all": {
                   "Crafting": 10,
@@ -11324,11 +10903,7 @@
           "description": "Started 'Mourning's End Part I'",
           "required": [
             {
-              "quests": [
-                "Roving Elves",
-                "Big Chompy Bird Hunting",
-                "Sheep Herder"
-              ],
+              "quests": ["Roving Elves", "Big Chompy Bird Hunting", "Sheep Herder"],
               "skills": {
                 "all": {
                   "Ranged": 60,
@@ -11369,9 +10944,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Big Chompy Bird Hunting"
-              ]
+              "quests": ["Big Chompy Bird Hunting"]
             }
           ]
         }
@@ -11387,9 +10960,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Roving Elves"
-              ],
+              "quests": ["Roving Elves"],
               "skills": {
                 "all": {
                   "Construction": 65
@@ -11450,9 +11021,7 @@
           "description": "Started 'Regicide'",
           "required": [
             {
-              "quests": [
-                "Underground Pass"
-              ],
+              "quests": ["Underground Pass"],
               "skills": {
                 "all": {
                   "Crafting": 10,
@@ -11494,9 +11063,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Recipe for Disaster: Freeing King Awowogei"
-              ],
+              "quests": ["Recipe for Disaster: Freeing King Awowogei"],
               "skills": {
                 "all": {
                   "Magic": 64
@@ -11549,9 +11116,7 @@
           "description": "Started 'Regicide'",
           "required": [
             {
-              "quests": [
-                "Underground Pass"
-              ],
+              "quests": ["Underground Pass"],
               "skills": {
                 "all": {
                   "Crafting": 10,
@@ -11691,9 +11256,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Underground Pass"
-              ],
+              "quests": ["Underground Pass"],
               "skills": {
                 "all": {
                   "Agility": 85
@@ -11742,9 +11305,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Big Chompy Bird Hunting"
-              ]
+              "quests": ["Big Chompy Bird Hunting"]
             }
           ]
         }
@@ -11772,11 +11333,7 @@
           "description": "Started 'Mourning's End Part I'",
           "required": [
             {
-              "quests": [
-                "Roving Elves",
-                "Big Chompy Bird Hunting",
-                "Sheep Herder"
-              ],
+              "quests": ["Roving Elves", "Big Chompy Bird Hunting", "Sheep Herder"],
               "skills": {
                 "all": {
                   "Ranged": 60,
@@ -11834,9 +11391,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Temple of the Eye"
-              ],
+              "quests": ["Temple of the Eye"],
               "skills": {
                 "all": {
                   "Runecraft": 1,
@@ -11846,9 +11401,7 @@
               }
             },
             {
-              "quests": [
-                "Enter the Abyss"
-              ]
+              "quests": ["Enter the Abyss"]
             }
           ]
         }
@@ -11939,9 +11492,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Enter the Abyss"
-              ]
+              "quests": ["Enter the Abyss"]
             }
           ]
         }
@@ -12112,9 +11663,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 52
@@ -12185,10 +11734,7 @@
           "description": "Partial completion of 'Between a Rock...'",
           "required": [
             {
-              "quests": [
-                "Dwarf Cannon",
-                "Fishing Contest"
-              ],
+              "quests": ["Dwarf Cannon", "Fishing Contest"],
               "skills": {
                 "all": {
                   "Defence": 30,
@@ -12229,9 +11775,7 @@
           "required": [
             {
               "combat": true,
-              "quests": [
-                "Mage Arena I"
-              ]
+              "quests": ["Mage Arena I"]
             }
           ]
         }
@@ -12264,9 +11808,7 @@
               "combat": true
             },
             {
-              "quests": [
-                "Death to the Dorgeshuun"
-              ],
+              "quests": ["Death to the Dorgeshuun"],
               "skills": {
                 "all": {
                   "Thieving": 52
@@ -12353,9 +11895,7 @@
               }
             },
             {
-              "quests": [
-                "Sleeping Giants"
-              ],
+              "quests": ["Sleeping Giants"],
               "skills": {
                 "all": {
                   "Smithing": 70
@@ -12493,9 +12033,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Death Plateau"
-              ],
+              "quests": ["Death Plateau"],
               "skills": {
                 "all": {
                   "Agility": 64
@@ -12660,9 +12198,7 @@
         {
           "required": [
             {
-              "quests": [
-                "Desert Treasure I"
-              ],
+              "quests": ["Desert Treasure I"],
               "skills": {
                 "all": {
                   "Magic": 96

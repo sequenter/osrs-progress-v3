@@ -2,19 +2,30 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+
+import { setCombat } from '@redux/reducers/SkillsReducer';
+import { useDispatch } from 'react-redux';
 
 import { SkillItem } from '@components';
 import { useActions } from '@hooks/useActions';
 import type { Skill } from '@types';
-import { StatsIcon } from '@utils/icons';
-import { useState } from 'react';
+import { CombatIcon, StatsIcon } from '@utils/icons';
+import { useCallback, useState } from 'react';
 
 const SkillDrawer = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const { skills } = useActions();
+  const { combat, combatLevel, skills } = useActions();
+
+  const dispatch = useDispatch();
+
+  const handleCombat = useCallback(() => {
+    dispatch(setCombat({ combat: !combat }));
+  }, [combat, dispatch]);
 
   return (
     <Drawer
@@ -63,6 +74,37 @@ const SkillDrawer = () => {
               skill={skill as Skill}
             />
           ))}
+
+          <Grid size={3}>
+            <Stack alignItems="center" direction="column" height="100%" justifyContent="space-between">
+              <Typography color="neutral" variant="body2" sx={{ marginTop: '8px' }}>
+                Combat Level: {combatLevel}
+              </Typography>
+
+              <Box
+                component="img"
+                src={CombatIcon}
+                height="4rem"
+                width="4rem"
+                sx={(theme) => ({
+                  transition: `all ${theme.transitions.duration.shorter}ms`,
+                  filter: `grayscale(${combat ? 0 : 80}%)`
+                })}
+              />
+
+              <Tooltip title={<Typography>{`Toggle combat ${combat ? 'off' : 'on'}`}</Typography>}>
+                <Switch
+                  color="secondary"
+                  size="small"
+                  slotProps={{ input: { 'aria-label': 'Toggle combat' } }}
+                  sx={{ marginBottom: '4px' }}
+                  checked={combat}
+                  value={combat}
+                  onChange={handleCombat}
+                />
+              </Tooltip>
+            </Stack>
+          </Grid>
         </Grid>
       </Box>
     </Drawer>

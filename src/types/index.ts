@@ -1,18 +1,23 @@
 import type {
   ACHIEVEMENT_DIARIES,
   ACHIEVEMENT_DIFFICULTY,
+  COMBAT_SKILLS,
   QUEST_DIFFICULTY,
-  SKILLS,
+  SKILLING_SKILLS,
   SUMMARY_ITEMS
 } from '@utils/constants';
 
 /* UNIONS */
 
+export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
 export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
 export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
-export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
-export type Skill = (typeof SKILLS)[number];
+
 export type Summary = (typeof SUMMARY_ITEMS)[number];
+
+export type CombatSkill = (typeof COMBAT_SKILLS)[number];
+export type SkillingSkill = (typeof SKILLING_SKILLS)[number];
+export type Skill = CombatSkill | SkillingSkill;
 
 export type Completion = 'unlocked' | 'locked' | 'completed';
 
@@ -25,7 +30,7 @@ interface SkillDetail {
 
 export type SkillState = Record<Skill, SkillDetail>;
 
-export type PartialSkillState = PartialRecord<Skill, SkillDetail>;
+export type PartialSkillState = Partial<Record<Skill, SkillDetail>>;
 
 /* ACHIEVEMENTS */
 
@@ -35,6 +40,7 @@ export interface SkillsRequirement {
 }
 
 interface Required {
+  combat?: boolean;
   quests?: Array<string>;
   skills?: SkillsRequirement;
 }

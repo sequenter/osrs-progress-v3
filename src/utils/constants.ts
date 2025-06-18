@@ -16,12 +16,7 @@ export const ACHIEVEMENTS = AchievementsJson as Array<Achievement>;
 
 export const SUMMARY_ITEMS = ['skills', 'achievements'] as const;
 
-export const ACHIEVEMENT_DIFFICULTY = [
-  'Easy',
-  'Medium',
-  'Hard',
-  'Elite'
-] as const;
+export const ACHIEVEMENT_DIFFICULTY = ['Easy', 'Medium', 'Hard', 'Elite'] as const;
 
 export const ACHIEVEMENT_DIARIES = [
   'Ardougne',
@@ -38,32 +33,11 @@ export const ACHIEVEMENT_DIARIES = [
   'Wilderness'
 ] as const;
 
-export const QUEST_DIFFICULTY = [
-  'Novice',
-  'Intermediate',
-  'Experienced',
-  'Master',
-  'Grandmaster',
-  'Special'
-] as const;
+export const QUEST_DIFFICULTY = ['Novice', 'Intermediate', 'Experienced', 'Master', 'Grandmaster', 'Special'] as const;
 
-export const QUEST_LENGTH = [
-  'Very Short',
-  'Short',
-  'Medium',
-  'Long',
-  'Very Long'
-] as const;
+export const QUEST_LENGTH = ['Very Short', 'Short', 'Medium', 'Long', 'Very Long'] as const;
 
-export const COMBAT_SKILLS = [
-  'Attack',
-  'Strength',
-  'Defence',
-  'Ranged',
-  'Prayer',
-  'Magic',
-  'Hitpoints'
-] as const;
+export const COMBAT_SKILLS = ['Attack', 'Strength', 'Defence', 'Ranged', 'Prayer', 'Magic', 'Hitpoints'] as const;
 
 export const SKILLING_SKILLS = [
   'Runecraft',
