@@ -7,7 +7,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 
 import { AchievementTab } from '@components';
+import { useActions } from '@hooks/useActions';
+import Chip from '@mui/material/Chip';
 import Paper from '@mui/material/Paper';
+import Tooltip from '@mui/material/Tooltip';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
 import { useMemo, useState, type ReactNode } from 'react';
 
@@ -15,35 +18,42 @@ interface TabDetail {
   component: ReactNode;
   icon: string;
   label: string;
+  unlocked: number;
 }
 
 const TabHandler = () => {
   const [activeTab, setActiveTab] = useState('Achievements');
+
+  const { unlockedAchievements } = useActions();
 
   const tabs: Array<TabDetail> = useMemo(
     () => [
       {
         component: <AchievementTab />,
         label: 'Achievements',
-        icon: AchievementsIcon
+        icon: AchievementsIcon,
+        unlocked: unlockedAchievements.length
       },
       {
         component: null,
         label: 'Quests',
-        icon: QuestsIcon
+        icon: QuestsIcon,
+        unlocked: 0
       },
       {
         component: null,
         label: 'Collections',
-        icon: CollectionsIcon
+        icon: CollectionsIcon,
+        unlocked: 0
       },
       {
         component: null,
         label: 'Pets',
-        icon: PetsIcon
+        icon: PetsIcon,
+        unlocked: 0
       }
     ],
-    []
+    [unlockedAchievements]
   );
 
   const handleChange = (_: React.SyntheticEvent, tab: string) => {
@@ -81,7 +91,7 @@ const TabHandler = () => {
               }
             }}
           >
-            {tabs.map(({ label, icon }) => (
+            {tabs.map(({ label, icon, unlocked }) => (
               <Tab
                 key={label}
                 component={Stack}
@@ -89,7 +99,29 @@ const TabHandler = () => {
                 flexGrow={1}
                 icon={<Box component="img" src={icon} width="2rem" height="2rem" paddingRight={1} />}
                 iconPosition="start"
-                label={<Typography variant="h6">{label}</Typography>}
+                label={
+                  <Stack alignItems="center" direction="row" gap={2}>
+                    <Typography variant="h6">{label}</Typography>
+
+                    <Tooltip
+                      title={
+                        <Typography>
+                          {unlocked} {label} to complete
+                        </Typography>
+                      }
+                    >
+                      <Chip
+                        color="warning"
+                        size="small"
+                        label={<Typography variant="subtitle1">{unlocked}</Typography>}
+                        sx={(theme) => ({
+                          transition: `all ${theme.transitions.duration.shorter}ms`,
+                          transform: `scale(${unlocked > 0 ? 100 : 0}%)`
+                        })}
+                      />
+                    </Tooltip>
+                  </Stack>
+                }
                 maxWidth="100%"
                 value={label}
               />

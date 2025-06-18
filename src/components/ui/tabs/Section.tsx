@@ -1,23 +1,21 @@
 import { ExpandCircleDown } from '@mui/icons-material';
 
 import Chip from '@mui/material/Chip';
-import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import type { AchievementState, Completion } from '@types';
-import React, { useState } from 'react';
+import type { Completion } from '@types';
+import { useState, type ReactNode } from 'react';
 
-const LazyAchievementItem = React.lazy(() => import('@components/ui/tabs/achievements/AchievementItem'));
-
-interface AchievementSectionProps {
-  achievements: AchievementState;
+interface SectionProps {
+  children: ReactNode;
   completion: Completion;
+  count: number;
 }
 
-const AchievementSection = ({ achievements, completion }: AchievementSectionProps) => {
+const Section = ({ children, completion, count }: SectionProps) => {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
@@ -28,13 +26,7 @@ const AchievementSection = ({ achievements, completion }: AchievementSectionProp
         </Typography>
 
         <Stack alignItems="center" direction="row" gap={1}>
-          <Tooltip placement="top" title={<Typography>Tasks {completion}</Typography>} arrow>
-            <Chip
-              color="neutral"
-              size="small"
-              label={<Typography variant="subtitle1">{achievements.length}</Typography>}
-            />
-          </Tooltip>
+          <Chip color="neutral" size="small" label={<Typography variant="subtitle1">{count}</Typography>} />
 
           <Tooltip placement="top" title={<Typography>{isExpanded ? 'Collapse' : 'Expand'}</Typography>} arrow>
             <IconButton
@@ -50,13 +42,9 @@ const AchievementSection = ({ achievements, completion }: AchievementSectionProp
         </Stack>
       </Stack>
 
-      <Grid display={isExpanded ? 'flex' : 'none'} spacing={2} container>
-        {achievements.map(({ diary, difficulty, task }) => (
-          <LazyAchievementItem key={task} completion={completion} diary={diary} difficulty={difficulty} task={task} />
-        ))}
-      </Grid>
+      <Stack display={isExpanded ? 'flex' : 'none'}>{children}</Stack>
     </Stack>
   );
 };
 
-export default AchievementSection;
+export default Section;
