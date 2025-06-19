@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import { store } from '@redux';
 import { Provider } from 'react-redux';
 
-import { ActionProvider, Header, SkillDrawer, Summary, TabHandler } from '@components';
+import { ActionProvider, Header, SkillPanel, SummaryPanel, TabHandler } from '@components';
 import { setItem } from '@utils/storage';
 import { themeDark } from '@utils/theme';
 import { StrictMode } from 'react';
@@ -34,13 +34,13 @@ createRoot(document.getElementById('root')!).render(
                 flexShrink={0}
                 sx={{ position: 'sticky', height: 'calc(100vh - 64px)', top: '64px' }}
               >
-                <Summary />
+                <SummaryPanel />
               </Box>
 
               <Container component="main" maxWidth={false}>
                 <TabHandler />
 
-                <SkillDrawer />
+                <SkillPanel />
               </Container>
             </Stack>
           </Stack>

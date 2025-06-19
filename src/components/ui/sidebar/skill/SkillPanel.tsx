@@ -16,7 +16,7 @@ import type { Skill } from '@types';
 import { CombatIcon, StatsIcon } from '@utils/icons';
 import { useCallback, useState } from 'react';
 
-const SkillDrawer = () => {
+const SkillPanel = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { combat, combatLevel, skills } = useActions();
@@ -111,4 +111,4 @@ const SkillDrawer = () => {
   );
 };
 
-export default SkillDrawer;
+export default SkillPanel;

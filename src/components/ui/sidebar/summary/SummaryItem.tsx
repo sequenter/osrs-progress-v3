@@ -8,26 +8,26 @@ import type { Summary } from '@types';
 import { memo } from 'react';
 
 interface SummaryItemProps {
-  item: Summary;
+  summary: Summary;
   complete: number;
   total: number;
 }
 
-const SummaryItem = ({ complete, item, total }: SummaryItemProps) => {
+const SummaryItem = ({ complete, summary, total }: SummaryItemProps) => {
   return (
     <Stack direction="column" component={Paper} elevation={4} gap={2} padding={2}>
       <Typography color="neutral" variant="h5" textTransform="capitalize">
-        {item}
+        {summary}
       </Typography>
 
       <LinearProgress
         variant="determinate"
         value={(complete / total) * 100}
         sx={(theme) => ({
-          backgroundColor: theme.palette.summary[item].light,
+          backgroundColor: theme.palette.summary[summary].light,
           borderRadius: 5,
           height: 10,
-          '& .MuiLinearProgress-bar': { backgroundColor: theme.palette.summary[item].dark }
+          '& .MuiLinearProgress-bar': { backgroundColor: theme.palette.summary[summary].dark }
         })}
       />
 

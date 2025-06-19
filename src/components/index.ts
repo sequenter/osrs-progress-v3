@@ -8,7 +8,7 @@ export { default as Section } from './ui/tabs/Section';
 export { default as TabHandler } from './ui/tabs/TabHandler';
 
 export { default as SkillItem } from './ui/sidebar/skill/SkillItem';
-export { default as SkillDrawer } from './ui/sidebar/skill/SkillPanel';
+export { default as SkillPanel } from './ui/sidebar/skill/SkillPanel';
 
 export { default as SummaryItem } from './ui/sidebar/summary/SummaryItem';
-export { default as Summary } from './ui/sidebar/summary/SummaryPanel';
+export { default as SummaryPanel } from './ui/sidebar/summary/SummaryPanel';

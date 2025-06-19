@@ -26,8 +26,12 @@ const TabHandler = () => {
 
   const { unlockedAchievements } = useActions();
 
-  const tabs: Array<TabDetail> = useMemo(
-    () => [
+  const tabs = useMemo(
+    /**
+     * Mapped tabs.
+     * @returns {Array<TabDetail>}
+     */
+    (): Array<TabDetail> => [
       {
         component: <AchievementTab />,
         label: 'Achievements',
@@ -56,6 +60,11 @@ const TabHandler = () => {
     [unlockedAchievements]
   );
 
+  /**
+   * On tab selection, set the active tab state.
+   * @param _
+   * @param tab The selected tab
+   */
   const handleChange = (_: React.SyntheticEvent, tab: string) => {
     setActiveTab(tab);
   };
