@@ -2,9 +2,9 @@ export { default as ActionProvider } from './provider/ActionProvider';
 
 export { default as Header } from './ui/Header';
 
-export { default as AchievementItem } from './ui/tabs/achievements/AchievementItem';
-export { default as AchievementTab } from './ui/tabs/achievements/AchievementTab';
-export { default as Section } from './ui/tabs/Section';
+export { default as Section } from './ui/Section';
+export { default as SectionItem } from './ui/SectionItem';
+export { default as AchievementTab } from './ui/tabs/AchievementTab';
 export { default as TabHandler } from './ui/tabs/TabHandler';
 
 export { default as SkillItem } from './ui/sidebar/skill/SkillItem';

@@ -53,8 +53,8 @@ const SummaryPanel = () => {
           </Typography>
         </Stack>
 
-        {summaryItems.map((summaryItem, index) => (
-          <SummaryItem key={index} {...summaryItem} />
+        {summaryItems.map((summaryItem) => (
+          <SummaryItem key={summaryItem.summary} {...summaryItem} />
         ))}
       </Stack>
     </Paper>

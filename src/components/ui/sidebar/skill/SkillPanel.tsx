@@ -64,14 +64,13 @@ const SkillPanel = () => {
 
       <Box width="32rem" flexGrow={1} padding={2}>
         <Grid direction="row" spacing={2} sx={{ alignItems: 'stretch', height: '100%' }} container>
-          {Object.entries(skills).map(([skill, { isLocked, level }]) => (
+          {Object.entries(skills).map(([skill, skillDetail]) => (
             <SkillItem
               key={skill}
-              isLocked={isLocked}
-              level={level}
               minLevel={skill === 'Hitpoints' ? 10 : 1}
               maxLevel={99}
               skill={skill as Skill}
+              {...skillDetail}
             />
           ))}
 

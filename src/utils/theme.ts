@@ -1,6 +1,6 @@
 import { createTheme, type ThemeOptions } from '@mui/material/styles';
 
-import type { AchievementDifficulty, Summary } from '@types';
+import type { AchievementDifficulty, QuestDifficulty, Summary } from '@types';
 
 interface SimplePaletteOptions {
   light: string;
@@ -12,7 +12,7 @@ declare module '@mui/material/styles' {
     neutral: Palette['primary'];
     summary: Record<Summary, SimplePaletteOptions>;
     difficulty: {
-      achievements: Record<AchievementDifficulty, string>;
+      achievements: Record<AchievementDifficulty | QuestDifficulty, string>;
     };
   }
 
@@ -20,7 +20,7 @@ declare module '@mui/material/styles' {
     neutral?: PaletteOptions['primary'];
     summary?: Record<Summary, SimplePaletteOptions>;
     difficulty?: {
-      achievements: Record<AchievementDifficulty, string>;
+      achievements: Record<AchievementDifficulty | QuestDifficulty, string>;
     };
   }
 }
@@ -74,7 +74,13 @@ export const themeDark: ThemeOptions = createTheme({
         Easy: '#4CAF50',
         Medium: '#009688',
         Hard: '#673AB7',
-        Elite: '#FFC107'
+        Elite: '#FFC107',
+        Novice: '#4CAF50',
+        Intermediate: '#009688',
+        Experienced: '#673AB7',
+        Master: '#FFC107',
+        Grandmaster: '#F44336',
+        Special: '#77797c'
       }
     }
   },
