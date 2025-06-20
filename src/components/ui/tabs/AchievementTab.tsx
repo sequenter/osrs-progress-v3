@@ -1,9 +1,9 @@
 import Stack from '@mui/material/Stack';
 
 import { setIsComplete } from '@redux/reducers/AchievementsReducer';
-import { useDispatch } from 'react-redux';
 
 import { Section, SectionItem } from '@components';
+import { useStoreDispatch } from '@hooks';
 import { useActions } from '@hooks/useActions';
 import type { AchievementState, Completion } from '@types';
 import { diaryIconMap } from '@utils/icons';
@@ -21,7 +21,7 @@ interface Sections {
 const AchievementsTab = () => {
   const { completedAchievements, lockedAchievements, unlockedAchievements } = useActions();
 
-  const dispatch = useDispatch();
+  const dispatch = useStoreDispatch();
 
   /**
    * Dispatches update to task completion state.

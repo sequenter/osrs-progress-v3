@@ -8,11 +8,19 @@ import type { Summary } from '@types';
 import { memo } from 'react';
 
 interface SummaryItemProps {
-  summary: Summary;
   complete: number;
+  summary: Summary;
   total: number;
 }
 
+/**
+ * A summary item, that displays a progress bar and complete, incomplete, and total counts to show progress.
+ * @param {object} props Properties object
+ * @param {number} props.complete Complete count
+ * @param {Summary} props.summary Summary type used as a title
+ * @param {number} props.total Total count
+ * @returns JSX Element
+ */
 const SummaryItem = ({ complete, summary, total }: SummaryItemProps) => {
   return (
     <Stack direction="column" component={Paper} elevation={4} gap={2} padding={2}>

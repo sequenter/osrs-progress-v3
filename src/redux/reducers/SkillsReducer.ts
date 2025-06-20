@@ -32,7 +32,7 @@ export const skillsSlice = createSlice({
         state.combat = { ...state.combat, combatLevel };
       }
     },
-    setCombat: (state, { payload: { combat } }: PayloadAction<{ combat: boolean }>) => {
+    setCombat: (state, { payload: combat }: PayloadAction<boolean>) => {
       state.combat = { ...state.combat, combat };
     }
   },

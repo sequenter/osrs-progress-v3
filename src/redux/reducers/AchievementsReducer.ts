@@ -7,7 +7,7 @@ const initialState = {
 
 const indexMap = initialAchievementsState.reduce(
   (acc, { task }, index) => ({ ...acc, [task]: index }),
-  {} as { [key: string]: number }
+  {} as Record<string, number>
 );
 
 export const achievementsSlice = createSlice({

@@ -8,24 +8,34 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { setCombat } from '@redux/reducers/SkillsReducer';
-import { useDispatch } from 'react-redux';
 
 import { SkillItem } from '@components';
+import { useStoreDispatch } from '@hooks';
 import { useActions } from '@hooks/useActions';
 import type { Skill } from '@types';
 import { CombatIcon, StatsIcon } from '@utils/icons';
 import { useCallback, useState } from 'react';
 
+/**
+ * A side panel that renders all skill items, as well as the combat enabled state.
+ * @returns JSX Element
+ */
 const SkillPanel = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { combat, combatLevel, skills } = useActions();
 
-  const dispatch = useDispatch();
+  const dispatch = useStoreDispatch();
 
-  const handleCombat = useCallback(() => {
-    dispatch(setCombat({ combat: !combat }));
-  }, [combat, dispatch]);
+  const handleCombat = useCallback(
+    /**
+     * Toggles the combat enabled state.
+     */
+    () => {
+      dispatch(setCombat(!combat));
+    },
+    [combat, dispatch]
+  );
 
   return (
     <Drawer

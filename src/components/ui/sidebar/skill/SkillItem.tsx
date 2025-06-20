@@ -8,8 +8,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { setIsLocked, setLevel } from '@redux/reducers/SkillsReducer';
-import { useDispatch } from 'react-redux';
 
+import { useStoreDispatch } from '@hooks';
 import type { Skill } from '@types';
 import { skillIconMap } from '@utils/icons';
 import { memo, useCallback, useEffect, useState } from 'react';
@@ -22,10 +22,20 @@ interface SkillItemProps {
   skill: Skill;
 }
 
+/**
+ * A skill item that is able to be unlocked/locked, as well as increment and decrement its level.
+ * @param {object} props Properties object
+ * @param {boolean} props.isLocked Skill locked state
+ * @param {number} props.level Skill level
+ * @param {number} props.maxLevel Max level of the skill
+ * @param {number} props.minlevel Min level of the skill
+ * @param {Skill} props.skill The skill to render
+ * @returns JSX Element
+ */
 const SkillItem = ({ isLocked, level, maxLevel, minLevel, skill }: SkillItemProps) => {
   const [pressed, setPressed] = useState(false);
 
-  const dispatch = useDispatch();
+  const dispatch = useStoreDispatch();
 
   const handleIncrement = useCallback(
     /**
