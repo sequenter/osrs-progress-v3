@@ -1,10 +1,11 @@
 import { getAchievements } from '@redux/reducers/AchievementsReducer';
+import { getQuests } from '@redux/reducers/QuestsReducer';
 import { getCombat, getSkills } from '@redux/reducers/SkillsReducer';
 
 import { useStoreSelector } from '@hooks';
 import { ActionsContext } from '@hooks/useActions';
 import type { PartialSkillState } from '@types';
-import { isRequirementsFulfilled, trifilter } from '@utils/common';
+import { bifilter, isRequirementsFulfilled, isRewardsFulfilled, trifilter } from '@utils/common';
 import { useMemo, type ReactNode } from 'react';
 
 interface ActionsProps {
@@ -12,9 +13,10 @@ interface ActionsProps {
 }
 
 const ActionsProvider = ({ children }: ActionsProps) => {
-  const achievements = useStoreSelector((state) => getAchievements(state));
-  const skills = useStoreSelector((state) => getSkills(state));
   const { combat, combatLevel } = useStoreSelector((state) => getCombat(state));
+  const achievements = useStoreSelector((state) => getAchievements(state));
+  const quests = useStoreSelector((state) => getQuests(state));
+  const skills = useStoreSelector((state) => getSkills(state));
 
   const unlockedSkills = useMemo(
     /**
@@ -44,6 +46,37 @@ const ActionsProvider = ({ children }: ActionsProps) => {
     [unlockedSkills]
   );
 
+  const [incompleteQuests, completedQuests] = useMemo(
+    /**
+     * Get complete, and incomplete quests.
+     * Complete quests: quests marked complete
+     * Incomplete quests: quests marked incomplete
+     * @returns An array containing incomplete, and complete quests
+     */
+    () => {
+      return bifilter(quests, ({ isComplete }) => isComplete);
+    },
+    [quests]
+  );
+
+  const [lockedQuests, unlockedQuests] = useMemo(
+    /**
+     * Get unlocked, and locked achievements.
+     * Unlocked quests: quests that have their requirements criteria met, and have their reward skills unlocked
+     * Locked quests: quests that do not have their requirements criteria met
+     * @returns An array containing locked, and unlocked quests
+     */
+    () => {
+      return bifilter(
+        incompleteQuests,
+        ({ requirements, rewards }) =>
+          isRequirementsFulfilled(combat, completedQuests, unlockedSkills, requirements) &&
+          isRewardsFulfilled(rewards, unlockedSkills)
+      );
+    },
+    [combat, completedQuests, incompleteQuests, unlockedSkills]
+  );
+
   const [completedAchievements, unlockedAchievements, lockedAchievements] = useMemo(
     /**
      * Get completed, unlocked, and locked achievements.
@@ -53,11 +86,22 @@ const ActionsProvider = ({ children }: ActionsProps) => {
      * @returns An array containing completed, unlocked, and locked achievements
      */
     () =>
-      trifilter(achievements, ({ isComplete, requirements }) =>
-        isComplete ? 0 : isRequirementsFulfilled(combat, unlockedSkills, requirements) ? 1 : 2
-      ),
+      trifilter(achievements, ({ isComplete, requirements }) => {
+        // Complete
+        if (isComplete) {
+          return 0;
+        }
 
-    [achievements, combat, unlockedSkills]
+        // Unlocked
+        if (isRequirementsFulfilled(combat, completedQuests, unlockedSkills, requirements)) {
+          return 1;
+        }
+
+        // Locked
+        return 2;
+      }),
+
+    [achievements, combat, completedQuests, unlockedSkills]
   );
 
   return (
@@ -69,6 +113,9 @@ const ActionsProvider = ({ children }: ActionsProps) => {
         completedAchievements,
         unlockedAchievements,
         lockedAchievements,
+        completedQuests,
+        unlockedQuests,
+        lockedQuests,
         combat,
         combatLevel
       }}

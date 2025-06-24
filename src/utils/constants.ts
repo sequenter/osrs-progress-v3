@@ -1,20 +1,20 @@
-import type { Achievement } from '@types';
-
 import { default as AchievementsJson } from '@assets/json/achievements.json';
+import { default as QuestsJson } from '@assets/json/quests.json';
+import type { Achievement, Quest } from '@types';
 
 /* COMMON */
 
 export const WIKI_IMAGES_URL = 'https://oldschool.runescape.wiki/images/';
-
 export const WIKI_IMAGES_ERROR = 'https://oldschool.runescape.wiki/images/Bank_filler.png';
 
 /* DATA EXPORTS */
 
 export const ACHIEVEMENTS = AchievementsJson as Array<Achievement>;
+export const QUESTS = QuestsJson as Array<Quest>;
 
 /* UNIONS */
 
-export const SUMMARY_ITEMS = ['skills', 'achievements'] as const;
+export const SUMMARY_ITEMS = ['skills', 'achievements', 'quests'] as const;
 
 export const ACHIEVEMENT_DIFFICULTY = ['Easy', 'Medium', 'Hard', 'Elite'] as const;
 

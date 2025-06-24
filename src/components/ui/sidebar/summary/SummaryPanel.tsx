@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { SummaryItem } from '@components';
 import { useActions } from '@hooks/useActions';
 import type { Summary } from '@types';
-import { ACHIEVEMENTS, SKILLS } from '@utils/constants';
+import { ACHIEVEMENTS, QUESTS, SKILLS } from '@utils/constants';
 import { ProgressIcon } from '@utils/icons';
 import { useMemo } from 'react';
 
@@ -21,7 +21,7 @@ interface SummaryItems {
  * @returns JSX Element
  */
 const SummaryPanel = () => {
-  const { completedAchievements, completedSkills } = useActions();
+  const { completedAchievements, completedQuests, completedSkills } = useActions();
 
   const summaryItems = useMemo(
     /**
@@ -38,9 +38,14 @@ const SummaryPanel = () => {
         summary: 'achievements',
         complete: completedAchievements.length,
         total: ACHIEVEMENTS.length
+      },
+      {
+        summary: 'quests',
+        complete: completedQuests.length,
+        total: QUESTS.length
       }
     ],
-    [completedAchievements, completedSkills]
+    [completedAchievements, completedQuests, completedSkills]
   );
 
   return (

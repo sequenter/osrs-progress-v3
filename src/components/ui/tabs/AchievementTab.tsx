@@ -24,7 +24,7 @@ const AchievementsTab = () => {
   const dispatch = useStoreDispatch();
 
   /**
-   * Dispatches update to task completion state.
+   * Dispatches update to achievement completion state.
    * @param {boolean} isComplete Task completion state
    * @param {string} task The task to update as complete/incomplete
    */
@@ -67,7 +67,6 @@ const AchievementsTab = () => {
               description={task}
               difficulty={difficulty}
               icon={diaryIconMap[diary]}
-              test={task}
               title={diary}
               onCompletion={onCompletion}
             />

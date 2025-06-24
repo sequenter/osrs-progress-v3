@@ -1,5 +1,11 @@
-import { initialAchievementsState } from '@redux/initialState';
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+import type { AchievementState } from '@types';
+import { ACHIEVEMENTS } from '@utils/constants';
+
+const initialAchievementsState = ACHIEVEMENTS.reduce(
+  (acc, achievement) => [...acc, { ...achievement, isComplete: false }],
+  [] as AchievementState
+);
 
 const initialState = {
   detail: initialAchievementsState

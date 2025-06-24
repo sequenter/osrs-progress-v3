@@ -3,15 +3,17 @@ import type {
   ACHIEVEMENT_DIFFICULTY,
   COMBAT_SKILLS,
   QUEST_DIFFICULTY,
+  QUEST_LENGTH,
   SKILLING_SKILLS,
   SUMMARY_ITEMS
 } from '@utils/constants';
 
 /* UNIONS */
 
-export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
 export type AchievementDifficulty = (typeof ACHIEVEMENT_DIFFICULTY)[number];
 export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
+export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
+export type QuestLength = (typeof QUEST_LENGTH)[number];
 
 export type Summary = (typeof SUMMARY_ITEMS)[number];
 
@@ -21,18 +23,7 @@ export type Skill = CombatSkill | SkillingSkill;
 
 export type Completion = 'unlocked' | 'locked' | 'completed';
 
-/* SKILLS */
-
-interface SkillDetail {
-  level: number;
-  isLocked: boolean;
-}
-
-export type SkillState = Record<Skill, SkillDetail>;
-
-export type PartialSkillState = Partial<Record<Skill, SkillDetail>>;
-
-/* ACHIEVEMENTS */
+/* COMMON */
 
 export interface SkillsRequirement {
   all?: Partial<Record<Skill, number>>;
@@ -55,6 +46,19 @@ export interface Requirements {
   ironman?: Array<Requirement>;
 }
 
+/* SKILLS */
+
+interface SkillDetail {
+  level: number;
+  isLocked: boolean;
+}
+
+export type SkillState = Record<Skill, SkillDetail>;
+
+export type PartialSkillState = Partial<Record<Skill, SkillDetail>>;
+
+/* ACHIEVEMENTS */
+
 export interface Achievement {
   diary: AchievementDiary;
   difficulty: AchievementDifficulty;
@@ -64,6 +68,34 @@ export interface Achievement {
 
 export type AchievementState = Array<
   Achievement & {
+    isComplete: boolean;
+  }
+>;
+
+/* QUESTS */
+
+interface RewardSkills {
+  all?: Array<Skill>;
+  any?: Array<Skill>;
+}
+
+export interface Rewards {
+  QP: number;
+  skills: RewardSkills;
+}
+
+export interface Quest {
+  difficulty: QuestDifficulty;
+  icon: string;
+  length: QuestLength;
+  name: string;
+  release: string;
+  requirements: Requirements;
+  rewards: Rewards;
+}
+
+export type QuestState = Array<
+  Quest & {
     isComplete: boolean;
   }
 >;

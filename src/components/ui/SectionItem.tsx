@@ -12,7 +12,8 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import type { AchievementDifficulty, Completion, QuestDifficulty } from '@types';
-import { memo } from 'react';
+import { WIKI_IMAGES_ERROR } from '@utils/constants';
+import { memo, useState } from 'react';
 
 interface SectionItemProps {
   completion: Completion;
@@ -21,7 +22,6 @@ interface SectionItemProps {
   difficulty?: AchievementDifficulty | QuestDifficulty;
   icon: string;
   title: string;
-  test: string;
   onCompletion: (isComplete: boolean, completionId: string) => void;
 }
 
@@ -46,12 +46,18 @@ const SectionItem = ({
   title,
   onCompletion
 }: SectionItemProps) => {
+  const [iconSrc, setIconSrc] = useState(icon);
+
+  const handleIconError = () => {
+    setIconSrc(WIKI_IMAGES_ERROR);
+  };
+
   return (
     <Grid component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
       <Stack component={Paper} divider={<Divider />} direction="column" elevation={2} flexGrow={1} gap={1} padding={2}>
         <Stack alignItems="center" direction="row" justifyContent="space-between">
           <Stack alignItems="center" direction="row" gap={1}>
-            <Box component="img" src={icon} />
+            <Box component="img" height="1.5rem" width="1.5rem" src={iconSrc} onError={handleIconError} />
 
             <Typography color="neutral" variant="h6">
               {title}

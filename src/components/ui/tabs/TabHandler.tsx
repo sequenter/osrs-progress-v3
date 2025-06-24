@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 
-import { AchievementTab } from '@components';
+import { AchievementTab, QuestTab } from '@components';
 import { useActions } from '@hooks/useActions';
 import Chip from '@mui/material/Chip';
 import Paper from '@mui/material/Paper';
@@ -21,10 +21,14 @@ interface TabDetail {
   unlocked: number;
 }
 
+/**
+ * Renders the tab container, allowing to switch between achievements, quests, collections, and pets tabs.
+ * @returns JSX Element
+ */
 const TabHandler = () => {
   const [activeTab, setActiveTab] = useState('Achievements');
 
-  const { unlockedAchievements } = useActions();
+  const { unlockedAchievements, unlockedQuests } = useActions();
 
   const tabs = useMemo(
     /**
@@ -39,10 +43,10 @@ const TabHandler = () => {
         unlocked: unlockedAchievements.length
       },
       {
-        component: null,
+        component: <QuestTab />,
         label: 'Quests',
         icon: QuestsIcon,
-        unlocked: 0
+        unlocked: unlockedQuests.length
       },
       {
         component: null,

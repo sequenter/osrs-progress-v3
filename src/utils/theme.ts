@@ -67,7 +67,8 @@ export const themeDark: ThemeOptions = createTheme({
     },
     summary: {
       skills: { dark: '#FFA400', light: '#FFE0AE' },
-      achievements: { dark: '#00A3FF', light: '#B7DEFF' }
+      achievements: { dark: '#00A3FF', light: '#B7DEFF' },
+      quests: { dark: '#673AB7', light: '#B39DDB' }
     },
     difficulty: {
       achievements: {

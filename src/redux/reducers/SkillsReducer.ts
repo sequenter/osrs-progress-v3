@@ -1,8 +1,18 @@
-import { initialCombatState, initialSkillsState } from '@redux/initialState';
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
-import type { Skill } from '@types';
+import type { Skill, SkillState } from '@types';
 import { isCombatSkill } from '@utils/common';
+import { SKILLS } from '@utils/constants';
+
+const initialCombatState = {
+  combat: false,
+  combatLevel: 3
+};
+
+export const initialSkillsState = SKILLS.reduce(
+  (acc, skill) => ({ ...acc, [skill]: { level: skill === 'Hitpoints' ? 10 : 1, isLocked: true } }),
+  {} as SkillState
+);
 
 const initialState = {
   detail: initialSkillsState,

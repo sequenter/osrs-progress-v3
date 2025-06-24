@@ -1,4 +1,13 @@
-import type { CombatSkill, PartialSkillState, Requirement, Requirements, Skill, SkillsRequirement } from '@types';
+import type {
+  CombatSkill,
+  PartialSkillState,
+  QuestState,
+  Requirement,
+  Requirements,
+  Rewards,
+  Skill,
+  SkillsRequirement
+} from '@types';
 import { COMBAT_SKILLS } from './constants';
 
 /* COMMON */
@@ -21,13 +30,6 @@ export const trifilter = <T>(arr: Array<T>, comparator: (value: T) => number) =>
     [[] as Array<T>, [] as Array<T>, [] as Array<T>]
   );
 
-export const hasProperty = <T extends object, K extends keyof T>(
-  obj: T,
-  key: K
-): obj is T & Required<{ [P in K]: T[K] }> => {
-  return key in obj && obj[key] !== undefined;
-};
-
 /* TYPE GUARDS */
 
 /**
@@ -39,35 +41,74 @@ export const isCombatSkill = (skill: Skill): skill is CombatSkill => COMBAT_SKIL
 
 /* REQUIREMENTS */
 
-const isSkillLevelMet = (unlockedSkills: PartialSkillState, skill: Skill, level: number) =>
-  hasProperty(unlockedSkills, skill) && unlockedSkills[skill].level >= level;
+const isQuestRequirementFulfilled = (completedQuests: QuestState, requiredQuests: Array<string>) => {
+  return requiredQuests.every(
+    (requiredQuest) => completedQuests.findIndex((completedQuest) => completedQuest.name === requiredQuest) > -1
+  );
+};
 
-const isSkillsRequirementFulfilled = (unlockedSkills: PartialSkillState, requirement: SkillsRequirement) =>
-  (!('all' in requirement) ||
-    (hasProperty(requirement, 'all') &&
+const isSkillLevelMet = (unlockedSkills: PartialSkillState, skill: Skill, level: number) => {
+  return unlockedSkills[skill] && unlockedSkills[skill].level >= level;
+};
+
+const isSkillsRequirementFulfilled = (unlockedSkills: PartialSkillState, requirement: SkillsRequirement) => {
+  return (
+    (!requirement.all ||
       (Object.entries(requirement.all) as Array<[Skill, number]>).every(([skill, level]) =>
         isSkillLevelMet(unlockedSkills, skill, level)
-      ))) &&
-  (!('any' in requirement) ||
-    (hasProperty(requirement, 'any') &&
+      )) &&
+    (!requirement.any ||
       (Object.entries(requirement.any) as Array<[Skill, number]>).some(([skill, level]) =>
         isSkillLevelMet(unlockedSkills, skill, level)
-      )));
+      ))
+  );
+};
 
-const isRequirementFulfilled = (combat: boolean, unlockedSkills: PartialSkillState, requirement: Array<Requirement>) =>
-  requirement.every(({ required }) =>
+const isRequirementFulfilled = (
+  combat: boolean,
+  completedQuests: QuestState,
+  unlockedSkills: PartialSkillState,
+  requirement: Array<Requirement>
+) => {
+  return requirement.every(({ required }) =>
     required.some(
       (req) =>
-        (!req.combat || (req.combat && combat)) &&
-        (!req.quests || false) &&
-        (!req.skills || (req.skills && isSkillsRequirementFulfilled(unlockedSkills, req.skills)))
+        (!req.combat || combat) &&
+        (!req.quests || isQuestRequirementFulfilled(completedQuests, req.quests)) &&
+        (!req.skills || isSkillsRequirementFulfilled(unlockedSkills, req.skills))
     )
   );
+};
 
 export const isRequirementsFulfilled = (
   combat: boolean,
+  completedQuests: QuestState,
   unlockedSkills: PartialSkillState,
   requirements: Requirements
-) =>
-  !Object.keys(requirements).length ||
-  (requirements.main && isRequirementFulfilled(combat, unlockedSkills, requirements.main));
+) => {
+  if (Object.keys(requirements).length) {
+    return !requirements.main || isRequirementFulfilled(combat, completedQuests, unlockedSkills, requirements.main);
+  }
+
+  return true;
+};
+
+/**
+ * Determines if the skill rewards of a quest is fulfilled by checking if required skills are unlocked.
+ * @param rewards Quest rewards
+ * @param unlockedSkills Unlocked skills
+ * @returns {boolean}
+ */
+export const isRewardsFulfilled = (rewards: Rewards, unlockedSkills: PartialSkillState): boolean => {
+  if (rewards.skills) {
+    const rewardSkills = rewards.skills;
+    const skills = Object.keys(unlockedSkills) as Array<Skill>;
+
+    return (
+      (!rewardSkills.all || rewardSkills.all.every((reward) => skills.includes(reward))) &&
+      (!rewardSkills.any || rewardSkills.any.some((reward) => skills.includes(reward)))
+    );
+  }
+
+  return true;
+};

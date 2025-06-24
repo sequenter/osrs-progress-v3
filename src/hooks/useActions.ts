@@ -1,6 +1,6 @@
-import { initialSkillsState } from '@redux/initialState';
+import { initialSkillsState } from '@redux/reducers/SkillsReducer';
 
-import type { AchievementState, PartialSkillState, SkillState } from '@types';
+import type { AchievementState, PartialSkillState, QuestState, SkillState } from '@types';
 import { createContext, useContext } from 'react';
 
 interface Actions {
@@ -10,6 +10,9 @@ interface Actions {
   completedAchievements: AchievementState;
   unlockedAchievements: AchievementState;
   lockedAchievements: AchievementState;
+  completedQuests: QuestState;
+  unlockedQuests: QuestState;
+  lockedQuests: QuestState;
   combat: boolean;
   combatLevel: number;
 }
@@ -21,6 +24,9 @@ export const ActionsContext = createContext<Actions>({
   completedAchievements: [],
   unlockedAchievements: [],
   lockedAchievements: [],
+  completedQuests: [],
+  unlockedQuests: [],
+  lockedQuests: [],
   combat: false,
   combatLevel: 3
 });
