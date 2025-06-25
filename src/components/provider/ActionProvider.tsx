@@ -34,7 +34,7 @@ const ActionsProvider = ({ children }: ActionsProps) => {
 
   const completedSkills = useMemo(
     /**
-     * Get skills levelled to 99.
+     * Get skills that are at level 99.
      * @returns {PartialSkillState} An object containing completed skills
      */
     (): PartialSkillState =>
@@ -50,7 +50,7 @@ const ActionsProvider = ({ children }: ActionsProps) => {
     /**
      * Get complete, and incomplete quests.
      * Complete quests: quests marked complete
-     * Incomplete quests: quests marked incomplete
+     * Incomplete quests: all other non complete quests
      * @returns An array containing incomplete, and complete quests
      */
     () => {
@@ -61,7 +61,7 @@ const ActionsProvider = ({ children }: ActionsProps) => {
 
   const [lockedQuests, unlockedQuests] = useMemo(
     /**
-     * Get unlocked, and locked achievements.
+     * Get unlocked, and locked quests.
      * Unlocked quests: quests that have their requirements criteria met, and have their reward skills unlocked
      * Locked quests: quests that do not have their requirements criteria met
      * @returns An array containing locked, and unlocked quests
