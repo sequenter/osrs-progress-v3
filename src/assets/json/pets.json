@@ -1,0 +1,1727 @@
+[
+  {
+    "icon": "Abyssal orphan",
+    "name": "Abyssal orphan",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Into the Abyss"],
+              "skills": {
+                "all": {
+                  "Slayer": 85
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Abyssal Sire",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 85,
+                  "Strength": 85,
+                  "Defence": 85,
+                  "Ranged": 85,
+                  "Magic": 92,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Abyssal protector",
+    "name": "Abyssal protector",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Temple of the Eye"],
+              "skills": {
+                "all": {
+                  "Runecraft": 27,
+                  "Mining": 1,
+                  "Crafting": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Baby chinchompa (grey)",
+    "name": "Baby chinchompa",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Eagles' Peak"],
+              "skills": {
+                "all": {
+                  "Hunter": 53
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Baby mole",
+    "name": "Baby mole",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Giant Mole",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 70,
+                  "Strength": 70,
+                  "Defence": 70,
+                  "Prayer": 43
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 85,
+                  "Prayer": 77
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Baron",
+    "name": "Baron",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Desert Treasure II - The Fallen Empire"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Duke Sucellus",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 90,
+                  "Strength": 90,
+                  "Defence": 90,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Beaver",
+    "name": "Beaver",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Woodcutting": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Butch",
+    "name": "Butch",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Desert Treasure II - The Fallen Empire"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Duke Sucellus",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 90,
+                  "Strength": 90,
+                  "Defence": 90,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Callisto cub",
+    "name": "Callisto cub",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Callisto",
+          "required": [
+            {
+              "combatLevel": 95,
+              "skills": {
+                "all": {
+                  "Hitpoints": 90,
+                  "Defence": 70,
+                  "Prayer": 74
+                },
+                "any": {
+                  "Ranged": 90,
+                  "Magic": 94
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Giant squirrel",
+    "name": "Giant squirrel",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Hellpuppy",
+    "name": "Hellpuppy",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Slayer": 91
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Cerberus",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 85,
+                  "Strength": 85,
+                  "Defence": 85,
+                  "Prayer": 70
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Defence": 85,
+                  "Prayer": 74,
+                  "Ranged": 75
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Herbi",
+    "name": "Herbi",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Bone Voyage"],
+              "skills": {
+                "all": {
+                  "Hunter": 80,
+                  "Herblore": 31
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Heron",
+    "name": "Heron",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Ikkle hydra (serpentine)",
+    "name": "Ikkle hydra",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Slayer": 95
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Alchemical Hydra",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 75,
+                  "Hitpoints": 85,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Jal-nib-rek",
+    "name": "Jal-nib-rek",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Complete the Inferno",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 90,
+                  "Defence": 90,
+                  "Prayer": 80,
+                  "Magic": 94,
+                  "Hitpoints": 90
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Kalphite princess",
+    "name": "Kalphite princess",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Kalphite Queen",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 80,
+                  "Strength": 80,
+                  "Defence": 80,
+                  "Ranged": 80,
+                  "Prayer": 70,
+                  "Hitpoints": 85
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Lil' creator",
+    "name": "Lil' creator",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Lil'viathan",
+    "name": "Lil'viathan",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Desert Treasure II - The Fallen Empire"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill The Leviathan",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 90,
+                  "Defence": 90,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Lil' zik",
+    "name": "Lil'zik",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Priest in Peril"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Complete the Theatre of Blood",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 95,
+                  "Strength": 99,
+                  "Defence": 95,
+                  "Hitpoints": 95,
+                  "Ranged": 99,
+                  "Magic": 94,
+                  "Prayer": 77
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Little nightmare",
+    "name": "Little nightmare",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Priest in Peril"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill The Nightmare",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 85,
+                  "Strength": 85,
+                  "Defence": 85,
+                  "Hitpoints": 85,
+                  "Magic": 85,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Muphin (ranged)",
+    "name": "Muphin",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Secrets of the North"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Phantom Muspah",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 90,
+                  "Defence": 80,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Nexling",
+    "name": "Nexling",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["The Frozen Door"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Nex",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 95,
+                  "Strength": 95,
+                  "Defence": 90,
+                  "Ranged": 90,
+                  "Magic": 90,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Noon",
+    "name": "Noon",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Priest in Peril"],
+              "skills": {
+                "all": {
+                  "Slayer": 75
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Grotesque Guardians",
+          "required": [
+            {
+              "combatLevel": 90,
+              "skills": {
+                "all": {
+                  "Defence": 70,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Olmlet",
+    "name": "Olmlet",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Complete the Chambers of Xeric",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 90,
+                  "Strength": 90,
+                  "Defence": 90,
+                  "Magic": 90,
+                  "Ranged": 90,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet chaos elemental",
+    "name": "Pet chaos elemental",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Chaos Elemental",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 80,
+                  "Strength": 80,
+                  "Defence": 70,
+                  "Prayer": 70
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 75,
+                  "Defence": 40,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet dagannoth prime",
+    "name": "Pet dagannoth prime",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Dagannoth Prime",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 70,
+                  "Defence": 80,
+                  "Hitpoints": 70,
+                  "Prayer": 45
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet dagannoth rex",
+    "name": "Pet dagannoth rex",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Dagannoth Rex",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Magic": 75,
+                  "Defence": 80,
+                  "Hitpoints": 70,
+                  "Prayer": 45
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet dagannoth supreme",
+    "name": "Pet dagannoth supreme",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Dagannoth Supreme",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 70,
+                  "Strength": 70,
+                  "Defence": 80,
+                  "Hitpoints": 70,
+                  "Prayer": 45
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet dark core",
+    "name": "Pet dark core",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Corporeal Beast",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Hitpoints": 95,
+                  "Attack": 94,
+                  "Strength": 94,
+                  "Defence": 94,
+                  "Prayer": 70
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hitpoints": 90,
+                  "Ranged": 90,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet general graardor",
+    "name": "Pet general graardor",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Strength": 70
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill General Graardor",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 80,
+                  "Strength": 80,
+                  "Defence": 80,
+                  "Magic": 75,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet k'ril tsutsaroth",
+    "name": "Pet k'ril tsutsaroth",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "any": {
+                  "Strength": 60,
+                  "Agility": 60
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill K'ril Tsutsaroth",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 80,
+                  "Strength": 80,
+                  "Defence": 90,
+                  "Magic": 75,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet kraken",
+    "name": "Pet kraken",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "any": {
+                  "Slayer": 87,
+                  "Magic": 50
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Kraken",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Magic": 85,
+                  "Defence": 85,
+                  "Hitpoints": 85
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet kree'arra",
+    "name": "Pet kree'arra",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Ranged": 70
+                },
+                "any": {
+                  "Strength": 60,
+                  "Agility": 60
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Obtain a mithril grapple",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Fletching": 59,
+                  "Smithing": 59
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Fletching": 99
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Kree'arra",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 80,
+                  "Magic": 80,
+                  "Defence": 90,
+                  "Prayer": 77
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet penance queen",
+    "name": "Pet penance queen",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet smoke devil",
+    "name": "Pet smoke devil",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Slayer": 93
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill the Thermonuclear smoke devil",
+          "required": [
+            {
+              "combatLevel": 90,
+              "skills": {
+                "all": {
+                  "Hitpoints": 90,
+                  "Magic": 94
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet snakeling",
+    "name": "Pet snakeling",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "any": {
+                  "Ranged": 1,
+                  "Magic": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "Partial completion of 'Regicide'",
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Underground Pass"],
+              "skills": {
+                "all": {
+                  "Crafting": 10,
+                  "Agility": 56
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Zulrah",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Defence": 70,
+                  "Hitpoints": 80,
+                  "Prayer": 45
+                },
+                "any": {
+                  "Ranged": 80,
+                  "Magic": 85
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pet zilyana",
+    "name": "Pet zilyana",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Agility": 70
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Commander Zilyana",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 80,
+                  "Defence": 90,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Phoenix",
+    "name": "Phoenix",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Woodcutting": 1,
+                  "Firemaking": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Prince black dragon",
+    "name": "Prince black dragon",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill King Black Dragon",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 80,
+                  "Strength": 80,
+                  "Defence": 80,
+                  "Hitpoints": 70,
+                  "Prayer": 70
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 80,
+                  "Defence": 80,
+                  "Hitpoints": 70,
+                  "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Rift guardian (air)",
+    "name": "Rift guardian",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Runecraft": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Rock golem",
+    "name": "Rock golem",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Mining": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Rocky",
+    "name": "Rocky",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Thieving": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Scorpia's offspring",
+    "name": "Scorpia's offspring",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Scorpia",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Magic": 78,
+                  "Prayer": 40
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Skotos",
+    "name": "Skotos",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Skotizo",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 75,
+                  "Strength": 75,
+                  "Defence": 70,
+                  "Prayer": 43
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Smolcano",
+    "name": "Smolcano",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Song of the Elves"],
+              "skills": {
+                "all": {
+                  "Mining": 70,
+                  "Smithing": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Sraracha",
+    "name": "Sraracha",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Sarachnis",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Hitpoints": 65,
+                  "Attack": 65,
+                  "Strength": 65,
+                  "Defence": 65,
+                  "Magic": 60,
+                  "Ranged": 70,
+                  "Prayer": 43
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Tangleroot",
+    "name": "Tangleroot",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Farming": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Tiny tempor",
+    "name": "Tiny tempor",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Tumeken's guardian",
+    "name": "Tumeken's guardian",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Beneath Cursed Sands"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Complete Tombs of Amascus",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Attack": 82,
+                  "Strength": 85,
+                  "Defence": 80,
+                  "Hitpoints": 85,
+                  "Ranged": 90,
+                  "Magic": 94,
+                  "Prayer": 77
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Tzrek-jad",
+    "name": "Tzrek-jad",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Complete the Fight Caves",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 75,
+                  "Hitpoints": 75,
+                  "Defence": 70,
+                  "Prayer": 60
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Venenatis spiderling",
+    "name": "Venenatis spiderling",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Venenatis",
+          "required": [
+            {
+              "combatLevel": 105,
+              "skills": {
+                "all": {
+                  "Attack": 75,
+                  "Strength": 90,
+                  "Defence": 75,
+                  "Hitpoints": 85,
+                  "Prayer": 74
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Defence": 70,
+                  "Hitpoints": 85,
+                  "Prayer": 74
+                },
+                "any": {
+                  "Ranged": 85,
+                  "Magic": 94
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Vet'ion jr.",
+    "name": "Vet'ion Jr.",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Vet'ion",
+          "required": [
+            {
+              "combatLevel": 85,
+              "skills": {
+                "all": {
+                  "Hitpoints": 85,
+                  "Strength": 90,
+                  "Attack": 85,
+                  "Defence": 75,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Vorki",
+    "name": "Vorki",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Dragon Slayer II"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill Vorkath",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Ranged": 85,
+                  "Defence": 75,
+                  "Prayer": 74
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Attack": 90,
+                  "Strength": 85,
+                  "Defence": 85,
+                  "Prayer": 70
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Wisp",
+    "name": "Wisp",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Desert Treasure II - The Fallen Empire"]
+            }
+          ]
+        }
+      ],
+      "recommended": [
+        {
+          "description": "Kill The Whisperer",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Defence": 65,
+                  "Magic": 90,
+                  "Prayer": 77
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Youngllef",
+    "name": "Youngllef",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Song of the Elves"]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

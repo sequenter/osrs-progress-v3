@@ -5,7 +5,8 @@ import { QUESTS } from '@utils/constants';
 const initialQuestsState = QUESTS.reduce((acc, quest) => [...acc, { ...quest, isComplete: false }], [] as QuestState);
 
 const initialState = {
-  detail: initialQuestsState
+  detail: initialQuestsState,
+  QP: 0
 };
 
 const indexMap = initialQuestsState.reduce(
@@ -17,11 +18,17 @@ export const questsSlice = createSlice({
   name: 'quests',
   initialState,
   reducers: {
-    setIsComplete: (state, { payload: { name, isComplete } }: PayloadAction<{ name: string; isComplete: boolean }>) => {
-      state.detail[indexMap[name]].isComplete = isComplete;
+    setIsComplete: (state, { payload: { id, isComplete } }: PayloadAction<{ id: string; isComplete: boolean }>) => {
+      const QPReward = state.detail[indexMap[id]].rewards?.QP ?? 0;
+
+      state.detail[indexMap[id]].isComplete = isComplete;
+      state.QP = state.QP + (isComplete ? QPReward : -QPReward);
     }
   },
   selectors: {
+    getQP: (state) => {
+      return state.QP;
+    },
     getQuests: (state) => {
       return state.detail;
     }
@@ -29,6 +36,6 @@ export const questsSlice = createSlice({
 });
 
 export const { setIsComplete } = questsSlice.actions;
-export const { getQuests } = questsSlice.selectors;
+export const { getQP, getQuests } = questsSlice.selectors;
 
 export default questsSlice.reducer;

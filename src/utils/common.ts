@@ -105,6 +105,8 @@ const isSkillsRequirementFulfilled = (unlockedSkills: PartialSkillState, require
  */
 export const isRequirementsFulfilled = (
   combat: boolean,
+  combatLevel: number,
+  QP: number,
   completedQuests: QuestState,
   unlockedSkills: PartialSkillState,
   requirements: Requirements
@@ -116,6 +118,8 @@ export const isRequirementsFulfilled = (
       required.some(
         (req) =>
           (!req.combat || combat) &&
+          (!req.combatLevel || combatLevel >= req.combatLevel) &&
+          (!req.QP || QP >= req.QP) &&
           (!req.quests || isQuestRequirementFulfilled(completedQuests, req.quests)) &&
           (!req.skills || isSkillsRequirementFulfilled(unlockedSkills, req.skills))
       )
@@ -143,4 +147,27 @@ export const isRewardsFulfilled = (rewards: Rewards, unlockedSkills: PartialSkil
   }
 
   return true;
+};
+
+export const trifilterRequirements = (
+  isComplete: boolean,
+  combat: boolean,
+  combatLevel: number,
+  QP: number,
+  completedQuests: QuestState,
+  unlockedSkills: PartialSkillState,
+  requirements: Requirements
+) => {
+  // Complete
+  if (isComplete) {
+    return 0;
+  }
+
+  // Unlocked
+  if (isRequirementsFulfilled(combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)) {
+    return 1;
+  }
+
+  // Locked
+  return 2;
 };

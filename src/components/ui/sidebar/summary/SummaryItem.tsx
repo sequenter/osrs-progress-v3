@@ -8,6 +8,7 @@ import type { Summary } from '@types';
 import { memo } from 'react';
 
 interface SummaryItemProps {
+  adornment?: string;
   complete: number;
   summary: Summary;
   total: number;
@@ -21,12 +22,20 @@ interface SummaryItemProps {
  * @param {number} props.total Total count
  * @returns JSX Element
  */
-const SummaryItem = ({ complete, summary, total }: SummaryItemProps) => {
+const SummaryItem = ({ adornment, complete, summary, total }: SummaryItemProps) => {
   return (
     <Stack direction="column" component={Paper} elevation={4} gap={2} padding={2}>
-      <Typography color="neutral" variant="h5" textTransform="capitalize">
-        {summary}
-      </Typography>
+      <Stack alignItems="center" direction="row" justifyContent="space-between">
+        <Typography color="neutral" variant="h5" textTransform="capitalize">
+          {summary}
+        </Typography>
+
+        {adornment && (
+          <Typography color="neutral" variant="h6">
+            {adornment}
+          </Typography>
+        )}
+      </Stack>
 
       <LinearProgress
         variant="determinate"

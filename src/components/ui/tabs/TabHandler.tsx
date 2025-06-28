@@ -2,15 +2,15 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-
-import { AchievementTab, QuestTab } from '@components';
-import { useActions } from '@hooks/useActions';
 import Chip from '@mui/material/Chip';
 import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Tab from '@mui/material/Tab';
 import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+
+import { AchievementsTab, PetsTab, QuestsTab } from '@components';
+import { useActions } from '@hooks/useActions';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
 import { useMemo, useState, type ReactNode } from 'react';
 
@@ -28,7 +28,7 @@ interface TabDetail {
 const TabHandler = () => {
   const [activeTab, setActiveTab] = useState('Achievements');
 
-  const { unlockedAchievements, unlockedQuests } = useActions();
+  const { unlockedAchievements, unlockedPets, unlockedQuests } = useActions();
 
   const tabs = useMemo(
     /**
@@ -37,13 +37,13 @@ const TabHandler = () => {
      */
     (): Array<TabDetail> => [
       {
-        component: <AchievementTab />,
+        component: <AchievementsTab />,
         label: 'Achievements',
         icon: AchievementsIcon,
         unlocked: unlockedAchievements.length
       },
       {
-        component: <QuestTab />,
+        component: <QuestsTab />,
         label: 'Quests',
         icon: QuestsIcon,
         unlocked: unlockedQuests.length
@@ -55,13 +55,13 @@ const TabHandler = () => {
         unlocked: 0
       },
       {
-        component: null,
+        component: <PetsTab />,
         label: 'Pets',
         icon: PetsIcon,
-        unlocked: 0
+        unlocked: unlockedPets.length
       }
     ],
-    [unlockedAchievements]
+    [unlockedAchievements, unlockedPets, unlockedQuests]
   );
 
   /**
@@ -87,7 +87,7 @@ const TabHandler = () => {
             top: '64px',
             overflow: 'hidden',
             position: 'sticky',
-            'z-index': 999,
+            zIndex: 999,
             '& .MuiTabs-root': { minHeight: 0 }
           }}
         >

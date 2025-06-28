@@ -11,18 +11,20 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
+import { useStoreDispatch } from '@hooks';
+import type { ActionCreatorWithPayload } from '@reduxjs/toolkit/react';
 import type { AchievementDifficulty, Completion, QuestDifficulty } from '@types';
 import { WIKI_IMAGES_ERROR } from '@utils/constants';
-import { memo, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 interface SectionItemProps {
   completion: Completion;
-  completionId: string;
   description?: string;
   difficulty?: AchievementDifficulty | QuestDifficulty;
   icon: string;
+  id: string;
   title: string;
-  onCompletion: (isComplete: boolean, completionId: string) => void;
+  onCompletion: ActionCreatorWithPayload<{ id: string; isComplete: boolean }>;
 }
 
 /**
@@ -34,23 +36,24 @@ interface SectionItemProps {
  * @param {AchievementDifficulty | QuestDifficulty} [props.difficulty = undefined] Optional difficulty to render
  * @param {string} props.icon The icon to render to the left of the title
  * @param {string} props.title The title of the section item
- * @param {Consumer<boolean>} props.onCompletion On mark complete/incomplete callback
+ * @param {ActionCreatorWithPayload<{ id: string; isComplete: boolean }>} props.onCompletion Completion dispatch function
  * @returns JSX Element
  */
-const SectionItem = ({
-  completion,
-  completionId,
-  description,
-  difficulty,
-  icon,
-  title,
-  onCompletion
-}: SectionItemProps) => {
+const SectionItem = ({ completion, description, difficulty, icon, id, title, onCompletion }: SectionItemProps) => {
   const [iconSrc, setIconSrc] = useState(icon);
+
+  const dispatch = useStoreDispatch();
 
   const handleIconError = () => {
     setIconSrc(WIKI_IMAGES_ERROR);
   };
+
+  const handleCompletion = useCallback(
+    (isComplete: boolean) => {
+      dispatch(onCompletion({ isComplete, id }));
+    },
+    [id, dispatch, onCompletion]
+  );
 
   return (
     <Grid component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
@@ -84,7 +87,7 @@ const SectionItem = ({
                 color="success"
                 sx={{ padding: 0 }}
                 onClick={() => {
-                  onCompletion(true, completionId);
+                  handleCompletion(true);
                 }}
               >
                 <CheckCircle />
@@ -98,7 +101,7 @@ const SectionItem = ({
                 color="error"
                 sx={{ padding: 0 }}
                 onClick={() => {
-                  onCompletion(false, completionId);
+                  handleCompletion(false);
                 }}
               >
                 <Cancel />

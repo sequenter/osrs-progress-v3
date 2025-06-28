@@ -1,6 +1,6 @@
 import { initialSkillsState } from '@redux/reducers/SkillsReducer';
 
-import type { AchievementState, PartialSkillState, QuestState, SkillState } from '@types';
+import type { AchievementState, PartialSkillState, PetState, QuestState, SkillState } from '@types';
 import { createContext, useContext } from 'react';
 
 interface Actions {
@@ -10,11 +10,15 @@ interface Actions {
   completedAchievements: AchievementState;
   unlockedAchievements: AchievementState;
   lockedAchievements: AchievementState;
+  completedPets: PetState;
+  unlockedPets: PetState;
+  lockedPets: PetState;
   completedQuests: QuestState;
   unlockedQuests: QuestState;
   lockedQuests: QuestState;
   combat: boolean;
   combatLevel: number;
+  QP: number;
 }
 
 export const ActionsContext = createContext<Actions>({
@@ -24,11 +28,15 @@ export const ActionsContext = createContext<Actions>({
   completedAchievements: [],
   unlockedAchievements: [],
   lockedAchievements: [],
+  completedPets: [],
+  unlockedPets: [],
+  lockedPets: [],
   completedQuests: [],
   unlockedQuests: [],
   lockedQuests: [],
   combat: false,
-  combatLevel: 3
+  combatLevel: 3,
+  QP: 0
 });
 
 export const useActions = () => useContext(ActionsContext);

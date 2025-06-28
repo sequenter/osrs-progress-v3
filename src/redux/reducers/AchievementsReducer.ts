@@ -20,8 +20,8 @@ export const achievementsSlice = createSlice({
   name: 'achievements',
   initialState,
   reducers: {
-    setIsComplete: (state, { payload: { task, isComplete } }: PayloadAction<{ task: string; isComplete: boolean }>) => {
-      state.detail[indexMap[task]].isComplete = isComplete;
+    setIsComplete: (state, { payload: { id, isComplete } }: PayloadAction<{ id: string; isComplete: boolean }>) => {
+      state.detail[indexMap[id]].isComplete = isComplete;
     }
   },
   selectors: {

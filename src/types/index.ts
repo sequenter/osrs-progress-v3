@@ -32,6 +32,8 @@ export interface SkillsRequirement {
 
 interface Required {
   combat?: boolean;
+  combatLevel?: number;
+  QP?: number;
   quests?: Array<string>;
   skills?: SkillsRequirement;
 }
@@ -96,6 +98,21 @@ export interface Quest {
 
 export type QuestState = Array<
   Quest & {
+    isComplete: boolean;
+  }
+>;
+
+/* PETS */
+
+export interface Pet {
+  icon: string;
+  name: string;
+  recommended: Array<Requirement>;
+  requirements: Requirements;
+}
+
+export type PetState = Array<
+  Pet & {
     isComplete: boolean;
   }
 >;

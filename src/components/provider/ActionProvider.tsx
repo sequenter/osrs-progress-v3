@@ -1,11 +1,12 @@
 import { getAchievements } from '@redux/reducers/AchievementsReducer';
-import { getQuests } from '@redux/reducers/QuestsReducer';
+import { getPets } from '@redux/reducers/PetsReducer';
+import { getQP, getQuests } from '@redux/reducers/QuestsReducer';
 import { getCombat, getSkills } from '@redux/reducers/SkillsReducer';
 
 import { useStoreSelector } from '@hooks';
 import { ActionsContext } from '@hooks/useActions';
 import type { PartialSkillState } from '@types';
-import { bifilter, isRequirementsFulfilled, isRewardsFulfilled, trifilter } from '@utils/common';
+import { bifilter, isRequirementsFulfilled, isRewardsFulfilled, trifilter, trifilterRequirements } from '@utils/common';
 import { useMemo, type ReactNode } from 'react';
 
 interface ActionsProps {
@@ -15,6 +16,8 @@ interface ActionsProps {
 const ActionsProvider = ({ children }: ActionsProps) => {
   const { combat, combatLevel } = useStoreSelector((state) => getCombat(state));
   const achievements = useStoreSelector((state) => getAchievements(state));
+  const pets = useStoreSelector((state) => getPets(state));
+  const QP = useStoreSelector((state) => getQP(state));
   const quests = useStoreSelector((state) => getQuests(state));
   const skills = useStoreSelector((state) => getSkills(state));
 
@@ -70,11 +73,11 @@ const ActionsProvider = ({ children }: ActionsProps) => {
       return bifilter(
         incompleteQuests,
         ({ requirements, rewards }) =>
-          isRequirementsFulfilled(combat, completedQuests, unlockedSkills, requirements) &&
+          isRequirementsFulfilled(combat, combatLevel, QP, completedQuests, unlockedSkills, requirements) &&
           isRewardsFulfilled(rewards, unlockedSkills)
       );
     },
-    [combat, completedQuests, incompleteQuests, unlockedSkills]
+    [combat, combatLevel, QP, completedQuests, incompleteQuests, unlockedSkills]
   );
 
   const [completedAchievements, unlockedAchievements, lockedAchievements] = useMemo(
@@ -86,22 +89,26 @@ const ActionsProvider = ({ children }: ActionsProps) => {
      * @returns An array containing completed, unlocked, and locked achievements
      */
     () =>
-      trifilter(achievements, ({ isComplete, requirements }) => {
-        // Complete
-        if (isComplete) {
-          return 0;
-        }
+      trifilter(achievements, ({ isComplete, requirements }) =>
+        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+      ),
 
-        // Unlocked
-        if (isRequirementsFulfilled(combat, completedQuests, unlockedSkills, requirements)) {
-          return 1;
-        }
+    [achievements, combat, combatLevel, QP, completedQuests, unlockedSkills]
+  );
 
-        // Locked
-        return 2;
-      }),
-
-    [achievements, combat, completedQuests, unlockedSkills]
+  const [completedPets, unlockedPets, lockedPets] = useMemo(
+    /**
+     * Get completed, unlocked, and locked pets.
+     * Completed pets: pets marked complete
+     * Unlocked pets: pets that have their requirements criteria met
+     * Locked pets: pets that do not have their requirements criteria met
+     * @returns An array containing completed, unlocked, and locked pets
+     */
+    () =>
+      trifilter(pets, ({ isComplete, requirements }) =>
+        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+      ),
+    [pets, combat, combatLevel, QP, completedQuests, unlockedSkills]
   );
 
   return (
@@ -113,11 +120,15 @@ const ActionsProvider = ({ children }: ActionsProps) => {
         completedAchievements,
         unlockedAchievements,
         lockedAchievements,
+        completedPets,
+        unlockedPets,
+        lockedPets,
         completedQuests,
         unlockedQuests,
         lockedQuests,
         combat,
-        combatLevel
+        combatLevel,
+        QP
       }}
     >
       {children}

@@ -36,6 +36,7 @@ import { default as ThievingIcon } from '@assets/icons/skills/thieving.png';
 import { default as WoodcuttingIcon } from '@assets/icons/skills/woodcutting.png';
 
 import type { AchievementDiary, Skill } from '@types';
+import { WIKI_IMAGES_URL } from '@utils/constants';
 
 export { default as AchievementsIcon } from '@assets/icons/achievements.png';
 export { default as CollectionsIcon } from '@assets/icons/collections.png';
@@ -44,6 +45,8 @@ export { default as PetsIcon } from '@assets/icons/pets.png';
 export { default as ProgressIcon } from '@assets/icons/progress.png';
 export { default as QuestsIcon } from '@assets/icons/quests.png';
 export { default as StatsIcon } from '@assets/icons/stats.png';
+
+export const wikiIcon = (icon: string) => `${WIKI_IMAGES_URL}${icon.replaceAll(' ', '_')}.png`;
 
 export const diaryIconMap: Record<AchievementDiary, string> = {
   Ardougne: ArdougneIcon,
