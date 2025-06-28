@@ -1,8 +1,8 @@
 import { setIsComplete } from '@redux/reducers/PetsReducer';
 
-import { Tab } from '@components';
+import { SectionItem, Tab } from '@components';
 import { useActions } from '@hooks/useActions';
-import type { Pet } from '@types';
+import type { Completion, Pet } from '@types';
 import { wikiIcon } from '@utils/icons';
 
 /**
@@ -13,23 +13,20 @@ const PetsTab = () => {
   const { completedPets, lockedPets, unlockedPets } = useActions();
 
   /**
-   * Get details for a Pet item.
+   * Returns a section item utilising a given Pet.
    */
-  const handleItemDetails = ({ icon, name }: Pet) => ({
-    id: name,
-    icon: wikiIcon(icon),
-    title: name
-  });
-
-  return (
-    <Tab<Pet>
-      completed={completedPets}
-      locked={lockedPets}
-      unlocked={unlockedPets}
-      getItemDetails={handleItemDetails}
+  const handleItem = ({ icon, name }: Pet, completion: Completion) => (
+    <SectionItem
+      key={name}
+      completion={completion}
+      icon={wikiIcon(icon)}
+      id={name}
+      title={name}
       onCompletion={setIsComplete}
     />
   );
+
+  return <Tab<Pet> completed={completedPets} locked={lockedPets} unlocked={unlockedPets} getItem={handleItem} />;
 };
 
 export default PetsTab;

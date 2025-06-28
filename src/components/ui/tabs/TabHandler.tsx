@@ -3,6 +3,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Tab from '@mui/material/Tab';
 import Tooltip from '@mui/material/Tooltip';
@@ -10,7 +11,6 @@ import Typography from '@mui/material/Typography';
 
 import { AchievementsTab, PetsTab, QuestsTab } from '@components';
 import { useActions } from '@hooks/useActions';
-import Divider from '@mui/material/Divider';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
 import { useMemo, useState, type ReactNode } from 'react';
 
@@ -115,7 +115,7 @@ const TabHandler = () => {
                 flexBasis={0}
                 flexGrow={1}
                 icon={
-                  <Box display="flex" justifyContent="end">
+                  <Box display="flex" justifyContent="end" paddingRight={1}>
                     <Box component="img" src={icon} width="2rem" height="2rem" />
                   </Box>
                 }

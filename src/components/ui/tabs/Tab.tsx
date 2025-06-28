@@ -1,10 +1,8 @@
 import Stack from '@mui/material/Stack';
 
-import type { ActionCreatorWithPayload } from '@reduxjs/toolkit/react';
-
-import { Section, SectionItem } from '@components';
+import { Section } from '@components';
 import type { AchievementDifficulty, Completion, QuestDifficulty } from '@types';
-import { useMemo } from 'react';
+import { useMemo, type ReactNode } from 'react';
 
 interface Sections<T> {
   completion: Completion;
@@ -23,8 +21,7 @@ interface TabProps<T> {
   completed: Array<T>;
   locked: Array<T>;
   unlocked: Array<T>;
-  getItemDetails: (item: T) => Item;
-  onCompletion: ActionCreatorWithPayload<{ id: string; isComplete: boolean }>;
+  getItem: (item: T, completion: Completion) => ReactNode;
 }
 
 /**
@@ -32,7 +29,7 @@ interface TabProps<T> {
  * @param {object} props Properties object
  * @returns
  */
-const Tab = <T,>({ completed, locked, unlocked, getItemDetails, onCompletion }: TabProps<T>) => {
+const Tab = <T,>({ completed, locked, unlocked, getItem }: TabProps<T>) => {
   const sections = useMemo(
     /**
      * Mapped sections.
@@ -59,20 +56,7 @@ const Tab = <T,>({ completed, locked, unlocked, getItemDetails, onCompletion }: 
     <Stack direction="column" gap={2}>
       {sections.map(({ completion, items }) => (
         <Section key={completion} title={completion}>
-          {items.map((item) =>
-            (({ id, description, difficulty, icon, title }) => (
-              <SectionItem
-                key={id}
-                completion={completion}
-                description={description}
-                difficulty={difficulty}
-                icon={icon}
-                id={id}
-                title={title}
-                onCompletion={onCompletion}
-              />
-            ))(getItemDetails(item))
-          )}
+          {items.map((item) => getItem(item, completion))}
         </Section>
       ))}
     </Stack>
