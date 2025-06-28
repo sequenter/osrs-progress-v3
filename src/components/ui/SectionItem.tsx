@@ -13,9 +13,9 @@ import Typography from '@mui/material/Typography';
 
 import { useStoreDispatch } from '@hooks';
 import type { ActionCreatorWithPayload } from '@reduxjs/toolkit/react';
-import type { AchievementDifficulty, Completion, QuestDifficulty } from '@types';
+import type { AchievementDifficulty, Completion, QuestDifficulty, Requirements, Rewards } from '@types';
 import { WIKI_IMAGES_ERROR } from '@utils/constants';
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 
 interface SectionItemProps {
   completion: Completion;
@@ -23,6 +23,8 @@ interface SectionItemProps {
   difficulty?: AchievementDifficulty | QuestDifficulty;
   icon: string;
   id: string;
+  requirements: Requirements;
+  rewards?: Rewards;
   title: string;
   onCompletion: ActionCreatorWithPayload<{ id: string; isComplete: boolean }>;
 }
@@ -35,18 +37,37 @@ interface SectionItemProps {
  * @param {string} [props.description = undefined] Optional description to render
  * @param {AchievementDifficulty | QuestDifficulty} [props.difficulty = undefined] Optional difficulty to render
  * @param {string} props.icon The icon to render to the left of the title
+ * @param {Requirements} props.requirements The requirements of the section item
+ * @param {Rewards} [props.rewards=undefined] Optional rewards of the section item
  * @param {string} props.title The title of the section item
  * @param {ActionCreatorWithPayload<{ id: string; isComplete: boolean }>} props.onCompletion Completion dispatch function
  * @returns JSX Element
  */
-const SectionItem = ({ completion, description, difficulty, icon, id, title, onCompletion }: SectionItemProps) => {
+const SectionItem = ({
+  completion,
+  description,
+  difficulty,
+  icon,
+  id,
+  requirements,
+  rewards,
+  title,
+  onCompletion
+}: SectionItemProps) => {
   const [iconSrc, setIconSrc] = useState(icon);
 
   const dispatch = useStoreDispatch();
 
-  const handleIconError = () => {
+  const requirementsEnabled = useMemo(() => {
+    return (
+      Object.keys(requirements).length > 0 ||
+      (rewards !== undefined && rewards.skills && Object.keys(rewards.skills).length > 0)
+    );
+  }, [requirements, rewards]);
+
+  const handleIconError = useCallback(() => {
     setIconSrc(WIKI_IMAGES_ERROR);
-  };
+  }, []);
 
   const handleCompletion = useCallback(
     (isComplete: boolean) => {
@@ -110,7 +131,12 @@ const SectionItem = ({ completion, description, difficulty, icon, id, title, onC
           )}
 
           <Tooltip placement="top" title={<Typography>Requirements</Typography>} arrow>
-            <IconButton color="neutral" sx={{ padding: 0 }} onClick={() => {}}>
+            <IconButton
+              color="neutral"
+              disabled={!requirementsEnabled}
+              sx={[{ padding: 0 }, !requirementsEnabled && { opacity: '20%' }]}
+              onClick={() => {}}
+            >
               <Info />
             </IconButton>
           </Tooltip>

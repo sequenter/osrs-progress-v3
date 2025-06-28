@@ -15,13 +15,14 @@ const PetsTab = () => {
   /**
    * Returns a section item utilising a given Pet.
    */
-  const handleItem = ({ icon, name }: Pet, completion: Completion) => (
+  const handleItem = ({ icon, name, requirements }: Pet, completion: Completion) => (
     <SectionItem
       key={name}
       completion={completion}
       icon={wikiIcon(icon)}
       id={name}
       title={name}
+      requirements={requirements}
       onCompletion={setIsComplete}
     />
   );

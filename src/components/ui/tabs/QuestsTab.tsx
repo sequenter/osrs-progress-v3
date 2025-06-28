@@ -13,9 +13,12 @@ const QuestsTab = () => {
   const { completedQuests, lockedQuests, unlockedQuests } = useActions();
 
   /**
-   * Get details for a Quest item.
+   * Returns a section item utilising a given Quest.
    */
-  const handleItem = ({ difficulty, icon, length, name, release }: Quest, completion: Completion) => (
+  const handleItem = (
+    { difficulty, icon, length, name, release, requirements, rewards }: Quest,
+    completion: Completion
+  ) => (
     <SectionItem
       key={name}
       completion={completion}
@@ -23,6 +26,8 @@ const QuestsTab = () => {
       difficulty={difficulty}
       icon={wikiIcon(icon)}
       id={name}
+      requirements={requirements}
+      rewards={rewards}
       title={name}
       onCompletion={setIsComplete}
     />

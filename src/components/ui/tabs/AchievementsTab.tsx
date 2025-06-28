@@ -15,7 +15,7 @@ const AchievementsTab = () => {
   /**
    * Returns a section item utilising a given Achievement.
    */
-  const handleItemDetails = ({ diary, difficulty, task }: Achievement, completion: Completion) => (
+  const handleItemDetails = ({ diary, difficulty, requirements, task }: Achievement, completion: Completion) => (
     <SectionItem
       key={task}
       completion={completion}
@@ -23,6 +23,7 @@ const AchievementsTab = () => {
       difficulty={difficulty}
       icon={diaryIconMap[diary]}
       id={task}
+      requirements={requirements}
       title={diary}
       onCompletion={setIsComplete}
     />
