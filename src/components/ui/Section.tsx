@@ -1,6 +1,7 @@
 import ExpandCircleDown from '@mui/icons-material/ExpandCircleDown';
 
 import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
@@ -25,7 +26,7 @@ const Section = ({ children, title }: SectionProps) => {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <Stack direction="column" gap={1}>
+    <Stack direction="column" divider={<Divider />} gap={2}>
       <Stack alignItems="center" direction="row" justifyContent="space-between">
         <Typography color="neutral" variant="h5" textTransform="capitalize">
           {title}
