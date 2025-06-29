@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import { setIsComplete, setIsItemComplete } from '@redux/reducers/CollectionsReducer';
 
 import { useStoreDispatch } from '@hooks';
-import type { Completion, Item, Requirements } from '@types';
+import type { Completion, ItemState, Requirements } from '@types';
 import { WIKI_IMAGES_ERROR } from '@utils/constants';
 import { wikiIcon } from '@utils/icons';
 import { memo, useCallback, useMemo, useState } from 'react';
@@ -24,7 +24,7 @@ import { memo, useCallback, useMemo, useState } from 'react';
 interface CollectionItemProps {
   completion: Completion;
   icon: string;
-  items: Array<Item>;
+  items: Array<ItemState>;
   requirements: Requirements;
   title: string;
 }
@@ -84,11 +84,11 @@ const CollectionItem = ({ completion, icon, items, requirements, title }: Collec
           gap={1}
           sx={{ overflowY: 'scroll', paddingTop: 0, paddingBottom: 0, paddingRight: '8px' }}
         >
-          {items.map(({ isComplete, name }) => (
-            <ListItem component={Paper} key={name} sx={{}}>
+          {items.map(({ icon, isComplete, name }) => (
+            <ListItem component={Paper} key={name}>
               <Stack alignItems="center" direction="row" gap={1} justifyContent="space-between" width="100%">
                 <Stack direction="row" gap={1} minWidth={0}>
-                  <Box component="img" height="1.5rem" width="1.5rem" src={wikiIcon(name)} />
+                  <Box component="img" height="1.5rem" width="1.5rem" src={wikiIcon(icon)} />
                   <Typography
                     color={isComplete ? 'neutral' : 'secondary'}
                     overflow="hidden"

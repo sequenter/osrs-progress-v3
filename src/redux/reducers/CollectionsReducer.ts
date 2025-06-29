@@ -5,7 +5,7 @@ import { COLLECTIONS } from '@utils/constants';
 const initialCollectionsState = COLLECTIONS.reduce(
   (acc, { items, ...rest }) => [
     ...acc,
-    { ...rest, items: items.map((item) => ({ name: item, isComplete: false })), isComplete: false }
+    { ...rest, items: items.map((item) => ({ ...item, isComplete: false })), isComplete: false }
   ],
   [] as CollectionsState
 );

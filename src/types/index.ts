@@ -120,19 +120,23 @@ export type PetsState = Array<PetState>;
 /* COLLECTIONS */
 
 export interface Item {
+  icon: string;
   name: string;
+}
+
+export interface ItemState extends Item {
   isComplete: boolean;
 }
 
 export interface Collection {
   icon: string;
-  items: Array<string>;
+  items: Array<Item>;
   name: string;
   requirements: Requirements;
 }
 
 export interface CollectionState extends Omit<Collection, 'items'> {
-  items: Array<Item>;
+  items: Array<ItemState>;
   isComplete: boolean;
 }
 

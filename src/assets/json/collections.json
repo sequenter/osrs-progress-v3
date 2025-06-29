@@ -1,14 +1,6 @@
 [
   {
     "icon": "Graceful hood (Arceuus)",
-    "items": [
-      "Graceful boots (Arceuus)",
-      "Graceful cape (Arceuus)",
-      "Graceful gloves (Arceuus)",
-      "Graceful hood (Arceuus)",
-      "Graceful legs (Arceuus)",
-      "Graceful top (Arceuus)"
-    ],
     "name": "Arceuus Graceful",
     "requirements": {
       "main": [
@@ -25,11 +17,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Arceuus)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Arceuus)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Arceuus)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Arceuus)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Arceuus)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Arceuus)"
+      }
+    ]
   },
   {
     "icon": "Golden tench",
-    "items": ["Fish sack", "Golden tench", "Pearl barbarian rod", "Pearl fishing rod", "Pearl fly fishing rod"],
     "name": "Aerial Fishing",
     "requirements": {
       "main": [
@@ -46,22 +63,56 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Fish sack",
+        "icon": "Fish sack"
+      },
+      {
+        "name": "Golden tench",
+        "icon": "Golden tench"
+      },
+      {
+        "name": "Pearl fishing rod",
+        "icon": "Pearl fishing rod"
+      },
+      {
+        "name": "Pearl fly fishing rod",
+        "icon": "Pearl fly fishing rod"
+      }
+    ]
+  },
+  {
+    "icon": "Pearl barbarian rod",
+    "name": "Aerial Fishing 2",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 15,
+                  "Fishing": 43,
+                  "Hunter": 35,
+                  "Strength": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "name": "Pearl barbarian rod",
+        "icon": "Pearl barbarian rod"
+      }
+    ]
   },
   {
     "icon": "Fighter hat",
-    "items": [
-      "Fighter hat",
-      "Fighter torso",
-      "Granite body",
-      "Granite helm",
-      "Healer hat",
-      "Penance gloves",
-      "Penance skirt",
-      "Ranger hat",
-      "Runner boots",
-      "Runner hat"
-    ],
     "name": "Barbarian Assault",
     "requirements": {
       "main": [
@@ -73,11 +124,52 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Fighter hat",
+        "icon": "Fighter hat"
+      },
+      {
+        "name": "Fighter torso",
+        "icon": "Fighter torso"
+      },
+      {
+        "name": "Granite body",
+        "icon": "Granite body"
+      },
+      {
+        "name": "Granite helm",
+        "icon": "Granite helm"
+      },
+      {
+        "name": "Healer hat",
+        "icon": "Healer hat"
+      },
+      {
+        "name": "Penance gloves",
+        "icon": "Penance gloves"
+      },
+      {
+        "name": "Penance skirt",
+        "icon": "Penance skirt"
+      },
+      {
+        "name": "Ranger hat",
+        "icon": "Ranger hat"
+      },
+      {
+        "name": "Runner boots",
+        "icon": "Runner boots"
+      },
+      {
+        "name": "Runner hat",
+        "icon": "Runner hat"
+      }
+    ]
   },
   {
     "icon": "Big shark",
-    "items": ["Big bass", "Big shark", "Big swordfish"],
     "name": "Big Fish",
     "requirements": {
       "main": [
@@ -93,20 +185,24 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Big bass",
+        "icon": "Big bass"
+      },
+      {
+        "name": "Big shark",
+        "icon": "Big shark"
+      },
+      {
+        "name": "Big swordfish",
+        "icon": "Big swordfish"
+      }
+    ]
   },
   {
     "icon": "Agility arena ticket",
-    "items": [
-      "Agility arena ticket",
-      "Graceful boots (Agility Arena)",
-      "Graceful cape (Agility Arena)",
-      "Graceful gloves (Agility Arena)",
-      "Graceful hood (Agility Arena)",
-      "Graceful legs (Agility Arena)",
-      "Graceful top (Agility Arena)",
-      "Pirate's hook"
-    ],
     "name": "Brimhaven Agility Arena",
     "requirements": {
       "main": [
@@ -122,19 +218,44 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Agility arena ticket",
+        "icon": "Agility arena ticket"
+      },
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Agility Arena)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Agility Arena)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Agility Arena)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Agility Arena)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Agility Arena)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Agility Arena)"
+      },
+      {
+        "name": "Pirate's hook",
+        "icon": "Pirate's hook"
+      }
+    ]
   },
   {
     "icon": "Imcando hammer",
-    "items": [
-      "Ancient astroscope",
-      "Ancient carcanet",
-      "Ancient globe",
-      "Ancient ledger",
-      "Ancient treatise",
-      "Imcando hammer",
-      "Barronite head"
-    ],
     "name": "Camdozal",
     "requirements": {
       "main": [
@@ -152,11 +273,40 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ancient astroscope",
+        "icon": "Ancient astroscope"
+      },
+      {
+        "name": "Ancient carcanet",
+        "icon": "Ancient carcanet"
+      },
+      {
+        "name": "Ancient globe",
+        "icon": "Ancient globe"
+      },
+      {
+        "name": "Ancient ledger",
+        "icon": "Ancient ledger"
+      },
+      {
+        "name": "Ancient treatise",
+        "icon": "Ancient treatise"
+      },
+      {
+        "name": "Imcando hammer",
+        "icon": "Imcando hammer"
+      },
+      {
+        "name": "Barronite head",
+        "icon": "Barronite head"
+      }
+    ]
   },
   {
     "icon": "Barronite handle",
-    "items": ["Barronite handle"],
     "name": "Camdozal 2",
     "requirements": {
       "main": [
@@ -173,11 +323,16 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Barronite handle",
+        "icon": "Barronite handle"
+      }
+    ]
   },
   {
     "icon": "Barronite guard",
-    "items": ["Barronite guard", "Barronite mace"],
     "name": "Camdozal 3",
     "requirements": {
       "main": [
@@ -190,57 +345,183 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Barronite guard",
+        "icon": "Barronite guard"
+      },
+      {
+        "name": "Barronite mace",
+        "icon": "Barronite mace"
+      }
+    ]
   },
   {
     "icon": "Decorative armour (red platebody)",
-    "items": [
-      "Castlewars cloak (Saradomin)",
-      "Castlewars cloak (Zamorak)",
-      "Castlewars hood (Saradomin)",
-      "Castlewars hood (Zamorak)",
-      "Decorative armour (gold platebody)",
-      "Decorative armour (gold platelegs)",
-      "Decorative armour (gold plateskirt)",
-      "Decorative armour (magic hat)",
-      "Decorative armour (magic legs)",
-      "Decorative armour (magic top)",
-      "Decorative armour (quiver)",
-      "Decorative armour (ranged legs)",
-      "Decorative armour (ranged top)",
-      "Decorative armour (red platebody)",
-      "Decorative armour (red platelegs)",
-      "Decorative armour (red plateskirt)",
-      "Decorative armour (white platebody)",
-      "Decorative armour (white platelegs)",
-      "Decorative armour (white plateskirt)",
-      "Decorative boots (gold)",
-      "Decorative boots (red)",
-      "Decorative boots (white)",
-      "Decorative full helm (gold)",
-      "Decorative full helm (red)",
-      "Decorative full helm (white)",
-      "Decorative helm (gold)",
-      "Decorative helm (red)",
-      "Decorative helm (white)",
-      "Decorative shield (gold)",
-      "Decorative shield (red)",
-      "Decorative shield (white)",
-      "Decorative sword (gold)",
-      "Decorative sword (red)",
-      "Decorative sword (white)",
-      "Guthix halo",
-      "Saradomin banner",
-      "Saradomin halo",
-      "Zamorak banner",
-      "Zamorak halo"
-    ],
     "name": "Castle Wars",
-    "requirements": {}
+    "requirements": {},
+    "items": [
+      {
+        "name": "Castlewars cloak (Saradomin)",
+        "icon": "Castlewars cloak (Saradomin)"
+      },
+      {
+        "name": "Castlewars cloak (Zamorak)",
+        "icon": "Castlewars cloak (Zamorak)"
+      },
+      {
+        "name": "Castlewars hood (Saradomin)",
+        "icon": "Castlewars hood (Saradomin)"
+      },
+      {
+        "name": "Castlewars hood (Zamorak)",
+        "icon": "Castlewars hood (Zamorak)"
+      },
+      {
+        "name": "Decorative armour (gold platebody)",
+        "icon": "Decorative armour (gold platebody)"
+      },
+      {
+        "name": "Decorative armour (gold platelegs)",
+        "icon": "Decorative armour (gold platelegs)"
+      },
+      {
+        "name": "Decorative armour (gold plateskirt)",
+        "icon": "Decorative armour (gold plateskirt)"
+      },
+      {
+        "name": "Decorative armour (magic hat)",
+        "icon": "Decorative armour (magic hat)"
+      },
+      {
+        "name": "Decorative armour (magic legs)",
+        "icon": "Decorative armour (magic legs)"
+      },
+      {
+        "name": "Decorative armour (magic top)",
+        "icon": "Decorative armour (magic top)"
+      },
+      {
+        "name": "Decorative armour (quiver)",
+        "icon": "Decorative armour (quiver)"
+      },
+      {
+        "name": "Decorative armour (ranged legs)",
+        "icon": "Decorative armour (ranged legs)"
+      },
+      {
+        "name": "Decorative armour (ranged top)",
+        "icon": "Decorative armour (ranged top)"
+      },
+      {
+        "name": "Decorative armour (red platebody)",
+        "icon": "Decorative armour (red platebody)"
+      },
+      {
+        "name": "Decorative armour (red platelegs)",
+        "icon": "Decorative armour (red platelegs)"
+      },
+      {
+        "name": "Decorative armour (red plateskirt)",
+        "icon": "Decorative armour (red plateskirt)"
+      },
+      {
+        "name": "Decorative armour (white platebody)",
+        "icon": "Decorative armour (white platebody)"
+      },
+      {
+        "name": "Decorative armour (white platelegs)",
+        "icon": "Decorative armour (white platelegs)"
+      },
+      {
+        "name": "Decorative armour (white plateskirt)",
+        "icon": "Decorative armour (white plateskirt)"
+      },
+      {
+        "name": "Decorative boots (gold)",
+        "icon": "Decorative boots (gold)"
+      },
+      {
+        "name": "Decorative boots (red)",
+        "icon": "Decorative boots (red)"
+      },
+      {
+        "name": "Decorative boots (white)",
+        "icon": "Decorative boots (white)"
+      },
+      {
+        "name": "Decorative full helm (gold)",
+        "icon": "Decorative full helm (gold)"
+      },
+      {
+        "name": "Decorative full helm (red)",
+        "icon": "Decorative full helm (red)"
+      },
+      {
+        "name": "Decorative full helm (white)",
+        "icon": "Decorative full helm (white)"
+      },
+      {
+        "name": "Decorative helm (gold)",
+        "icon": "Decorative helm (gold)"
+      },
+      {
+        "name": "Decorative helm (red)",
+        "icon": "Decorative helm (red)"
+      },
+      {
+        "name": "Decorative helm (white)",
+        "icon": "Decorative helm (white)"
+      },
+      {
+        "name": "Decorative shield (gold)",
+        "icon": "Decorative shield (gold)"
+      },
+      {
+        "name": "Decorative shield (red)",
+        "icon": "Decorative shield (red)"
+      },
+      {
+        "name": "Decorative shield (white)",
+        "icon": "Decorative shield (white)"
+      },
+      {
+        "name": "Decorative sword (gold)",
+        "icon": "Decorative sword (gold)"
+      },
+      {
+        "name": "Decorative sword (red)",
+        "icon": "Decorative sword (red)"
+      },
+      {
+        "name": "Decorative sword (white)",
+        "icon": "Decorative sword (white)"
+      },
+      {
+        "name": "Guthix halo",
+        "icon": "Guthix halo"
+      },
+      {
+        "name": "Saradomin banner",
+        "icon": "Saradomin banner"
+      },
+      {
+        "name": "Saradomin halo",
+        "icon": "Saradomin halo"
+      },
+      {
+        "name": "Zamorak banner",
+        "icon": "Zamorak banner"
+      },
+      {
+        "name": "Zamorak halo",
+        "icon": "Zamorak halo"
+      }
+    ]
   },
   {
     "icon": "Elder chaos hood",
-    "items": ["Elder chaos hood", "Elder chaos robe", "Elder chaos top"],
     "name": "Chaos Druids",
     "requirements": {
       "main": [
@@ -252,30 +533,24 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Elder chaos hood",
+        "icon": "Elder chaos hood"
+      },
+      {
+        "name": "Elder chaos robe",
+        "icon": "Elder chaos robe"
+      },
+      {
+        "name": "Elder chaos top",
+        "icon": "Elder chaos top"
+      }
+    ]
   },
   {
     "icon": "Chompy bird hat (expert dragon archer)",
-    "items": [
-      "Chompy bird hat (bowman)",
-      "Chompy bird hat (bowmaster)",
-      "Chompy bird hat (dragon archer)",
-      "Chompy bird hat (expert dragon archer)",
-      "Chompy bird hat (expert ogre dragon archer)",
-      "Chompy bird hat (expert)",
-      "Chompy bird hat (forester)",
-      "Chompy bird hat (marksman)",
-      "Chompy bird hat (ogre bowman)",
-      "Chompy bird hat (ogre bowmaster)",
-      "Chompy bird hat (ogre dragon archer)",
-      "Chompy bird hat (ogre expert)",
-      "Chompy bird hat (ogre forester)",
-      "Chompy bird hat (ogre marksman)",
-      "Chompy bird hat (ogre woodsman)",
-      "Chompy bird hat (ogre yeoman)",
-      "Chompy bird hat (woodsman)",
-      "Chompy bird hat (yeoman)"
-    ],
     "name": "Chompy Bird Hunting",
     "requirements": {
       "main": [
@@ -293,19 +568,84 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Chompy bird hat (bowman)",
+        "icon": "Chompy bird hat (bowman)"
+      },
+      {
+        "name": "Chompy bird hat (bowmaster)",
+        "icon": "Chompy bird hat (bowmaster)"
+      },
+      {
+        "name": "Chompy bird hat (dragon archer)",
+        "icon": "Chompy bird hat (dragon archer)"
+      },
+      {
+        "name": "Chompy bird hat (expert dragon archer)",
+        "icon": "Chompy bird hat (expert dragon archer)"
+      },
+      {
+        "name": "Chompy bird hat (expert ogre dragon archer)",
+        "icon": "Chompy bird hat (expert ogre dragon archer)"
+      },
+      {
+        "name": "Chompy bird hat (expert)",
+        "icon": "Chompy bird hat (expert)"
+      },
+      {
+        "name": "Chompy bird hat (forester)",
+        "icon": "Chompy bird hat (forester)"
+      },
+      {
+        "name": "Chompy bird hat (marksman)",
+        "icon": "Chompy bird hat (marksman)"
+      },
+      {
+        "name": "Chompy bird hat (ogre bowman)",
+        "icon": "Chompy bird hat (ogre bowman)"
+      },
+      {
+        "name": "Chompy bird hat (ogre bowmaster)",
+        "icon": "Chompy bird hat (ogre bowmaster)"
+      },
+      {
+        "name": "Chompy bird hat (ogre dragon archer)",
+        "icon": "Chompy bird hat (ogre dragon archer)"
+      },
+      {
+        "name": "Chompy bird hat (ogre expert)",
+        "icon": "Chompy bird hat (ogre expert)"
+      },
+      {
+        "name": "Chompy bird hat (ogre forester)",
+        "icon": "Chompy bird hat (ogre forester)"
+      },
+      {
+        "name": "Chompy bird hat (ogre marksman)",
+        "icon": "Chompy bird hat (ogre marksman)"
+      },
+      {
+        "name": "Chompy bird hat (ogre woodsman)",
+        "icon": "Chompy bird hat (ogre woodsman)"
+      },
+      {
+        "name": "Chompy bird hat (ogre yeoman)",
+        "icon": "Chompy bird hat (ogre yeoman)"
+      },
+      {
+        "name": "Chompy bird hat (woodsman)",
+        "icon": "Chompy bird hat (woodsman)"
+      },
+      {
+        "name": "Chompy bird hat (yeoman)",
+        "icon": "Chompy bird hat (yeoman)"
+      }
+    ]
   },
   {
     "icon": "Tea flask",
-    "items": [
-      "Black satchel",
-      "Gold satchel",
-      "Green satchel",
-      "Plain satchel",
-      "Red satchel",
-      "Rune satchel",
-      "Tea flask"
-    ],
     "name": "Creature Creation",
     "requirements": {
       "main": [
@@ -318,20 +658,40 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Black satchel",
+        "icon": "Black satchel"
+      },
+      {
+        "name": "Gold satchel",
+        "icon": "Gold satchel"
+      },
+      {
+        "name": "Green satchel",
+        "icon": "Green satchel"
+      },
+      {
+        "name": "Plain satchel",
+        "icon": "Plain satchel"
+      },
+      {
+        "name": "Red satchel",
+        "icon": "Red satchel"
+      },
+      {
+        "name": "Rune satchel",
+        "icon": "Rune satchel"
+      },
+      {
+        "name": "Tea flask",
+        "icon": "Tea flask"
+      }
+    ]
   },
   {
     "icon": "Dragon defender",
-    "items": [
-      "Adamant defender",
-      "Black defender",
-      "Bronze defender",
-      "Dragon defender",
-      "Iron defender",
-      "Mithril defender",
-      "Rune defender",
-      "Steel defender"
-    ],
     "name": "Cyclopes",
     "requirements": {
       "main": [
@@ -349,11 +709,44 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Adamant defender",
+        "icon": "Adamant defender"
+      },
+      {
+        "name": "Black defender",
+        "icon": "Black defender"
+      },
+      {
+        "name": "Bronze defender",
+        "icon": "Bronze defender"
+      },
+      {
+        "name": "Dragon defender",
+        "icon": "Dragon defender"
+      },
+      {
+        "name": "Iron defender",
+        "icon": "Iron defender"
+      },
+      {
+        "name": "Mithril defender",
+        "icon": "Mithril defender"
+      },
+      {
+        "name": "Rune defender",
+        "icon": "Rune defender"
+      },
+      {
+        "name": "Steel defender",
+        "icon": "Steel defender"
+      }
+    ]
   },
   {
     "icon": "Dark totem base",
-    "items": ["Dark totem base", "Dark totem middle", "Dark totem top"],
     "name": "Dark Totem",
     "requirements": {
       "main": [
@@ -365,11 +758,24 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Dark totem base",
+        "icon": "Dark totem base"
+      },
+      {
+        "name": "Dark totem middle",
+        "icon": "Dark totem middle"
+      },
+      {
+        "name": "Dark totem top",
+        "icon": "Dark totem top"
+      }
+    ]
   },
   {
     "icon": "Angler hat",
-    "items": ["Angler boots", "Angler hat", "Angler top", "Angler waders"],
     "name": "Fishing Trawler",
     "requirements": {
       "main": [
@@ -385,34 +791,28 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Angler boots",
+        "icon": "Angler boots"
+      },
+      {
+        "name": "Angler hat",
+        "icon": "Angler hat"
+      },
+      {
+        "name": "Angler top",
+        "icon": "Angler top"
+      },
+      {
+        "name": "Angler waders",
+        "icon": "Angler waders"
+      }
+    ]
   },
   {
     "icon": "Lumberjack hat",
-    "items": [
-      "Cape pouch",
-      "Clothes pouch blueprint",
-      "Felling axe handle",
-      "Forestry boots",
-      "Forestry hat",
-      "Forestry legs",
-      "Forestry top",
-      "Fox whistle",
-      "Funky shaped log",
-      "Golden pheasant egg",
-      "Log basket",
-      "Log brace",
-      "Lumberjack boots",
-      "Lumberjack hat",
-      "Lumberjack legs",
-      "Lumberjack top",
-      "Petal garland",
-      "Pheasant boots",
-      "Pheasant cape",
-      "Pheasant hat",
-      "Pheasant legs",
-      "Twitcher's gloves"
-    ],
     "name": "Forestry",
     "requirements": {
       "main": [
@@ -428,22 +828,100 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Cape pouch",
+        "icon": "Cape pouch"
+      },
+      {
+        "name": "Clothes pouch blueprint",
+        "icon": "Clothes pouch blueprint"
+      },
+      {
+        "name": "Felling axe handle",
+        "icon": "Felling axe handle"
+      },
+      {
+        "name": "Forestry boots",
+        "icon": "Forestry boots"
+      },
+      {
+        "name": "Forestry hat",
+        "icon": "Forestry hat"
+      },
+      {
+        "name": "Forestry legs",
+        "icon": "Forestry legs"
+      },
+      {
+        "name": "Forestry top",
+        "icon": "Forestry top"
+      },
+      {
+        "name": "Fox whistle",
+        "icon": "Fox whistle"
+      },
+      {
+        "name": "Funky shaped log",
+        "icon": "Funky shaped log"
+      },
+      {
+        "name": "Golden pheasant egg",
+        "icon": "Golden pheasant egg"
+      },
+      {
+        "name": "Log basket",
+        "icon": "Log basket"
+      },
+      {
+        "name": "Log brace",
+        "icon": "Log brace"
+      },
+      {
+        "name": "Lumberjack boots",
+        "icon": "Lumberjack boots"
+      },
+      {
+        "name": "Lumberjack hat",
+        "icon": "Lumberjack hat"
+      },
+      {
+        "name": "Lumberjack legs",
+        "icon": "Lumberjack legs"
+      },
+      {
+        "name": "Lumberjack top",
+        "icon": "Lumberjack top"
+      },
+      {
+        "name": "Petal garland",
+        "icon": "Petal garland"
+      },
+      {
+        "name": "Pheasant boots",
+        "icon": "Pheasant boots"
+      },
+      {
+        "name": "Pheasant cape",
+        "icon": "Pheasant cape"
+      },
+      {
+        "name": "Pheasant hat",
+        "icon": "Pheasant hat"
+      },
+      {
+        "name": "Pheasant legs",
+        "icon": "Pheasant legs"
+      },
+      {
+        "name": "Twitcher's gloves",
+        "icon": "Twitcher's gloves"
+      }
+    ]
   },
   {
     "icon": "Scribbled note",
-    "items": [
-      "Ancient note",
-      "Ancient writings",
-      "Experimental note",
-      "Hastily scrawled note",
-      "Musty smelling note",
-      "Old writing",
-      "Paragraph of text",
-      "Partial note",
-      "Scribbled note",
-      "Short note"
-    ],
     "name": "Fossil Island Notes",
     "requirements": {
       "main": [
@@ -455,21 +933,52 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ancient note",
+        "icon": "Ancient note"
+      },
+      {
+        "name": "Ancient writings",
+        "icon": "Ancient writings"
+      },
+      {
+        "name": "Experimental note",
+        "icon": "Experimental note"
+      },
+      {
+        "name": "Hastily scrawled note",
+        "icon": "Hastily scrawled note"
+      },
+      {
+        "name": "Musty smelling note",
+        "icon": "Musty smelling note"
+      },
+      {
+        "name": "Old writing",
+        "icon": "Old writing"
+      },
+      {
+        "name": "Paragraph of text",
+        "icon": "Paragraph of text"
+      },
+      {
+        "name": "Partial note",
+        "icon": "Partial note"
+      },
+      {
+        "name": "Scribbled note",
+        "icon": "Scribbled note"
+      },
+      {
+        "name": "Short note",
+        "icon": "Short note"
+      }
+    ]
   },
   {
     "icon": "Smiths tunic",
-    "items": [
-      "Colossal blade",
-      "Double ammo mould",
-      "Kovac's grog",
-      "Ore pack",
-      "Smithing catalyst",
-      "Smiths boots",
-      "Smiths gloves",
-      "Smiths trousers",
-      "Smiths tunic"
-    ],
     "name": "Giants' Foundry",
     "requirements": {
       "main": [
@@ -486,11 +995,48 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Colossal blade",
+        "icon": "Colossal blade"
+      },
+      {
+        "name": "Double ammo mould",
+        "icon": "Double ammo mould"
+      },
+      {
+        "name": "Kovac's grog",
+        "icon": "Kovac's grog"
+      },
+      {
+        "name": "Ore pack",
+        "icon": "Ore pack (Giants' Foundry)"
+      },
+      {
+        "name": "Smithing catalyst",
+        "icon": "Smithing catalyst"
+      },
+      {
+        "name": "Smiths boots",
+        "icon": "Smiths boots"
+      },
+      {
+        "name": "Smiths gloves",
+        "icon": "Smiths gloves"
+      },
+      {
+        "name": "Smiths trousers",
+        "icon": "Smiths trousers"
+      },
+      {
+        "name": "Smiths tunic",
+        "icon": "Smiths tunic"
+      }
+    ]
   },
   {
     "icon": "Zenyte shard",
-    "items": ["Ballista limbs", "Ballista spring", "Heavy frame", "Light frame", "Monkey tail", "Zenyte shard"],
     "name": "Glough's Experiments",
     "requirements": {
       "main": [
@@ -503,11 +1049,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ballista limbs",
+        "icon": "Ballista limbs"
+      },
+      {
+        "name": "Ballista spring",
+        "icon": "Ballista spring"
+      },
+      {
+        "name": "Heavy frame",
+        "icon": "Heavy frame"
+      },
+      {
+        "name": "Light frame",
+        "icon": "Light frame"
+      },
+      {
+        "name": "Monkey tail",
+        "icon": "Monkey tail"
+      },
+      {
+        "name": "Zenyte shard",
+        "icon": "Zenyte shard"
+      }
+    ]
   },
   {
     "icon": "Gnome scarf",
-    "items": ["Gnome goggles", "Gnome scarf", "Grand seed pod", "Mint cake"],
     "name": "Gnome Restaurant",
     "requirements": {
       "main": [
@@ -524,16 +1095,28 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Gnome goggles",
+        "icon": "Gnome goggles"
+      },
+      {
+        "name": "Gnome scarf",
+        "icon": "Gnome scarf"
+      },
+      {
+        "name": "Grand seed pod",
+        "icon": "Grand seed pod"
+      },
+      {
+        "name": "Mint cake",
+        "icon": "Mint cake"
+      }
+    ]
   },
   {
     "icon": "Golden prospector helmet",
-    "items": [
-      "Golden prospector boots",
-      "Golden prospector helmet",
-      "Golden prospector jacket",
-      "Golden prospector legs"
-    ],
     "name": "Golden Prospector",
     "requirements": {
       "main": [
@@ -549,18 +1132,28 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Golden prospector boots",
+        "icon": "Golden prospector boots"
+      },
+      {
+        "name": "Golden prospector helmet",
+        "icon": "Golden prospector helmet"
+      },
+      {
+        "name": "Golden prospector jacket",
+        "icon": "Golden prospector jacket"
+      },
+      {
+        "name": "Golden prospector legs",
+        "icon": "Golden prospector legs"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Kourend)",
-    "items": [
-      "Graceful boots (Kourend)",
-      "Graceful cape (Kourend)",
-      "Graceful gloves (Kourend)",
-      "Graceful hood (Kourend)",
-      "Graceful legs (Kourend)",
-      "Graceful top (Kourend)"
-    ],
     "name": "Great Kourend Graceful",
     "requirements": {
       "main": [
@@ -583,28 +1176,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Kourend)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Kourend)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Kourend)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Kourend)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Kourend)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Kourend)"
+      }
+    ]
   },
   {
     "icon": "Hat of the eye",
-    "items": [
-      "Abyssal blue dye",
-      "Abyssal green dye",
-      "Abyssal lantern",
-      "Abyssal needle",
-      "Abyssal pearls",
-      "Abyssal red dye",
-      "Boots of the eye",
-      "Catalytic talisman",
-      "Guardian's eye",
-      "Hat of the eye",
-      "Intricate pouch",
-      "Lost bag",
-      "Ring of the elements",
-      "Robe bottoms of the eye",
-      "Robe top of the eye",
-      "Tarnished locket"
-    ],
     "name": "Guardians of the Rift",
     "requirements": {
       "main": [
@@ -623,18 +1224,76 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Abyssal blue dye",
+        "icon": "Abyssal blue dye"
+      },
+      {
+        "name": "Abyssal green dye",
+        "icon": "Abyssal green dye"
+      },
+      {
+        "name": "Abyssal lantern",
+        "icon": "Abyssal lantern"
+      },
+      {
+        "name": "Abyssal needle",
+        "icon": "Abyssal needle"
+      },
+      {
+        "name": "Abyssal pearls",
+        "icon": "Abyssal pearls 5"
+      },
+      {
+        "name": "Abyssal red dye",
+        "icon": "Abyssal red dye"
+      },
+      {
+        "name": "Boots of the eye",
+        "icon": "Boots of the eye"
+      },
+      {
+        "name": "Catalytic talisman",
+        "icon": "Catalytic talisman"
+      },
+      {
+        "name": "Guardian's eye",
+        "icon": "Guardian's eye"
+      },
+      {
+        "name": "Hat of the eye",
+        "icon": "Hat of the eye"
+      },
+      {
+        "name": "Intricate pouch",
+        "icon": "Intricate pouch"
+      },
+      {
+        "name": "Lost bag",
+        "icon": "Lost bag"
+      },
+      {
+        "name": "Ring of the elements",
+        "icon": "Ring of the elements"
+      },
+      {
+        "name": "Robe bottoms of the eye",
+        "icon": "Robe bottoms of the eye"
+      },
+      {
+        "name": "Robe top of the eye",
+        "icon": "Robe top of the eye"
+      },
+      {
+        "name": "Tarnished locket",
+        "icon": "Tarnished locket"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Hallowed)",
-    "items": [
-      "Graceful boots (Hallowed)",
-      "Graceful cape (Hallowed)",
-      "Graceful gloves (Hallowed)",
-      "Graceful hood (Hallowed)",
-      "Graceful legs (Hallowed)",
-      "Graceful top (Hallowed)"
-    ],
     "name": "Hallowed Graceful",
     "requirements": {
       "main": [
@@ -651,28 +1310,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Hallowed)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Hallowed)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Hallowed)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Hallowed)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Hallowed)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Hallowed)"
+      }
+    ]
   },
   {
     "icon": "Ring of endurance",
-    "items": [
-      "Dark acorn",
-      "Dark dye",
-      "Hallowed focus",
-      "Hallowed grapple",
-      "Hallowed hammer",
-      "Hallowed mark",
-      "Hallowed ring",
-      "Hallowed symbol",
-      "Hallowed token",
-      "Mysterious page 1",
-      "Mysterious page 2",
-      "Mysterious page 3",
-      "Mysterious page 4",
-      "Mysterious page 5",
-      "Ring of endurance",
-      "Strange old lockpick"
-    ],
     "name": "Hallowed Sepulchre",
     "requirements": {
       "main": [
@@ -689,18 +1356,76 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Dark acorn",
+        "icon": "Dark acorn"
+      },
+      {
+        "name": "Dark dye",
+        "icon": "Dark dye"
+      },
+      {
+        "name": "Hallowed focus",
+        "icon": "Hallowed focus"
+      },
+      {
+        "name": "Hallowed grapple",
+        "icon": "Hallowed grapple"
+      },
+      {
+        "name": "Hallowed hammer",
+        "icon": "Hallowed hammer"
+      },
+      {
+        "name": "Hallowed mark",
+        "icon": "Hallowed mark 25"
+      },
+      {
+        "name": "Hallowed ring",
+        "icon": "Hallowed ring"
+      },
+      {
+        "name": "Hallowed symbol",
+        "icon": "Hallowed symbol"
+      },
+      {
+        "name": "Hallowed token",
+        "icon": "Hallowed token"
+      },
+      {
+        "name": "Mysterious page 1",
+        "icon": "Mysterious page"
+      },
+      {
+        "name": "Mysterious page 2",
+        "icon": "Mysterious page"
+      },
+      {
+        "name": "Mysterious page 3",
+        "icon": "Mysterious page"
+      },
+      {
+        "name": "Mysterious page 4",
+        "icon": "Mysterious page"
+      },
+      {
+        "name": "Mysterious page 5",
+        "icon": "Mysterious page"
+      },
+      {
+        "name": "Ring of endurance",
+        "icon": "Ring of endurance"
+      },
+      {
+        "name": "Strange old lockpick",
+        "icon": "Strange old lockpick"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Hosidius)",
-    "items": [
-      "Graceful boots (Hosidius)",
-      "Graceful cape (Hosidius)",
-      "Graceful gloves (Hosidius)",
-      "Graceful hood (Hosidius)",
-      "Graceful legs (Hosidius)",
-      "Graceful top (Hosidius)"
-    ],
     "name": "Hosidius Graceful",
     "requirements": {
       "main": [
@@ -717,18 +1442,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Hosidius)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Hosidius)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Hosidius)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Hosidius)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Hosidius)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Hosidius)"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Lovakengj)",
-    "items": [
-      "Graceful boots (Lovakengj)",
-      "Graceful cape (Lovakengj)",
-      "Graceful gloves (Lovakengj)",
-      "Graceful hood (Lovakengj)",
-      "Graceful legs (Lovakengj)",
-      "Graceful top (Lovakengj)"
-    ],
     "name": "Lovakengj Graceful",
     "requirements": {
       "main": [
@@ -745,23 +1488,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Lovakengj)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Lovakengj)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Lovakengj)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Lovakengj)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Lovakengj)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Lovakengj)"
+      }
+    ]
   },
   {
     "icon": "Infinity hat",
-    "items": [
-      "Apprentice wand",
-      "Beginner wand",
-      "Bones to peaches",
-      "Infinity boots",
-      "Infinity bottoms",
-      "Infinity gloves",
-      "Infinity hat",
-      "Infinity top",
-      "Mage's book",
-      "Master wand",
-      "Teacher wand"
-    ],
     "name": "Mage Training Arena",
     "requirements": {
       "main": [
@@ -777,20 +1533,56 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Apprentice wand",
+        "icon": "Apprentice wand"
+      },
+      {
+        "name": "Beginner wand",
+        "icon": "Beginner wand"
+      },
+      {
+        "name": "Bones to peaches",
+        "icon": "Bones to peaches (tablet)"
+      },
+      {
+        "name": "Infinity boots",
+        "icon": "Infinity boots"
+      },
+      {
+        "name": "Infinity bottoms",
+        "icon": "Infinity bottoms"
+      },
+      {
+        "name": "Infinity gloves",
+        "icon": "Infinity gloves"
+      },
+      {
+        "name": "Infinity hat",
+        "icon": "Infinity hat"
+      },
+      {
+        "name": "Infinity top",
+        "icon": "Infinity top"
+      },
+      {
+        "name": "Mage's book",
+        "icon": "Mage's book"
+      },
+      {
+        "name": "Master wand",
+        "icon": "Master wand"
+      },
+      {
+        "name": "Teacher wand",
+        "icon": "Teacher wand"
+      }
+    ]
   },
   {
     "icon": "Carpenter's shirt",
-    "items": [
-      "Amy's saw",
-      "Carpenter's boots",
-      "Carpenter's helmet",
-      "Carpenter's shirt",
-      "Carpenter's trousers",
-      "Hosidius blueprints",
-      "Plank sack",
-      "Supply crate"
-    ],
     "name": "Mahogany Homes",
     "requirements": {
       "main": [
@@ -806,11 +1598,44 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Amy's saw",
+        "icon": "Amy's saw"
+      },
+      {
+        "name": "Carpenter's boots",
+        "icon": "Carpenter's boots"
+      },
+      {
+        "name": "Carpenter's helmet",
+        "icon": "Carpenter's helmet"
+      },
+      {
+        "name": "Carpenter's shirt",
+        "icon": "Carpenter's shirt"
+      },
+      {
+        "name": "Carpenter's trousers",
+        "icon": "Carpenter's trousers"
+      },
+      {
+        "name": "Hosidius blueprints",
+        "icon": "Hosidius blueprints"
+      },
+      {
+        "name": "Plank sack",
+        "icon": "Plank sack"
+      },
+      {
+        "name": "Supply crate",
+        "icon": "Supply crate"
+      }
+    ]
   },
   {
     "icon": "Expert mining gloves",
-    "items": ["Expert mining gloves", "Mining gloves", "Superior mining gloves"],
     "name": "Mining Gloves",
     "requirements": {
       "main": [
@@ -826,11 +1651,24 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Expert mining gloves",
+        "icon": "Expert mining gloves"
+      },
+      {
+        "name": "Mining gloves",
+        "icon": "Mining gloves"
+      },
+      {
+        "name": "Superior mining gloves",
+        "icon": "Superior mining gloves"
+      }
+    ]
   },
   {
     "icon": "Karamjan monkey (item)",
-    "items": ["Karamjan monkey", "Kruk jr", "Maniacal monkey", "Princely monkey", "Skeleton monkey", "Zombie monkey"],
     "name": "Monkey Backpacks",
     "requirements": {
       "main": [
@@ -847,11 +1685,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Karamjan monkey",
+        "icon": "Karamjan monkey (item)"
+      },
+      {
+        "name": "Kruk jr",
+        "icon": "Kruk jr"
+      },
+      {
+        "name": "Maniacal monkey",
+        "icon": "Maniacal monkey"
+      },
+      {
+        "name": "Princely monkey",
+        "icon": "Princely monkey"
+      },
+      {
+        "name": "Skeleton monkey",
+        "icon": "Skeleton monkey (item)"
+      },
+      {
+        "name": "Zombie monkey",
+        "icon": "Zombie monkey (item)"
+      }
+    ]
   },
   {
     "icon": "Prospector helmet",
-    "items": ["Coal bag", "Gem bag", "Prospector boots", "Prospector helmet", "Prospector jacket", "Prospector legs"],
     "name": "Motherlode Mine",
     "requirements": {
       "main": [
@@ -867,38 +1730,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Coal bag",
+        "icon": "Coal bag"
+      },
+      {
+        "name": "Gem bag",
+        "icon": "Gem bag"
+      },
+      {
+        "name": "Prospector boots",
+        "icon": "Prospector boots"
+      },
+      {
+        "name": "Prospector helmet",
+        "icon": "Prospector helmet"
+      },
+      {
+        "name": "Prospector jacket",
+        "icon": "Prospector jacket"
+      },
+      {
+        "name": "Prospector legs",
+        "icon": "Prospector legs"
+      }
+    ]
   },
   {
     "icon": "Ancient page",
-    "items": [
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page",
-      "Ancient page"
-    ],
     "name": "My Notes",
     "requirements": {
       "main": [
@@ -918,22 +1779,116 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ancient page (1)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (2)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (3)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (4)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (5)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (6)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (7)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (8)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (9)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (10)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (11)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (12)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (13)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (14)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (15)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (16)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (17)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (18)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (19)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (20)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (21)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (22)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (23)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (24)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (25)",
+        "icon": "Ancient page"
+      },
+      {
+        "name": "Ancient page (26)",
+        "icon": "Ancient page"
+      }
+    ]
   },
   {
     "icon": "Void ranger helm",
-    "items": [
-      "Elite void robe",
-      "Elite void top",
-      "Void knight gloves",
-      "Void knight mace",
-      "Void knight robe",
-      "Void knight top",
-      "Void mage helm",
-      "Void melee helm",
-      "Void ranger helm",
-      "Void seal(8)"
-    ],
     "name": "Pest Control",
     "requirements": {
       "main": [
@@ -946,18 +1901,52 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Elite void robe",
+        "icon": "Elite void robe"
+      },
+      {
+        "name": "Elite void top",
+        "icon": "Elite void top"
+      },
+      {
+        "name": "Void knight gloves",
+        "icon": "Void knight gloves"
+      },
+      {
+        "name": "Void knight mace",
+        "icon": "Void knight mace"
+      },
+      {
+        "name": "Void knight robe",
+        "icon": "Void knight robe"
+      },
+      {
+        "name": "Void knight top",
+        "icon": "Void knight top"
+      },
+      {
+        "name": "Void mage helm",
+        "icon": "Void mage helm"
+      },
+      {
+        "name": "Void melee helm",
+        "icon": "Void melee helm"
+      },
+      {
+        "name": "Void ranger helm",
+        "icon": "Void ranger helm"
+      },
+      {
+        "name": "Void seal",
+        "icon": "Void seal"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Piscarilius)",
-    "items": [
-      "Graceful boots (Piscarilius)",
-      "Graceful cape (Piscarilius)",
-      "Graceful gloves (Piscarilius)",
-      "Graceful hood (Piscarilius)",
-      "Graceful legs (Piscarilius)",
-      "Graceful top (Piscarilius)"
-    ],
     "name": "Piscarilius Graceful",
     "requirements": {
       "main": [
@@ -974,11 +1963,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Piscarilius)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Piscarilius)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Piscarilius)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Piscarilius)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Piscarilius)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Piscarilius)"
+      }
+    ]
   },
   {
     "icon": "Rogue mask",
-    "items": ["Rogue boots", "Rogue gloves", "Rogue mask", "Rogue top", "Rogue trousers"],
     "name": "Rogues' Den",
     "requirements": {
       "main": [
@@ -994,19 +2008,32 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Rogue boots",
+        "icon": "Rogue boots"
+      },
+      {
+        "name": "Rogue gloves",
+        "icon": "Rogue gloves"
+      },
+      {
+        "name": "Rogue mask",
+        "icon": "Rogue mask"
+      },
+      {
+        "name": "Rogue top",
+        "icon": "Rogue top"
+      },
+      {
+        "name": "Rogue trousers",
+        "icon": "Rogue trousers"
+      }
+    ]
   },
   {
     "icon": "Graceful hood",
-    "items": [
-      "Graceful boots",
-      "Graceful cape",
-      "Graceful gloves",
-      "Graceful hood",
-      "Graceful legs",
-      "Graceful top",
-      "Mark of grace"
-    ],
     "name": "Rooftop Agility",
     "requirements": {
       "main": [
@@ -1022,26 +2049,40 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top"
+      },
+      {
+        "name": "Mark of grace",
+        "icon": "Mark of grace"
+      }
+    ]
   },
   {
     "icon": "Zealot's helm",
-    "items": [
-      "Amulet of the damned",
-      "Black locks",
-      "Bloody notes",
-      "Bronze locks",
-      "Fine cloth",
-      "Flamtaer bag",
-      "Gold locks",
-      "Silver locks",
-      "Steel locks",
-      "Tree wizards' journal",
-      "Zealot's boots",
-      "Zealot's helm",
-      "Zealot's robe bottom",
-      "Zealot's robe top"
-    ],
     "name": "Shades of Mort'ton",
     "requirements": {
       "main": [
@@ -1060,37 +2101,68 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Amulet of the damned",
+        "icon": "Amulet of the damned"
+      },
+      {
+        "name": "Black locks",
+        "icon": "Black locks"
+      },
+      {
+        "name": "Bloody notes",
+        "icon": "Bloody notes"
+      },
+      {
+        "name": "Bronze locks",
+        "icon": "Bronze locks"
+      },
+      {
+        "name": "Fine cloth",
+        "icon": "Fine cloth"
+      },
+      {
+        "name": "Flamtaer bag",
+        "icon": "Flamtaer bag"
+      },
+      {
+        "name": "Gold locks",
+        "icon": "Gold locks"
+      },
+      {
+        "name": "Silver locks",
+        "icon": "Silver locks"
+      },
+      {
+        "name": "Steel locks",
+        "icon": "Steel locks"
+      },
+      {
+        "name": "Tree wizards' journal",
+        "icon": "Tree wizards' journal"
+      },
+      {
+        "name": "Zealot's boots",
+        "icon": "Zealot's boots"
+      },
+      {
+        "name": "Zealot's helm",
+        "icon": "Zealot's helm"
+      },
+      {
+        "name": "Zealot's robe bottom",
+        "icon": "Zealot's robe bottom"
+      },
+      {
+        "name": "Zealot's robe top",
+        "icon": "Zealot's robe top"
+      }
+    ]
   },
   {
     "icon": "Shayzien helm (5)",
-    "items": [
-      "Shayzien body (5)",
-      "Shayzien boots (1)",
-      "Shayzien boots (2)",
-      "Shayzien boots (3)",
-      "Shayzien boots (4)",
-      "Shayzien boots (5)",
-      "Shayzien gloves (1)",
-      "Shayzien gloves (2)",
-      "Shayzien gloves (3)",
-      "Shayzien gloves (4)",
-      "Shayzien gloves (5)",
-      "Shayzien greaves (1)",
-      "Shayzien greaves (2)",
-      "Shayzien greaves (3)",
-      "Shayzien greaves (4)",
-      "Shayzien greaves (5)",
-      "Shayzien helm (1)",
-      "Shayzien helm (2)",
-      "Shayzien helm (3)",
-      "Shayzien helm (4)",
-      "Shayzien helm (5)",
-      "Shayzien platebody (1)",
-      "Shayzien platebody (2)",
-      "Shayzien platebody (3)",
-      "Shayzien platebody (4)"
-    ],
     "name": "Shayzien Armour",
     "requirements": {
       "main": [
@@ -1124,18 +2196,112 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Shayzien body (5)",
+        "icon": "Shayzien body (5)"
+      },
+      {
+        "name": "Shayzien boots (1)",
+        "icon": "Shayzien boots (1)"
+      },
+      {
+        "name": "Shayzien boots (2)",
+        "icon": "Shayzien boots (2)"
+      },
+      {
+        "name": "Shayzien boots (3)",
+        "icon": "Shayzien boots (3)"
+      },
+      {
+        "name": "Shayzien boots (4)",
+        "icon": "Shayzien boots (4)"
+      },
+      {
+        "name": "Shayzien boots (5)",
+        "icon": "Shayzien boots (5)"
+      },
+      {
+        "name": "Shayzien gloves (1)",
+        "icon": "Shayzien gloves (1)"
+      },
+      {
+        "name": "Shayzien gloves (2)",
+        "icon": "Shayzien gloves (2)"
+      },
+      {
+        "name": "Shayzien gloves (3)",
+        "icon": "Shayzien gloves (3)"
+      },
+      {
+        "name": "Shayzien gloves (4)",
+        "icon": "Shayzien gloves (4)"
+      },
+      {
+        "name": "Shayzien gloves (5)",
+        "icon": "Shayzien gloves (5)"
+      },
+      {
+        "name": "Shayzien greaves (1)",
+        "icon": "Shayzien greaves (1)"
+      },
+      {
+        "name": "Shayzien greaves (2)",
+        "icon": "Shayzien greaves (2)"
+      },
+      {
+        "name": "Shayzien greaves (3)",
+        "icon": "Shayzien greaves (3)"
+      },
+      {
+        "name": "Shayzien greaves (4)",
+        "icon": "Shayzien greaves (4)"
+      },
+      {
+        "name": "Shayzien greaves (5)",
+        "icon": "Shayzien greaves (5)"
+      },
+      {
+        "name": "Shayzien helm (1)",
+        "icon": "Shayzien helm (1)"
+      },
+      {
+        "name": "Shayzien helm (2)",
+        "icon": "Shayzien helm (2)"
+      },
+      {
+        "name": "Shayzien helm (3)",
+        "icon": "Shayzien helm (3)"
+      },
+      {
+        "name": "Shayzien helm (4)",
+        "icon": "Shayzien helm (4)"
+      },
+      {
+        "name": "Shayzien helm (5)",
+        "icon": "Shayzien helm (5)"
+      },
+      {
+        "name": "Shayzien platebody (1)",
+        "icon": "Shayzien platebody (1)"
+      },
+      {
+        "name": "Shayzien platebody (2)",
+        "icon": "Shayzien platebody (2)"
+      },
+      {
+        "name": "Shayzien platebody (3)",
+        "icon": "Shayzien platebody (3)"
+      },
+      {
+        "name": "Shayzien platebody (4)",
+        "icon": "Shayzien platebody (4)"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Shayzien)",
-    "items": [
-      "Graceful boots (Shayzien)",
-      "Graceful cape (Shayzien)",
-      "Graceful gloves (Shayzien)",
-      "Graceful hood (Shayzien)",
-      "Graceful legs (Shayzien)",
-      "Graceful top (Shayzien)"
-    ],
     "name": "Shayzien Graceful",
     "requirements": {
       "main": [
@@ -1152,11 +2318,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Graceful boots",
+        "icon": "Graceful boots (Shayzien)"
+      },
+      {
+        "name": "Graceful cape",
+        "icon": "Graceful cape (Shayzien)"
+      },
+      {
+        "name": "Graceful gloves",
+        "icon": "Graceful gloves (Shayzien)"
+      },
+      {
+        "name": "Graceful hood",
+        "icon": "Graceful hood (Shayzien)"
+      },
+      {
+        "name": "Graceful legs",
+        "icon": "Graceful legs (Shayzien)"
+      },
+      {
+        "name": "Graceful top",
+        "icon": "Graceful top (Shayzien)"
+      }
+    ]
   },
   {
     "icon": "Star fragment",
-    "items": ["Celestial ring (uncharged)", "Star fragment"],
     "name": "Shooting Stars",
     "requirements": {
       "main": [
@@ -1172,11 +2363,20 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Celestial ring (uncharged)",
+        "icon": "Celestial ring (uncharged)"
+      },
+      {
+        "name": "Star fragment",
+        "icon": "Star fragment"
+      }
+    ]
   },
   {
     "icon": "Right skull half",
-    "items": ["Bottom of sceptre", "Left skull half", "Right skull half", "Top of sceptre"],
     "name": "Skull Sceptre",
     "requirements": {
       "main": [
@@ -1188,11 +2388,28 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Bottom of sceptre",
+        "icon": "Bottom of sceptre"
+      },
+      {
+        "name": "Left skull half",
+        "icon": "Left skull half"
+      },
+      {
+        "name": "Right skull half",
+        "icon": "Right skull half"
+      },
+      {
+        "name": "Top of sceptre",
+        "icon": "Top of sceptre"
+      }
+    ]
   },
   {
     "icon": "Smiths gloves (i)",
-    "items": ["Ice gloves", "Smith gloves (i)"],
     "name": "Smiths Gloves",
     "requirements": {
       "main": [
@@ -1218,18 +2435,20 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ice gloves",
+        "icon": "Ice gloves"
+      },
+      {
+        "name": "Smiths gloves (i)",
+        "icon": "Smiths gloves (i)"
+      }
+    ]
   },
   {
     "icon": "Graceful hood (Adventurer)",
-    "items": [
-      "Adventurer's boots (t3)",
-      "Adventurer's cape",
-      "Adventurer's hood (t3)",
-      "Adventurer's top (t3)",
-      "Adventurer's trousers (t3)",
-      "Adventurer's vambraces"
-    ],
     "name": "Speedrunning Graceful",
     "requirements": {
       "main": [
@@ -1245,11 +2464,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Adventurer's boots (t3)",
+        "icon": "Adventurer's boots (t3)"
+      },
+      {
+        "name": "Adventurer's cape",
+        "icon": "Adventurer's cape"
+      },
+      {
+        "name": "Adventurer's hood (t3)",
+        "icon": "Adventurer's hood (t3)"
+      },
+      {
+        "name": "Adventurer's top (t3)",
+        "icon": "Adventurer's top (t3)"
+      },
+      {
+        "name": "Adventurer's trousers (t3)",
+        "icon": "Adventurer's trousers (t3)"
+      },
+      {
+        "name": "Adventurer's vambraces",
+        "icon": "Adventurer's vambraces"
+      }
+    ]
   },
   {
     "icon": "Xeric's talisman (inert)",
-    "items": ["Xeric's talisman (inert)"],
     "name": "Talisman",
     "requirements": {
       "main": [
@@ -1268,23 +2512,16 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Xeric's talisman (inert)",
+        "icon": "Xeric's talisman (inert)"
+      }
+    ]
   },
   {
     "icon": "Spirit angler headband",
-    "items": [
-      "Big harpoonfish",
-      "Dragon harpoon",
-      "Fish barrel",
-      "Soaked page",
-      "Spirit angler boots",
-      "Spirit angler headband",
-      "Spirit angler top",
-      "Spirit angler waders",
-      "Spirit flakes",
-      "Tackle box",
-      "Tome of water (empty)"
-    ],
     "name": "Tempoross",
     "requirements": {
       "main": [
@@ -1300,18 +2537,56 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Big harpoonfish",
+        "icon": "Big harpoonfish"
+      },
+      {
+        "name": "Dragon harpoon",
+        "icon": "Dragon harpoon"
+      },
+      {
+        "name": "Fish barrel",
+        "icon": "Fish barrel"
+      },
+      {
+        "name": "Soaked page",
+        "icon": "Soaked page"
+      },
+      {
+        "name": "Spirit angler boots",
+        "icon": "Spirit angler boots"
+      },
+      {
+        "name": "Spirit angler headband",
+        "icon": "Spirit angler headband"
+      },
+      {
+        "name": "Spirit angler top",
+        "icon": "Spirit angler top"
+      },
+      {
+        "name": "Spirit angler waders",
+        "icon": "Spirit angler waders"
+      },
+      {
+        "name": "Spirit flakes",
+        "icon": "Spirit flakes 9"
+      },
+      {
+        "name": "Tackle box",
+        "icon": "Tackle box"
+      },
+      {
+        "name": "Tome of water",
+        "icon": "Tome of water (empty)"
+      }
+    ]
   },
   {
     "icon": "Farmer's strawhat",
-    "items": [
-      "Farmer's boots",
-      "Farmer's boro trousers",
-      "Farmer's jacket",
-      "Farmer's strawhat",
-      "Gricoller's can",
-      "Seed box"
-    ],
     "name": "Tithe Farm",
     "requirements": {
       "main": [
@@ -1327,11 +2602,36 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Farmer's boots",
+        "icon": "Farmer's boots"
+      },
+      {
+        "name": "Farmer's boro trousers",
+        "icon": "Farmer's boro trousers"
+      },
+      {
+        "name": "Farmer's jacket",
+        "icon": "Farmer's jacket"
+      },
+      {
+        "name": "Farmer's strawhat",
+        "icon": "Farmer's strawhat"
+      },
+      {
+        "name": "Gricoller's can",
+        "icon": "Gricoller's can"
+      },
+      {
+        "name": "Seed box",
+        "icon": "Seed box"
+      }
+    ]
   },
   {
     "icon": "Herb sack",
-    "items": ["Herb sack"],
     "name": "Tithe Farm 2",
     "requirements": {
       "main": [
@@ -1357,42 +2657,16 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Herb sack",
+        "icon": "Herb sack"
+      }
+    ]
   },
   {
     "icon": "Blue tricorn hat",
-    "items": [
-      "Black naval shirt",
-      "Black navy slacks",
-      "Black tricorn hat",
-      "Blue naval shirt",
-      "Blue navy slacks",
-      "Blue tricorn hat",
-      "Bronze fist flag",
-      "Brown naval shirt",
-      "Brown navy slacks",
-      "Brown tricorn hat",
-      "Cutthroat flag",
-      "Gilded smile flag",
-      "Green naval shirt",
-      "Green navy slacks",
-      "Green tricorn hat",
-      "Grey naval shirt",
-      "Grey navy slacks",
-      "Grey tricorn hat",
-      "Lucky shot flag",
-      "Phasmatys flag",
-      "Purple naval shirt",
-      "Purple navy slacks",
-      "Purple tricorn hat",
-      "Red naval shirt",
-      "Red navy slacks",
-      "Red tricorn hat",
-      "Rum",
-      "Rum",
-      "The stuff",
-      "Treasure flag"
-    ],
     "name": "Trouble Brewing",
     "requirements": {
       "main": [
@@ -1409,11 +2683,132 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Black naval shirt",
+        "icon": "Black naval shirt"
+      },
+      {
+        "name": "Black navy slacks",
+        "icon": "Black navy slacks"
+      },
+      {
+        "name": "Black tricorn hat",
+        "icon": "Black tricorn hat"
+      },
+      {
+        "name": "Blue naval shirt",
+        "icon": "Blue naval shirt"
+      },
+      {
+        "name": "Blue navy slacks",
+        "icon": "Blue navy slacks"
+      },
+      {
+        "name": "Blue tricorn hat",
+        "icon": "Blue tricorn hat"
+      },
+      {
+        "name": "Bronze fist flag",
+        "icon": "Bronze fist flag"
+      },
+      {
+        "name": "Brown naval shirt",
+        "icon": "Brown naval shirt"
+      },
+      {
+        "name": "Brown navy slacks",
+        "icon": "Brown navy slacks"
+      },
+      {
+        "name": "Brown tricorn hat",
+        "icon": "Brown tricorn hat"
+      },
+      {
+        "name": "Cutthroat flag",
+        "icon": "Cutthroat flag"
+      },
+      {
+        "name": "Gilded smile flag",
+        "icon": "Gilded smile flag"
+      },
+      {
+        "name": "Green naval shirt",
+        "icon": "Green naval shirt"
+      },
+      {
+        "name": "Green navy slacks",
+        "icon": "Green navy slacks"
+      },
+      {
+        "name": "Green tricorn hat",
+        "icon": "Green tricorn hat"
+      },
+      {
+        "name": "Grey naval shirt",
+        "icon": "Grey naval shirt"
+      },
+      {
+        "name": "Grey navy slacks",
+        "icon": "Grey navy slacks"
+      },
+      {
+        "name": "Grey tricorn hat",
+        "icon": "Grey tricorn hat"
+      },
+      {
+        "name": "Lucky shot flag",
+        "icon": "Lucky shot flag"
+      },
+      {
+        "name": "Phasmatys flag",
+        "icon": "Phasmatys flag"
+      },
+      {
+        "name": "Purple naval shirt",
+        "icon": "Purple naval shirt"
+      },
+      {
+        "name": "Purple navy slacks",
+        "icon": "Purple navy slacks"
+      },
+      {
+        "name": "Purple tricorn hat",
+        "icon": "Purple tricorn hat"
+      },
+      {
+        "name": "Red naval shirt",
+        "icon": "Red naval shirt"
+      },
+      {
+        "name": "Red navy slacks",
+        "icon": "Red navy slacks"
+      },
+      {
+        "name": "Red tricorn hat",
+        "icon": "Red tricorn hat"
+      },
+      {
+        "name": "Rum (red)",
+        "icon": "Rum (red)"
+      },
+      {
+        "name": "Rum (blue)",
+        "icon": "Rum (blue)"
+      },
+      {
+        "name": "The stuff",
+        "icon": "The stuff"
+      },
+      {
+        "name": "Treasure flag",
+        "icon": "Treasure flag"
+      }
+    ]
   },
   {
     "icon": "Dragon pickaxe (broken)",
-    "items": ["Ash covered tome", "Dragon pickaxe (broken)", "Large water container", "Volcanic mine teleport"],
     "name": "Volcanic Mine",
     "requirements": {
       "main": [
@@ -1430,21 +2825,28 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Ash covered tome",
+        "icon": "Ash covered tome"
+      },
+      {
+        "name": "Dragon pickaxe (broken)",
+        "icon": "Dragon pickaxe (broken)"
+      },
+      {
+        "name": "Large water container",
+        "icon": "Large water container"
+      },
+      {
+        "name": "Volcanic mine teleport",
+        "icon": "Volcanic mine teleport"
+      }
+    ]
   },
   {
     "icon": "Pyromancer hood",
-    "items": [
-      "Bruma torch",
-      "Burnt page",
-      "Dragon axe",
-      "Pyromancer boots",
-      "Pyromancer garb",
-      "Pyromancer hood",
-      "Pyromancer robe",
-      "Tome of fire (empty)",
-      "Warm gloves"
-    ],
     "name": "Wintertodt",
     "requirements": {
       "main": [
@@ -1461,6 +2863,44 @@
           ]
         }
       ]
-    }
+    },
+    "items": [
+      {
+        "name": "Bruma torch",
+        "icon": "Bruma torch"
+      },
+      {
+        "name": "Burnt page",
+        "icon": "Burnt page"
+      },
+      {
+        "name": "Dragon axe",
+        "icon": "Dragon axe"
+      },
+      {
+        "name": "Pyromancer boots",
+        "icon": "Pyromancer boots"
+      },
+      {
+        "name": "Pyromancer garb",
+        "icon": "Pyromancer garb"
+      },
+      {
+        "name": "Pyromancer hood",
+        "icon": "Pyromancer hood"
+      },
+      {
+        "name": "Pyromancer robe",
+        "icon": "Pyromancer robe"
+      },
+      {
+        "name": "Tome of fire",
+        "icon": "Tome of fire (empty)"
+      },
+      {
+        "name": "Warm gloves",
+        "icon": "Warm gloves"
+      }
+    ]
   }
 ]
