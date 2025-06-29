@@ -2,6 +2,7 @@ import AchievementsReducer from '@redux/reducers/AchievementsReducer';
 import CollectionsReducer from '@redux/reducers/CollectionsReducer';
 import PetsReducer from '@redux/reducers/PetsReducer';
 import QuestsReducer from '@redux/reducers/QuestsReducer';
+import SettingsReducer from '@redux/reducers/SettingsReducer';
 import SkillsReducer from '@redux/reducers/SkillsReducer';
 import { configureStore } from '@reduxjs/toolkit';
 
@@ -15,6 +16,7 @@ export const store = configureStore({
     collections: CollectionsReducer,
     pets: PetsReducer,
     quests: QuestsReducer,
+    settings: SettingsReducer,
     skills: SkillsReducer
   },
   preloadedState

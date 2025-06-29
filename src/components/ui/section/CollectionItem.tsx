@@ -62,8 +62,6 @@ const CollectionItem = ({ completion, icon, items, requirements, title }: Collec
     setIconSrc(WIKI_IMAGES_ERROR);
   }, []);
 
-  console.log('RENDER', title);
-
   return (
     <Grid component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
       <Stack component={Paper} divider={<Divider />} direction="column" elevation={2} flexGrow={1} gap={1} padding={2}>

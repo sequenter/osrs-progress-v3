@@ -28,6 +28,7 @@ interface Actions {
   lockedQuests: QuestsState;
   combat: boolean;
   combatLevel: number;
+  isIronman: boolean;
   QP: number;
 }
 
@@ -49,6 +50,7 @@ export const ActionsContext = createContext<Actions>({
   lockedQuests: [],
   combat: false,
   combatLevel: 3,
+  isIronman: false,
   QP: 0
 });
 

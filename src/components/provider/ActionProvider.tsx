@@ -6,6 +6,7 @@ import { getCombat, getSkills } from '@redux/reducers/SkillsReducer';
 
 import { useStoreSelector } from '@hooks';
 import { ActionsContext } from '@hooks/useActions';
+import { getIsIronman } from '@redux/reducers/SettingsReducer';
 import type { PartialSkillState } from '@types';
 import { bifilter, isRequirementsFulfilled, isRewardsFulfilled, trifilter, trifilterRequirements } from '@utils/common';
 import { useMemo, type ReactNode } from 'react';
@@ -18,6 +19,7 @@ const ActionsProvider = ({ children }: ActionsProps) => {
   const { combat, combatLevel } = useStoreSelector((state) => getCombat(state));
   const achievements = useStoreSelector((state) => getAchievements(state));
   const collections = useStoreSelector((state) => getCollections(state));
+  const isIronman = useStoreSelector((state) => getIsIronman(state));
   const pets = useStoreSelector((state) => getPets(state));
   const QP = useStoreSelector((state) => getQP(state));
   const quests = useStoreSelector((state) => getQuests(state));
@@ -71,11 +73,11 @@ const ActionsProvider = ({ children }: ActionsProps) => {
       return bifilter(
         incompleteQuests,
         ({ requirements, rewards }) =>
-          isRequirementsFulfilled(combat, combatLevel, QP, completedQuests, unlockedSkills, requirements) &&
+          isRequirementsFulfilled(combat, combatLevel, isIronman, QP, completedQuests, unlockedSkills, requirements) &&
           isRewardsFulfilled(rewards, unlockedSkills)
       );
     },
-    [combat, combatLevel, QP, completedQuests, incompleteQuests, unlockedSkills]
+    [combat, combatLevel, isIronman, QP, completedQuests, incompleteQuests, unlockedSkills]
   );
 
   const [completedAchievements, unlockedAchievements, lockedAchievements] = useMemo(
@@ -85,10 +87,19 @@ const ActionsProvider = ({ children }: ActionsProps) => {
      */
     () =>
       trifilter(achievements, ({ isComplete, requirements }) =>
-        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+        trifilterRequirements(
+          isComplete,
+          combat,
+          combatLevel,
+          isIronman,
+          QP,
+          completedQuests,
+          unlockedSkills,
+          requirements
+        )
       ),
 
-    [achievements, combat, combatLevel, QP, completedQuests, unlockedSkills]
+    [achievements, combat, combatLevel, isIronman, QP, completedQuests, unlockedSkills]
   );
 
   const [completedCollections, unlockedCollections, lockedCollections] = useMemo(
@@ -98,10 +109,19 @@ const ActionsProvider = ({ children }: ActionsProps) => {
      */
     () =>
       trifilter(collections, ({ isComplete, requirements }) =>
-        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+        trifilterRequirements(
+          isComplete,
+          combat,
+          combatLevel,
+          isIronman,
+          QP,
+          completedQuests,
+          unlockedSkills,
+          requirements
+        )
       ),
 
-    [collections, combat, combatLevel, QP, completedQuests, unlockedSkills]
+    [collections, combat, combatLevel, isIronman, QP, completedQuests, unlockedSkills]
   );
 
   const [completedPets, unlockedPets, lockedPets] = useMemo(
@@ -111,9 +131,18 @@ const ActionsProvider = ({ children }: ActionsProps) => {
      */
     () =>
       trifilter(pets, ({ isComplete, requirements }) =>
-        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+        trifilterRequirements(
+          isComplete,
+          combat,
+          combatLevel,
+          isIronman,
+          QP,
+          completedQuests,
+          unlockedSkills,
+          requirements
+        )
       ),
-    [pets, combat, combatLevel, QP, completedQuests, unlockedSkills]
+    [pets, combat, combatLevel, isIronman, QP, completedQuests, unlockedSkills]
   );
 
   return (
@@ -136,6 +165,7 @@ const ActionsProvider = ({ children }: ActionsProps) => {
         lockedQuests,
         combat,
         combatLevel,
+        isIronman,
         QP
       }}
     >

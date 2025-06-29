@@ -41,6 +41,7 @@ import { WIKI_IMAGES_URL } from '@utils/constants';
 export { default as AchievementsIcon } from '@assets/icons/achievements.png';
 export { default as CollectionsIcon } from '@assets/icons/collections.png';
 export { default as CombatIcon } from '@assets/icons/combat.png';
+export { default as IronmanIcon } from '@assets/icons/ironman.png';
 export { default as PetsIcon } from '@assets/icons/pets.png';
 export { default as ProgressIcon } from '@assets/icons/progress.png';
 export { default as QuestsIcon } from '@assets/icons/quests.png';

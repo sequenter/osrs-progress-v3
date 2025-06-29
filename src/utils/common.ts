@@ -106,13 +106,14 @@ const isSkillsRequirementFulfilled = (unlockedSkills: PartialSkillState, require
 export const isRequirementsFulfilled = (
   combat: boolean,
   combatLevel: number,
+  isIronman: boolean,
   QP: number,
   completedQuests: QuestsState,
   unlockedSkills: PartialSkillState,
   requirements: Requirements
 ): boolean => {
   if (Object.keys(requirements).length) {
-    const requirement = [...(requirements?.main ?? [])];
+    const requirement = [...(requirements?.main ?? []), ...(isIronman ? (requirements?.ironman ?? []) : [])];
 
     return requirement.every(({ required }) =>
       required.some(
@@ -153,6 +154,7 @@ export const trifilterRequirements = (
   isComplete: boolean,
   combat: boolean,
   combatLevel: number,
+  isIronman: boolean,
   QP: number,
   completedQuests: QuestsState,
   unlockedSkills: PartialSkillState,
@@ -164,7 +166,7 @@ export const trifilterRequirements = (
   }
 
   // Unlocked
-  if (isRequirementsFulfilled(combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)) {
+  if (isRequirementsFulfilled(combat, combatLevel, isIronman, QP, completedQuests, unlockedSkills, requirements)) {
     return 1;
   }
 
