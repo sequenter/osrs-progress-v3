@@ -1,7 +1,5 @@
 import { ThemeProvider } from '@emotion/react';
 
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 
@@ -28,20 +26,21 @@ createRoot(document.getElementById('root')!).render(
             <Header />
 
             <Stack component={Paper} direction="row" flexGrow={1} square>
-              <Box
+              <Stack
                 component="aside"
                 width="24rem"
                 flexShrink={0}
                 sx={{ position: 'sticky', height: 'calc(100vh - 64px)', top: '64px' }}
+                zIndex={1100}
               >
                 <SummaryPanel />
-              </Box>
+              </Stack>
 
-              <Container component="main" maxWidth={false}>
+              <Stack component="main" flexGrow={1}>
                 <TabHandler />
 
                 <SkillPanel />
-              </Container>
+              </Stack>
             </Stack>
           </Stack>
         </ThemeProvider>

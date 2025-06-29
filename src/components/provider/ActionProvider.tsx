@@ -1,4 +1,5 @@
 import { getAchievements } from '@redux/reducers/AchievementsReducer';
+import { getCollections } from '@redux/reducers/CollectionsReducer';
 import { getPets } from '@redux/reducers/PetsReducer';
 import { getQP, getQuests } from '@redux/reducers/QuestsReducer';
 import { getCombat, getSkills } from '@redux/reducers/SkillsReducer';
@@ -16,6 +17,7 @@ interface ActionsProps {
 const ActionsProvider = ({ children }: ActionsProps) => {
   const { combat, combatLevel } = useStoreSelector((state) => getCombat(state));
   const achievements = useStoreSelector((state) => getAchievements(state));
+  const collections = useStoreSelector((state) => getCollections(state));
   const pets = useStoreSelector((state) => getPets(state));
   const QP = useStoreSelector((state) => getQP(state));
   const quests = useStoreSelector((state) => getQuests(state));
@@ -52,8 +54,6 @@ const ActionsProvider = ({ children }: ActionsProps) => {
   const [incompleteQuests, completedQuests] = useMemo(
     /**
      * Get complete, and incomplete quests.
-     * Complete quests: quests marked complete
-     * Incomplete quests: all other non complete quests
      * @returns An array containing incomplete, and complete quests
      */
     () => {
@@ -65,8 +65,6 @@ const ActionsProvider = ({ children }: ActionsProps) => {
   const [lockedQuests, unlockedQuests] = useMemo(
     /**
      * Get unlocked, and locked quests.
-     * Unlocked quests: quests that have their requirements criteria met, and have their reward skills unlocked
-     * Locked quests: quests that do not have their requirements criteria met
      * @returns An array containing locked, and unlocked quests
      */
     () => {
@@ -83,9 +81,6 @@ const ActionsProvider = ({ children }: ActionsProps) => {
   const [completedAchievements, unlockedAchievements, lockedAchievements] = useMemo(
     /**
      * Get completed, unlocked, and locked achievements.
-     * Completed achievements: achievements marked complete
-     * Unlocked achievements: achievements that have their requirements criteria met
-     * Locked achievements: achievements that do not have their requirements criteria met
      * @returns An array containing completed, unlocked, and locked achievements
      */
     () =>
@@ -96,12 +91,22 @@ const ActionsProvider = ({ children }: ActionsProps) => {
     [achievements, combat, combatLevel, QP, completedQuests, unlockedSkills]
   );
 
+  const [completedCollections, unlockedCollections, lockedCollections] = useMemo(
+    /**
+     * Get completed, unlocked, and locked collections.
+     * @returns An array containing completed, unlocked, and locked collections
+     */
+    () =>
+      trifilter(collections, ({ isComplete, requirements }) =>
+        trifilterRequirements(isComplete, combat, combatLevel, QP, completedQuests, unlockedSkills, requirements)
+      ),
+
+    [collections, combat, combatLevel, QP, completedQuests, unlockedSkills]
+  );
+
   const [completedPets, unlockedPets, lockedPets] = useMemo(
     /**
      * Get completed, unlocked, and locked pets.
-     * Completed pets: pets marked complete
-     * Unlocked pets: pets that have their requirements criteria met
-     * Locked pets: pets that do not have their requirements criteria met
      * @returns An array containing completed, unlocked, and locked pets
      */
     () =>
@@ -120,6 +125,9 @@ const ActionsProvider = ({ children }: ActionsProps) => {
         completedAchievements,
         unlockedAchievements,
         lockedAchievements,
+        completedCollections,
+        unlockedCollections,
+        lockedCollections,
         completedPets,
         unlockedPets,
         lockedPets,

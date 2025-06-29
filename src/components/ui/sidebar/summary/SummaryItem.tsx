@@ -24,17 +24,21 @@ interface SummaryItemProps {
  */
 const SummaryItem = ({ adornment, complete, summary, total }: SummaryItemProps) => {
   return (
-    <Stack direction="column" component={Paper} elevation={4} gap={2} padding={2}>
+    <Stack direction="column" component={Paper} elevation={4} flexGrow={1} gap={2} padding={2}>
       <Stack alignItems="center" direction="row" justifyContent="space-between">
-        <Typography color="neutral" variant="h5" textTransform="capitalize">
-          {summary}
-        </Typography>
-
-        {adornment && (
-          <Typography color="neutral" variant="h6">
-            {adornment}
+        <Stack direction="row" gap={2}>
+          <Typography color="neutral" variant="h5" textTransform="capitalize">
+            {summary}
           </Typography>
-        )}
+
+          {adornment && (
+            <Typography color="neutral" variant="h6">
+              {adornment}
+            </Typography>
+          )}
+        </Stack>
+
+        <Typography color="neutral" variant="h6">{`${((complete / total) * 100).toFixed(2)}%`}</Typography>
       </Stack>
 
       <LinearProgress

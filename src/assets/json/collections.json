@@ -1,0 +1,1466 @@
+[
+  {
+    "icon": "Graceful hood (Arceuus)",
+    "items": [
+      "Graceful boots (Arceuus)",
+      "Graceful cape (Arceuus)",
+      "Graceful gloves (Arceuus)",
+      "Graceful hood (Arceuus)",
+      "Graceful legs (Arceuus)",
+      "Graceful top (Arceuus)"
+    ],
+    "name": "Arceuus Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["The Ascent of Arceuus"],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Golden tench",
+    "items": ["Fish sack", "Golden tench", "Pearl barbarian rod", "Pearl fishing rod", "Pearl fly fishing rod"],
+    "name": "Aerial Fishing",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 43,
+                  "Hunter": 35
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Fighter hat",
+    "items": [
+      "Fighter hat",
+      "Fighter torso",
+      "Granite body",
+      "Granite helm",
+      "Healer hat",
+      "Penance gloves",
+      "Penance skirt",
+      "Ranger hat",
+      "Runner boots",
+      "Runner hat"
+    ],
+    "name": "Barbarian Assault",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Big shark",
+    "items": ["Big bass", "Big shark", "Big swordfish"],
+    "name": "Big Fish",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 46
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Agility arena ticket",
+    "items": [
+      "Agility arena ticket",
+      "Graceful boots (Agility Arena)",
+      "Graceful cape (Agility Arena)",
+      "Graceful gloves (Agility Arena)",
+      "Graceful hood (Agility Arena)",
+      "Graceful legs (Agility Arena)",
+      "Graceful top (Agility Arena)",
+      "Pirate's hook"
+    ],
+    "name": "Brimhaven Agility Arena",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Imcando hammer",
+    "items": [
+      "Ancient astroscope",
+      "Ancient carcanet",
+      "Ancient globe",
+      "Ancient ledger",
+      "Ancient treatise",
+      "Imcando hammer",
+      "Barronite head"
+    ],
+    "name": "Camdozal",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Below Ice Mountain"],
+              "skills": {
+                "all": {
+                  "Smithing": 14,
+                  "Mining": 14
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Barronite handle",
+    "items": ["Barronite handle"],
+    "name": "Camdozal 2",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Below Ice Mountain"],
+              "skills": {
+                "all": {
+                  "Fishing": 7
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Barronite guard",
+    "items": ["Barronite guard", "Barronite mace"],
+    "name": "Camdozal 3",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Below Ice Mountain"],
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Decorative armour (red platebody)",
+    "items": [
+      "Castlewars cloak (Saradomin)",
+      "Castlewars cloak (Zamorak)",
+      "Castlewars hood (Saradomin)",
+      "Castlewars hood (Zamorak)",
+      "Decorative armour (gold platebody)",
+      "Decorative armour (gold platelegs)",
+      "Decorative armour (gold plateskirt)",
+      "Decorative armour (magic hat)",
+      "Decorative armour (magic legs)",
+      "Decorative armour (magic top)",
+      "Decorative armour (quiver)",
+      "Decorative armour (ranged legs)",
+      "Decorative armour (ranged top)",
+      "Decorative armour (red platebody)",
+      "Decorative armour (red platelegs)",
+      "Decorative armour (red plateskirt)",
+      "Decorative armour (white platebody)",
+      "Decorative armour (white platelegs)",
+      "Decorative armour (white plateskirt)",
+      "Decorative boots (gold)",
+      "Decorative boots (red)",
+      "Decorative boots (white)",
+      "Decorative full helm (gold)",
+      "Decorative full helm (red)",
+      "Decorative full helm (white)",
+      "Decorative helm (gold)",
+      "Decorative helm (red)",
+      "Decorative helm (white)",
+      "Decorative shield (gold)",
+      "Decorative shield (red)",
+      "Decorative shield (white)",
+      "Decorative sword (gold)",
+      "Decorative sword (red)",
+      "Decorative sword (white)",
+      "Guthix halo",
+      "Saradomin banner",
+      "Saradomin halo",
+      "Zamorak banner",
+      "Zamorak halo"
+    ],
+    "name": "Castle Wars",
+    "requirements": {}
+  },
+  {
+    "icon": "Elder chaos hood",
+    "items": ["Elder chaos hood", "Elder chaos robe", "Elder chaos top"],
+    "name": "Chaos Druids",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Chompy bird hat (expert dragon archer)",
+    "items": [
+      "Chompy bird hat (bowman)",
+      "Chompy bird hat (bowmaster)",
+      "Chompy bird hat (dragon archer)",
+      "Chompy bird hat (expert dragon archer)",
+      "Chompy bird hat (expert ogre dragon archer)",
+      "Chompy bird hat (expert)",
+      "Chompy bird hat (forester)",
+      "Chompy bird hat (marksman)",
+      "Chompy bird hat (ogre bowman)",
+      "Chompy bird hat (ogre bowmaster)",
+      "Chompy bird hat (ogre dragon archer)",
+      "Chompy bird hat (ogre expert)",
+      "Chompy bird hat (ogre forester)",
+      "Chompy bird hat (ogre marksman)",
+      "Chompy bird hat (ogre woodsman)",
+      "Chompy bird hat (ogre yeoman)",
+      "Chompy bird hat (woodsman)",
+      "Chompy bird hat (yeoman)"
+    ],
+    "name": "Chompy Bird Hunting",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Big Chompy Bird Hunting"],
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Ranged": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Tea flask",
+    "items": [
+      "Black satchel",
+      "Gold satchel",
+      "Green satchel",
+      "Plain satchel",
+      "Red satchel",
+      "Rune satchel",
+      "Tea flask"
+    ],
+    "name": "Creature Creation",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Tower of Life"],
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Dragon defender",
+    "items": [
+      "Adamant defender",
+      "Black defender",
+      "Bronze defender",
+      "Dragon defender",
+      "Iron defender",
+      "Mithril defender",
+      "Rune defender",
+      "Steel defender"
+    ],
+    "name": "Cyclopes",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Attack": 65,
+                  "Strength": 65
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Dark totem base",
+    "items": ["Dark totem base", "Dark totem middle", "Dark totem top"],
+    "name": "Dark Totem",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Angler hat",
+    "items": ["Angler boots", "Angler hat", "Angler top", "Angler waders"],
+    "name": "Fishing Trawler",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Lumberjack hat",
+    "items": [
+      "Cape pouch",
+      "Clothes pouch blueprint",
+      "Felling axe handle",
+      "Forestry boots",
+      "Forestry hat",
+      "Forestry legs",
+      "Forestry top",
+      "Fox whistle",
+      "Funky shaped log",
+      "Golden pheasant egg",
+      "Log basket",
+      "Log brace",
+      "Lumberjack boots",
+      "Lumberjack hat",
+      "Lumberjack legs",
+      "Lumberjack top",
+      "Petal garland",
+      "Pheasant boots",
+      "Pheasant cape",
+      "Pheasant hat",
+      "Pheasant legs",
+      "Twitcher's gloves"
+    ],
+    "name": "Forestry",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Woodcutting": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Scribbled note",
+    "items": [
+      "Ancient note",
+      "Ancient writings",
+      "Experimental note",
+      "Hastily scrawled note",
+      "Musty smelling note",
+      "Old writing",
+      "Paragraph of text",
+      "Partial note",
+      "Scribbled note",
+      "Short note"
+    ],
+    "name": "Fossil Island Notes",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Bone Voyage"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Smiths tunic",
+    "items": [
+      "Colossal blade",
+      "Double ammo mould",
+      "Kovac's grog",
+      "Ore pack",
+      "Smithing catalyst",
+      "Smiths boots",
+      "Smiths gloves",
+      "Smiths trousers",
+      "Smiths tunic"
+    ],
+    "name": "Giants' Foundry",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Sleeping Giants"],
+              "skills": {
+                "all": {
+                  "Smithing": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Zenyte shard",
+    "items": ["Ballista limbs", "Ballista spring", "Heavy frame", "Light frame", "Monkey tail", "Zenyte shard"],
+    "name": "Glough's Experiments",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Monkey Madness II"],
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Gnome scarf",
+    "items": ["Gnome goggles", "Gnome scarf", "Grand seed pod", "Mint cake"],
+    "name": "Gnome Restaurant",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["The Grand Tree"],
+              "skills": {
+                "all": {
+                  "Cooking": 42
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Golden prospector helmet",
+    "items": [
+      "Golden prospector boots",
+      "Golden prospector helmet",
+      "Golden prospector jacket",
+      "Golden prospector legs"
+    ],
+    "name": "Golden Prospector",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Mining": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Kourend)",
+    "items": [
+      "Graceful boots (Kourend)",
+      "Graceful cape (Kourend)",
+      "Graceful gloves (Kourend)",
+      "Graceful hood (Kourend)",
+      "Graceful legs (Kourend)",
+      "Graceful top (Kourend)"
+    ],
+    "name": "Great Kourend Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": [
+                "The Queen of Thieves",
+                "The Depths of Despair",
+                "The Ascent of Arceuus",
+                "The Forsaken Tower",
+                "Tale of the Righteous"
+              ],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Hat of the eye",
+    "items": [
+      "Abyssal blue dye",
+      "Abyssal green dye",
+      "Abyssal lantern",
+      "Abyssal needle",
+      "Abyssal pearls",
+      "Abyssal red dye",
+      "Boots of the eye",
+      "Catalytic talisman",
+      "Guardian's eye",
+      "Hat of the eye",
+      "Intricate pouch",
+      "Lost bag",
+      "Ring of the elements",
+      "Robe bottoms of the eye",
+      "Robe top of the eye",
+      "Tarnished locket"
+    ],
+    "name": "Guardians of the Rift",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Temple of the Eye"],
+              "skills": {
+                "all": {
+                  "Runecraft": 27,
+                  "Mining": 1,
+                  "Crafting": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Hallowed)",
+    "items": [
+      "Graceful boots (Hallowed)",
+      "Graceful cape (Hallowed)",
+      "Graceful gloves (Hallowed)",
+      "Graceful hood (Hallowed)",
+      "Graceful legs (Hallowed)",
+      "Graceful top (Hallowed)"
+    ],
+    "name": "Hallowed Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Sins of the Father"],
+              "skills": {
+                "all": {
+                  "Agility": 52
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Ring of endurance",
+    "items": [
+      "Dark acorn",
+      "Dark dye",
+      "Hallowed focus",
+      "Hallowed grapple",
+      "Hallowed hammer",
+      "Hallowed mark",
+      "Hallowed ring",
+      "Hallowed symbol",
+      "Hallowed token",
+      "Mysterious page 1",
+      "Mysterious page 2",
+      "Mysterious page 3",
+      "Mysterious page 4",
+      "Mysterious page 5",
+      "Ring of endurance",
+      "Strange old lockpick"
+    ],
+    "name": "Hallowed Sepulchre",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Sins of the Father"],
+              "skills": {
+                "all": {
+                  "Agility": 52
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Hosidius)",
+    "items": [
+      "Graceful boots (Hosidius)",
+      "Graceful cape (Hosidius)",
+      "Graceful gloves (Hosidius)",
+      "Graceful hood (Hosidius)",
+      "Graceful legs (Hosidius)",
+      "Graceful top (Hosidius)"
+    ],
+    "name": "Hosidius Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["The Depths of Despair"],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Lovakengj)",
+    "items": [
+      "Graceful boots (Lovakengj)",
+      "Graceful cape (Lovakengj)",
+      "Graceful gloves (Lovakengj)",
+      "Graceful hood (Lovakengj)",
+      "Graceful legs (Lovakengj)",
+      "Graceful top (Lovakengj)"
+    ],
+    "name": "Lovakengj Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["The Forsaken Tower"],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Infinity hat",
+    "items": [
+      "Apprentice wand",
+      "Beginner wand",
+      "Bones to peaches",
+      "Infinity boots",
+      "Infinity bottoms",
+      "Infinity gloves",
+      "Infinity hat",
+      "Infinity top",
+      "Mage's book",
+      "Master wand",
+      "Teacher wand"
+    ],
+    "name": "Mage Training Arena",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Magic": 33
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Carpenter's shirt",
+    "items": [
+      "Amy's saw",
+      "Carpenter's boots",
+      "Carpenter's helmet",
+      "Carpenter's shirt",
+      "Carpenter's trousers",
+      "Hosidius blueprints",
+      "Plank sack",
+      "Supply crate"
+    ],
+    "name": "Mahogany Homes",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Construction": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Expert mining gloves",
+    "items": ["Expert mining gloves", "Mining gloves", "Superior mining gloves"],
+    "name": "Mining Gloves",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Mining": 60
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Karamjan monkey (item)",
+    "items": ["Karamjan monkey", "Kruk jr", "Maniacal monkey", "Princely monkey", "Skeleton monkey", "Zombie monkey"],
+    "name": "Monkey Backpacks",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Monkey Madness II"],
+              "skills": {
+                "all": {
+                  "Agility": 48
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Prospector helmet",
+    "items": ["Coal bag", "Gem bag", "Prospector boots", "Prospector helmet", "Prospector jacket", "Prospector legs"],
+    "name": "Motherlode Mine",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Mining": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Ancient page",
+    "items": [
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page",
+      "Ancient page"
+    ],
+    "name": "My Notes",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 55,
+                  "Agility": 15,
+                  "Strength": 35,
+                  "Firemaking": 35,
+                  "Crafting": 11
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Void ranger helm",
+    "items": [
+      "Elite void robe",
+      "Elite void top",
+      "Void knight gloves",
+      "Void knight mace",
+      "Void knight robe",
+      "Void knight top",
+      "Void mage helm",
+      "Void melee helm",
+      "Void ranger helm",
+      "Void seal(8)"
+    ],
+    "name": "Pest Control",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combatLevel": 40,
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Piscarilius)",
+    "items": [
+      "Graceful boots (Piscarilius)",
+      "Graceful cape (Piscarilius)",
+      "Graceful gloves (Piscarilius)",
+      "Graceful hood (Piscarilius)",
+      "Graceful legs (Piscarilius)",
+      "Graceful top (Piscarilius)"
+    ],
+    "name": "Piscarilius Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["The Queen of Thieves"],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Rogue mask",
+    "items": ["Rogue boots", "Rogue gloves", "Rogue mask", "Rogue top", "Rogue trousers"],
+    "name": "Rogues' Den",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Thieving": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood",
+    "items": [
+      "Graceful boots",
+      "Graceful cape",
+      "Graceful gloves",
+      "Graceful hood",
+      "Graceful legs",
+      "Graceful top",
+      "Mark of grace"
+    ],
+    "name": "Rooftop Agility",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Zealot's helm",
+    "items": [
+      "Amulet of the damned",
+      "Black locks",
+      "Bloody notes",
+      "Bronze locks",
+      "Fine cloth",
+      "Flamtaer bag",
+      "Gold locks",
+      "Silver locks",
+      "Steel locks",
+      "Tree wizards' journal",
+      "Zealot's boots",
+      "Zealot's helm",
+      "Zealot's robe bottom",
+      "Zealot's robe top"
+    ],
+    "name": "Shades of Mort'ton",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Shades of Mort'ton"],
+              "skills": {
+                "all": {
+                  "Thieving": 50,
+                  "Firemaking": 95
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Shayzien helm (5)",
+    "items": [
+      "Shayzien body (5)",
+      "Shayzien boots (1)",
+      "Shayzien boots (2)",
+      "Shayzien boots (3)",
+      "Shayzien boots (4)",
+      "Shayzien boots (5)",
+      "Shayzien gloves (1)",
+      "Shayzien gloves (2)",
+      "Shayzien gloves (3)",
+      "Shayzien gloves (4)",
+      "Shayzien gloves (5)",
+      "Shayzien greaves (1)",
+      "Shayzien greaves (2)",
+      "Shayzien greaves (3)",
+      "Shayzien greaves (4)",
+      "Shayzien greaves (5)",
+      "Shayzien helm (1)",
+      "Shayzien helm (2)",
+      "Shayzien helm (3)",
+      "Shayzien helm (4)",
+      "Shayzien helm (5)",
+      "Shayzien platebody (1)",
+      "Shayzien platebody (2)",
+      "Shayzien platebody (3)",
+      "Shayzien platebody (4)"
+    ],
+    "name": "Shayzien Armour",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Smithing": 93,
+                  "Mining": 65
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Obtain some redwood logs",
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Woodcutting": 90
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Shayzien)",
+    "items": [
+      "Graceful boots (Shayzien)",
+      "Graceful cape (Shayzien)",
+      "Graceful gloves (Shayzien)",
+      "Graceful hood (Shayzien)",
+      "Graceful legs (Shayzien)",
+      "Graceful top (Shayzien)"
+    ],
+    "name": "Shayzien Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Tale of the Righteous"],
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Star fragment",
+    "items": ["Celestial ring (uncharged)", "Star fragment"],
+    "name": "Shooting Stars",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Mining": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Right skull half",
+    "items": ["Bottom of sceptre", "Left skull half", "Right skull half", "Top of sceptre"],
+    "name": "Skull Sceptre",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Smiths gloves (i)",
+    "items": ["Ice gloves", "Smith gloves (i)"],
+    "name": "Smiths Gloves",
+    "requirements": {
+      "main": [
+        {
+          "description": "Obtain Ice gloves",
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        },
+        {
+          "description": "Obtain Smiths gloves",
+          "required": [
+            {
+              "quests": ["Sleeping Giants"],
+              "skills": {
+                "all": {
+                  "Smithing": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Graceful hood (Adventurer)",
+    "items": [
+      "Adventurer's boots (t3)",
+      "Adventurer's cape",
+      "Adventurer's hood (t3)",
+      "Adventurer's top (t3)",
+      "Adventurer's trousers (t3)",
+      "Adventurer's vambraces"
+    ],
+    "name": "Speedrunning Graceful",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Xeric's talisman (inert)",
+    "items": ["Xeric's talisman (inert)"],
+    "name": "Talisman",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Thieving": 64
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Spirit angler headband",
+    "items": [
+      "Big harpoonfish",
+      "Dragon harpoon",
+      "Fish barrel",
+      "Soaked page",
+      "Spirit angler boots",
+      "Spirit angler headband",
+      "Spirit angler top",
+      "Spirit angler waders",
+      "Spirit flakes",
+      "Tackle box",
+      "Tome of water (empty)"
+    ],
+    "name": "Tempoross",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Fishing": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Farmer's strawhat",
+    "items": [
+      "Farmer's boots",
+      "Farmer's boro trousers",
+      "Farmer's jacket",
+      "Farmer's strawhat",
+      "Gricoller's can",
+      "Seed box"
+    ],
+    "name": "Tithe Farm",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Farming": 34
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Herb sack",
+    "items": ["Herb sack"],
+    "name": "Tithe Farm 2",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Farming": 34,
+                  "Herblore": 58
+                }
+              }
+            },
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Slayer": 1,
+                  "Herblore": 58
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Blue tricorn hat",
+    "items": [
+      "Black naval shirt",
+      "Black navy slacks",
+      "Black tricorn hat",
+      "Blue naval shirt",
+      "Blue navy slacks",
+      "Blue tricorn hat",
+      "Bronze fist flag",
+      "Brown naval shirt",
+      "Brown navy slacks",
+      "Brown tricorn hat",
+      "Cutthroat flag",
+      "Gilded smile flag",
+      "Green naval shirt",
+      "Green navy slacks",
+      "Green tricorn hat",
+      "Grey naval shirt",
+      "Grey navy slacks",
+      "Grey tricorn hat",
+      "Lucky shot flag",
+      "Phasmatys flag",
+      "Purple naval shirt",
+      "Purple navy slacks",
+      "Purple tricorn hat",
+      "Red naval shirt",
+      "Red navy slacks",
+      "Red tricorn hat",
+      "Rum",
+      "Rum",
+      "The stuff",
+      "Treasure flag"
+    ],
+    "name": "Trouble Brewing",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Cabin Fever"],
+              "skills": {
+                "all": {
+                  "Cooking": 40
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Dragon pickaxe (broken)",
+    "items": ["Ash covered tome", "Dragon pickaxe (broken)", "Large water container", "Volcanic mine teleport"],
+    "name": "Volcanic Mine",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Bone Voyage"],
+              "skills": {
+                "all": {
+                  "Mining": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Pyromancer hood",
+    "items": [
+      "Bruma torch",
+      "Burnt page",
+      "Dragon axe",
+      "Pyromancer boots",
+      "Pyromancer garb",
+      "Pyromancer hood",
+      "Pyromancer robe",
+      "Tome of fire (empty)",
+      "Warm gloves"
+    ],
+    "name": "Wintertodt",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Woodcutting": 1,
+                  "Firemaking": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

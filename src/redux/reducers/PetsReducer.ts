@@ -1,8 +1,8 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { PetState } from '@types';
+import type { PetsState } from '@types';
 import { PETS } from '@utils/constants';
 
-const initialPetsState = PETS.reduce((acc, pet) => [...acc, { ...pet, isComplete: false }], [] as PetState);
+const initialPetsState = PETS.reduce((acc, pet) => [...acc, { ...pet, isComplete: false }], [] as PetsState);
 
 const initialState = {
   detail: initialPetsState

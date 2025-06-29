@@ -1,4 +1,5 @@
 import AchievementsReducer from '@redux/reducers/AchievementsReducer';
+import CollectionsReducer from '@redux/reducers/CollectionsReducer';
 import PetsReducer from '@redux/reducers/PetsReducer';
 import QuestsReducer from '@redux/reducers/QuestsReducer';
 import SkillsReducer from '@redux/reducers/SkillsReducer';
@@ -11,6 +12,7 @@ const preloadedState = (getItem('store') as object) ?? undefined;
 export const store = configureStore({
   reducer: {
     achievements: AchievementsReducer,
+    collections: CollectionsReducer,
     pets: PetsReducer,
     quests: QuestsReducer,
     skills: SkillsReducer

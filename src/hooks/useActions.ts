@@ -1,21 +1,31 @@
 import { initialSkillsState } from '@redux/reducers/SkillsReducer';
 
-import type { AchievementState, PartialSkillState, PetState, QuestState, SkillState } from '@types';
+import type {
+  AchievementsState,
+  CollectionsState,
+  PartialSkillState,
+  PetsState,
+  QuestsState,
+  SkillState
+} from '@types';
 import { createContext, useContext } from 'react';
 
 interface Actions {
   skills: SkillState;
   completedSkills: PartialSkillState;
   unlockedSkills: PartialSkillState;
-  completedAchievements: AchievementState;
-  unlockedAchievements: AchievementState;
-  lockedAchievements: AchievementState;
-  completedPets: PetState;
-  unlockedPets: PetState;
-  lockedPets: PetState;
-  completedQuests: QuestState;
-  unlockedQuests: QuestState;
-  lockedQuests: QuestState;
+  completedAchievements: AchievementsState;
+  unlockedAchievements: AchievementsState;
+  lockedAchievements: AchievementsState;
+  completedCollections: CollectionsState;
+  unlockedCollections: CollectionsState;
+  lockedCollections: CollectionsState;
+  completedPets: PetsState;
+  unlockedPets: PetsState;
+  lockedPets: PetsState;
+  completedQuests: QuestsState;
+  unlockedQuests: QuestsState;
+  lockedQuests: QuestsState;
   combat: boolean;
   combatLevel: number;
   QP: number;
@@ -28,6 +38,9 @@ export const ActionsContext = createContext<Actions>({
   completedAchievements: [],
   unlockedAchievements: [],
   lockedAchievements: [],
+  completedCollections: [],
+  unlockedCollections: [],
+  lockedCollections: [],
   completedPets: [],
   unlockedPets: [],
   lockedPets: [],

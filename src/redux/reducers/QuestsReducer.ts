@@ -1,8 +1,8 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { QuestState } from '@types';
+import type { QuestsState } from '@types';
 import { QUESTS } from '@utils/constants';
 
-const initialQuestsState = QUESTS.reduce((acc, quest) => [...acc, { ...quest, isComplete: false }], [] as QuestState);
+const initialQuestsState = QUESTS.reduce((acc, quest) => [...acc, { ...quest, isComplete: false }], [] as QuestsState);
 
 const initialState = {
   detail: initialQuestsState,

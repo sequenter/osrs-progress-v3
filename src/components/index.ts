@@ -2,9 +2,12 @@ export { default as ActionProvider } from './provider/ActionProvider';
 
 export { default as Header } from './ui/Header';
 
-export { default as Section } from './ui/Section';
-export { default as SectionItem } from './ui/SectionItem';
+export { default as CollectionItem } from './ui/section/CollectionItem';
+export { default as Section } from './ui/section/Section';
+export { default as SectionItem } from './ui/section/SectionItem';
+
 export { default as AchievementsTab } from './ui/tabs/AchievementsTab';
+export { default as CollectionsTab } from './ui/tabs/CollectionsTab';
 export { default as PetsTab } from './ui/tabs/PetsTab';
 export { default as QuestsTab } from './ui/tabs/QuestsTab';
 export { default as Tab } from './ui/tabs/Tab';

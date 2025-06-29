@@ -1,20 +1,12 @@
 import Stack from '@mui/material/Stack';
 
 import { Section } from '@components';
-import type { AchievementDifficulty, Completion, QuestDifficulty } from '@types';
+import type { Completion } from '@types';
 import { useMemo, type ReactNode } from 'react';
 
 interface Sections<T> {
   completion: Completion;
   items: Array<T>;
-}
-
-interface Item {
-  id: string;
-  description?: string;
-  difficulty?: AchievementDifficulty | QuestDifficulty;
-  icon: string;
-  title: string;
 }
 
 interface TabProps<T> {
@@ -53,7 +45,7 @@ const Tab = <T,>({ completed, locked, unlocked, getItem }: TabProps<T>) => {
   );
 
   return (
-    <Stack direction="column" gap={2}>
+    <Stack direction="column" gap={2} paddingX={3}>
       {sections.map(({ completion, items }) => (
         <Section key={completion} title={completion}>
           {items.map((item) => getItem(item, completion))}

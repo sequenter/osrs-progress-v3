@@ -68,11 +68,11 @@ export interface Achievement {
   requirements: Requirements;
 }
 
-export type AchievementState = Array<
-  Achievement & {
-    isComplete: boolean;
-  }
->;
+export interface AchievementState extends Achievement {
+  isComplete: boolean;
+}
+
+export type AchievementsState = Array<AchievementState>;
 
 /* QUESTS */
 
@@ -96,11 +96,11 @@ export interface Quest {
   rewards: Rewards;
 }
 
-export type QuestState = Array<
-  Quest & {
-    isComplete: boolean;
-  }
->;
+export interface QuestState extends Quest {
+  isComplete: boolean;
+}
+
+export type QuestsState = Array<QuestState>;
 
 /* PETS */
 
@@ -111,8 +111,29 @@ export interface Pet {
   requirements: Requirements;
 }
 
-export type PetState = Array<
-  Pet & {
-    isComplete: boolean;
-  }
->;
+export interface PetState extends Pet {
+  isComplete: boolean;
+}
+
+export type PetsState = Array<PetState>;
+
+/* COLLECTIONS */
+
+export interface Item {
+  name: string;
+  isComplete: boolean;
+}
+
+export interface Collection {
+  icon: string;
+  items: Array<string>;
+  name: string;
+  requirements: Requirements;
+}
+
+export interface CollectionState extends Omit<Collection, 'items'> {
+  items: Array<Item>;
+  isComplete: boolean;
+}
+
+export type CollectionsState = Array<CollectionState>;

@@ -2,7 +2,7 @@ import { setIsComplete } from '@redux/reducers/AchievementsReducer';
 
 import { SectionItem, Tab } from '@components';
 import { useActions } from '@hooks/useActions';
-import type { Achievement, Completion } from '@types';
+import type { AchievementState, Completion } from '@types';
 import { diaryIconMap } from '@utils/icons';
 
 /**
@@ -15,7 +15,7 @@ const AchievementsTab = () => {
   /**
    * Returns a section item utilising a given Achievement.
    */
-  const handleItemDetails = ({ diary, difficulty, requirements, task }: Achievement, completion: Completion) => (
+  const handleItemDetails = ({ diary, difficulty, requirements, task }: AchievementState, completion: Completion) => (
     <SectionItem
       key={task}
       completion={completion}
@@ -30,7 +30,7 @@ const AchievementsTab = () => {
   );
 
   return (
-    <Tab<Achievement>
+    <Tab<AchievementState>
       completed={completedAchievements}
       locked={lockedAchievements}
       unlocked={unlockedAchievements}

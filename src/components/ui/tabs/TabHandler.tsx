@@ -9,7 +9,7 @@ import Tab from '@mui/material/Tab';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { AchievementsTab, PetsTab, QuestsTab } from '@components';
+import { AchievementsTab, CollectionsTab, PetsTab, QuestsTab } from '@components';
 import { useActions } from '@hooks/useActions';
 import { AchievementsIcon, CollectionsIcon, PetsIcon, QuestsIcon } from '@utils/icons';
 import { useMemo, useState, type ReactNode } from 'react';
@@ -28,7 +28,7 @@ interface TabDetail {
 const TabHandler = () => {
   const [activeTab, setActiveTab] = useState('Achievements');
 
-  const { unlockedAchievements, unlockedPets, unlockedQuests } = useActions();
+  const { unlockedAchievements, unlockedCollections, unlockedPets, unlockedQuests } = useActions();
 
   const tabs = useMemo(
     /**
@@ -49,10 +49,10 @@ const TabHandler = () => {
         unlocked: unlockedQuests.length
       },
       {
-        component: null,
+        component: <CollectionsTab />,
         label: 'Collections',
         icon: CollectionsIcon,
-        unlocked: 0
+        unlocked: unlockedCollections.length
       },
       {
         component: <PetsTab />,
@@ -74,95 +74,93 @@ const TabHandler = () => {
   };
 
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
-      <TabContext value={activeTab}>
-        <Box
+    <TabContext value={activeTab}>
+      <Box
+        sx={{
+          borderBottom: 1,
+          borderColor: 'divider',
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0,
+          backdropFilter: 'blur(6px)',
+          boxShadow: '0px 5px 10px 0px rgba(0,0,0,0.75)',
+          WebkitBoxShadow: '0px 5px 10px 0px rgba(0,0,0,0.75)',
+          top: '64px',
+          overflow: 'hidden',
+          position: 'sticky',
+          zIndex: 1000,
+          '& .MuiTabs-root': { minHeight: 0 }
+        }}
+      >
+        <TabList
+          flexDirection="row"
+          flexGrow={1}
+          component={Stack}
+          onChange={handleChange}
           sx={{
-            borderBottom: 1,
-            borderColor: 'divider',
-            borderTopLeftRadius: 0,
-            borderTopRightRadius: 0,
-            backdropFilter: 'blur(6px)',
-            boxShadow: '0px 5px 10px 0px rgba(0,0,0,0.75)',
-            WebkitBoxShadow: '0px 5px 10px 0px rgba(0,0,0,0.75)',
-            top: '64px',
-            overflow: 'hidden',
-            position: 'sticky',
-            zIndex: 999,
-            '& .MuiTabs-root': { minHeight: 0 }
+            '& .MuiTab-root': {
+              minHeight: 0,
+              maxWidth: '100%',
+              padding: '16px 0 16px 0',
+              '& .MuiTab-iconWrapper': {
+                flexGrow: 1
+              }
+            }
           }}
         >
-          <TabList
-            flexDirection="row"
-            flexGrow={1}
-            component={Stack}
-            onChange={handleChange}
-            sx={{
-              '& .MuiTab-root': {
-                minHeight: 0,
-                maxWidth: '100%',
-                padding: '16px 0 16px 0',
-                '& .MuiTab-iconWrapper': {
-                  flexGrow: 1
-                }
+          {tabs.map(({ label, icon, unlocked }, index) => (
+            <Tab
+              key={label}
+              component={Stack}
+              flexBasis={0}
+              flexGrow={1}
+              icon={
+                <Box display="flex" justifyContent="end" paddingRight={1}>
+                  <Box component="img" src={icon} width="2rem" height="2rem" />
+                </Box>
               }
-            }}
-          >
-            {tabs.map(({ label, icon, unlocked }, index) => (
-              <Tab
-                key={label}
-                component={Stack}
-                flexBasis={0}
-                flexGrow={1}
-                icon={
-                  <Box display="flex" justifyContent="end" paddingRight={1}>
-                    <Box component="img" src={icon} width="2rem" height="2rem" />
-                  </Box>
-                }
-                iconPosition="start"
-                label={
-                  <>
-                    <Stack alignItems="center" direction="row" flexGrow="1" justifyContent="space-between">
-                      <Stack alignItems="center" direction="row" gap={2}>
-                        <Typography variant="h6">{label}</Typography>
+              iconPosition="start"
+              label={
+                <>
+                  <Stack alignItems="center" direction="row" flexGrow="1" justifyContent="space-between">
+                    <Stack alignItems="center" direction="row" gap={2}>
+                      <Typography variant="h6">{label}</Typography>
 
-                        <Tooltip
-                          title={
-                            <Typography>
-                              {unlocked} {label} to complete
-                            </Typography>
-                          }
-                        >
-                          <Chip
-                            color="warning"
-                            size="small"
-                            label={<Typography variant="subtitle1">{unlocked}</Typography>}
-                            sx={(theme) => ({
-                              transition: `all ${theme.transitions.duration.shorter}ms`,
-                              transform: `scale(${unlocked > 0 ? 100 : 0}%)`
-                            })}
-                          />
-                        </Tooltip>
-                      </Stack>
+                      <Tooltip
+                        title={
+                          <Typography>
+                            {unlocked} {label} to complete
+                          </Typography>
+                        }
+                      >
+                        <Chip
+                          color="warning"
+                          size="small"
+                          label={<Typography variant="subtitle1">{unlocked}</Typography>}
+                          sx={(theme) => ({
+                            transition: `all ${theme.transitions.duration.shorter}ms`,
+                            transform: `scale(${unlocked > 0 ? 100 : 0}%)`
+                          })}
+                        />
+                      </Tooltip>
                     </Stack>
+                  </Stack>
 
-                    {index < tabs.length - 1 && <Divider orientation="vertical" />}
-                  </>
-                }
-                maxWidth="100%"
-                value={label}
-              />
-            ))}
-          </TabList>
-        </Box>
+                  {index < tabs.length - 1 && <Divider orientation="vertical" />}
+                </>
+              }
+              maxWidth="100%"
+              value={label}
+            />
+          ))}
+        </TabList>
+      </Box>
 
-        {tabs.map(({ component, label }) => (
-          <TabPanel key={label} value={label} sx={{ paddingX: 0 }} keepMounted>
-            {component}
-          </TabPanel>
-        ))}
-      </TabContext>
-    </Box>
+      {tabs.map(({ component, label }) => (
+        <TabPanel key={label} value={label} sx={{ paddingX: 0 }} keepMounted>
+          {component}
+        </TabPanel>
+      ))}
+    </TabContext>
   );
 };
 

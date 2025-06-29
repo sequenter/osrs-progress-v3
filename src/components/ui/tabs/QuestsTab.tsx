@@ -2,7 +2,7 @@ import { setIsComplete } from '@redux/reducers/QuestsReducer';
 
 import { SectionItem, Tab } from '@components';
 import { useActions } from '@hooks/useActions';
-import type { Completion, Quest } from '@types';
+import type { Completion, QuestState } from '@types';
 import { wikiIcon } from '@utils/icons';
 
 /**
@@ -16,7 +16,7 @@ const QuestsTab = () => {
    * Returns a section item utilising a given Quest.
    */
   const handleItem = (
-    { difficulty, icon, length, name, release, requirements, rewards }: Quest,
+    { difficulty, icon, length, name, release, requirements, rewards }: QuestState,
     completion: Completion
   ) => (
     <SectionItem
@@ -34,7 +34,7 @@ const QuestsTab = () => {
   );
 
   return (
-    <Tab<Quest> completed={completedQuests} locked={lockedQuests} unlocked={unlockedQuests} getItem={handleItem} />
+    <Tab<QuestState> completed={completedQuests} locked={lockedQuests} unlocked={unlockedQuests} getItem={handleItem} />
   );
 };
 

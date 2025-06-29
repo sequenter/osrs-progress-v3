@@ -1,7 +1,7 @@
 import type {
   CombatSkill,
   PartialSkillState,
-  QuestState,
+  QuestsState,
   Requirements,
   Rewards,
   Skill,
@@ -59,7 +59,7 @@ export const isCombatSkill = (skill: Skill): skill is CombatSkill => COMBAT_SKIL
  * @param requiredQuests A list of quests that need to be completed
  * @returns {boolean} Whether or not required quests have been marked complete
  */
-const isQuestRequirementFulfilled = (completedQuests: QuestState, requiredQuests: Array<string>): boolean => {
+const isQuestRequirementFulfilled = (completedQuests: QuestsState, requiredQuests: Array<string>): boolean => {
   return requiredQuests.every(
     (requiredQuest) => completedQuests.findIndex((completedQuest) => completedQuest.name === requiredQuest) > -1
   );
@@ -107,7 +107,7 @@ export const isRequirementsFulfilled = (
   combat: boolean,
   combatLevel: number,
   QP: number,
-  completedQuests: QuestState,
+  completedQuests: QuestsState,
   unlockedSkills: PartialSkillState,
   requirements: Requirements
 ): boolean => {
@@ -154,7 +154,7 @@ export const trifilterRequirements = (
   combat: boolean,
   combatLevel: number,
   QP: number,
-  completedQuests: QuestState,
+  completedQuests: QuestsState,
   unlockedSkills: PartialSkillState,
   requirements: Requirements
 ) => {

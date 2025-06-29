@@ -130,15 +130,21 @@ const SectionItem = ({
             </Tooltip>
           )}
 
-          <Tooltip placement="top" title={<Typography>Requirements</Typography>} arrow>
-            <IconButton
-              color="neutral"
-              disabled={!requirementsEnabled}
-              sx={[{ padding: 0 }, !requirementsEnabled && { opacity: '20%' }]}
-              onClick={() => {}}
-            >
-              <Info />
-            </IconButton>
+          <Tooltip
+            placement="top"
+            title={<Typography>{`${!requirementsEnabled ? 'No ' : ''}Requirements`}</Typography>}
+            arrow
+          >
+            <span>
+              <IconButton
+                color="neutral"
+                disabled={!requirementsEnabled}
+                sx={[{ padding: 0 }, !requirementsEnabled && { opacity: '20%' }]}
+                onClick={() => {}}
+              >
+                <Info />
+              </IconButton>
+            </span>
           </Tooltip>
         </Stack>
       </Stack>

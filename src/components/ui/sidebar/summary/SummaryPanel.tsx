@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { SummaryItem } from '@components';
 import { useActions } from '@hooks/useActions';
 import type { Summary } from '@types';
-import { ACHIEVEMENTS, PETS, QUESTS, SKILLS } from '@utils/constants';
+import { ACHIEVEMENTS, COLLECTIONS, PETS, QUESTS, SKILLS } from '@utils/constants';
 import { ProgressIcon } from '@utils/icons';
 import { useMemo } from 'react';
 
@@ -22,7 +22,8 @@ interface SummaryItems {
  * @returns JSX Element
  */
 const SummaryPanel = () => {
-  const { completedAchievements, completedPets, completedQuests, completedSkills, QP } = useActions();
+  const { completedAchievements, completedCollections, completedPets, completedQuests, completedSkills, QP } =
+    useActions();
 
   const summaryItems = useMemo(
     /**
@@ -47,29 +48,32 @@ const SummaryPanel = () => {
         total: QUESTS.length
       },
       {
+        summary: 'collections',
+        complete: completedCollections.length,
+        total: COLLECTIONS.length
+      },
+      {
         summary: 'pets',
         complete: completedPets.length,
         total: PETS.length
       }
     ],
-    [completedAchievements, completedPets, completedQuests, completedSkills, QP]
+    [completedAchievements, completedCollections, completedPets, completedQuests, completedSkills, QP]
   );
 
   return (
-    <Paper elevation={2} sx={{ height: '100%' }} square>
-      <Stack direction="column" padding={2} gap={2}>
-        <Stack alignItems="center" direction="row" gap={2}>
-          <Box component="img" height="2rem" width="2rem" src={ProgressIcon} />
-          <Typography color="neutral" variant="h5">
-            Progress
-          </Typography>
-        </Stack>
-
-        {summaryItems.map((summaryItem) => (
-          <SummaryItem key={summaryItem.summary} {...summaryItem} />
-        ))}
+    <Stack component={Paper} direction="column" elevation={2} flexGrow={1} padding={2} gap={2} square>
+      <Stack alignItems="center" direction="row" gap={2}>
+        <Box component="img" height="2rem" width="2rem" src={ProgressIcon} />
+        <Typography color="neutral" variant="h5">
+          Progress
+        </Typography>
       </Stack>
-    </Paper>
+
+      {summaryItems.map((summaryItem) => (
+        <SummaryItem key={summaryItem.summary} {...summaryItem} />
+      ))}
+    </Stack>
   );
 };
 

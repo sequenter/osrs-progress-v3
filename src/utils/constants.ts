@@ -1,7 +1,8 @@
 import { default as AchievementsJson } from '@assets/json/achievements.json';
+import { default as CollectionsJson } from '@assets/json/collections.json';
 import { default as PetsJson } from '@assets/json/pets.json';
 import { default as QuestsJson } from '@assets/json/quests.json';
-import type { Achievement, Pet, Quest } from '@types';
+import type { Achievement, Collection, Pet, Quest } from '@types';
 
 /* COMMON */
 
@@ -11,12 +12,13 @@ export const WIKI_IMAGES_ERROR = 'https://oldschool.runescape.wiki/images/Bank_f
 /* DATA EXPORTS */
 
 export const ACHIEVEMENTS = AchievementsJson as Array<Achievement>;
+export const COLLECTIONS = CollectionsJson as Array<Collection>;
 export const PETS = PetsJson as Array<Pet>;
 export const QUESTS = QuestsJson as Array<Quest>;
 
 /* UNIONS */
 
-export const SUMMARY_ITEMS = ['skills', 'achievements', 'quests', 'pets'] as const;
+export const SUMMARY_ITEMS = ['skills', 'achievements', 'quests', 'collections', 'pets'] as const;
 
 export const ACHIEVEMENT_DIFFICULTY = ['Easy', 'Medium', 'Hard', 'Elite'] as const;
 
