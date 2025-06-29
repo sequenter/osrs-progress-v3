@@ -2902,5 +2902,38 @@
         "icon": "Warm gloves"
       }
     ]
+  },
+  {
+    "icon": "Calcified acorn",
+    "name": "Wyrm Agility Course",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Agility": 50
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "name": "Colossal wyrm teleport scroll",
+        "icon": "Colossal wyrm teleport scroll"
+      },
+      {
+        "name": "Graceful crafting kit",
+        "icon": "Graceful crafting kit"
+      },
+      {
+        "name": "Calcified acorn",
+        "icon": "Calcified acorn"
+      }
+    ]
   }
 ]
