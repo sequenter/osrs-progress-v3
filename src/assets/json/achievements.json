@@ -2587,9 +2587,13 @@
           "required": [
             {
               "skills": {
-                "any": {
+                "all": {
                   "Attack": 65,
                   "Strength": 65
+                },
+                "any": {
+                  "Attack": 99,
+                  "Strength": 99
                 }
               }
             }

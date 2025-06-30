@@ -1021,6 +1021,37 @@
     }
   },
   {
+    "difficulty": "Intermediate",
+    "icon": "Jaguar mask",
+    "length": "Medium",
+    "name": "Death on the Isle",
+    "release": "25 September 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"],
+              "skills": {
+                "all": {
+                  "Agility": 32,
+                  "Thieving": 34
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 2,
+      "skills": {
+        "all": ["Agility", "Crafting", "Thieving"]
+      }
+    }
+  },
+  {
     "difficulty": "Novice",
     "icon": "Climbing boots",
     "length": "Short",
@@ -2001,6 +2032,35 @@
     "requirements": {},
     "rewards": {
       "QP": 4
+    }
+  },
+  {
+    "difficulty": "Novice",
+    "icon": "Betty's notes",
+    "length": "Short",
+    "name": "Ethically Acquired Antiquities",
+    "release": "25 September 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Children of the Sun", "Shield of Arrav"],
+              "skills": {
+                "all": {
+                  "Thieving": 25
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 1,
+      "skills": {
+        "all": ["Thieving"]
+      }
     }
   },
   {
@@ -3293,6 +3353,31 @@
     }
   },
   {
+    "difficulty": "Experienced",
+    "icon": "Kebab",
+    "length": "Short",
+    "name": "Meat and Greet",
+    "release": "25 September 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"]
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 1,
+      "skills": {
+        "all": ["Cooking"]
+      }
+    }
+  },
+  {
     "difficulty": "Intermediate",
     "icon": "Excalibur",
     "length": "Short",
@@ -3576,7 +3661,7 @@
   },
   {
     "difficulty": "Master",
-    "icon": "Death talisma",
+    "icon": "Death talisman",
     "length": "Long",
     "name": "Mourning's End Part II",
     "release": "17 October 2005",
@@ -5442,6 +5527,66 @@
     }
   },
   {
+    "difficulty": "Master",
+    "icon": "Canopic jar (oil)",
+    "length": "Medium",
+    "name": "The Curse of Arrav",
+    "release": "6 November 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Defender of Varrock", "Troll Romance"],
+              "skills": {
+                "all": {
+                  "Agility": 61,
+                  "Mining": 64,
+                  "Ranged": 62,
+                  "Slayer": 37,
+                  "Strength": 58,
+                  "Thieving": 62
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Obtain a mithril grapple",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Fletching": 59,
+                  "Smithing": 59
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Fletching": 99
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 2,
+      "skills": {
+        "all": ["Agility", "Mining", "Thieving"]
+      }
+    }
+  },
+  {
     "difficulty": "Intermediate",
     "icon": "Graceful hood (Hosidius)",
     "length": "Short",
@@ -6182,6 +6327,39 @@
     }
   },
   {
+    "difficulty": "Experienced",
+    "icon": "Sunfire fanatic cuirass",
+    "length": "Medium",
+    "name": "The Heart of Darkness",
+    "release": "25 September 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Twilight's Promise"],
+              "skills": {
+                "all": {
+                  "Agility": 46,
+                  "Mining": 55,
+                  "Slayer": 48,
+                  "Thieving": 48
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 2,
+      "skills": {
+        "all": ["Agility", "Mining", "Slayer", "Thieving"]
+      }
+    }
+  },
+  {
     "difficulty": "Intermediate",
     "icon": "Blurite sword",
     "length": "Short",
@@ -6847,6 +7025,118 @@
       "QP": 1,
       "skills": {
         "all": ["Runecraft", "Defence"]
+      }
+    }
+  },
+  {
+    "difficulty": "Grandmaster",
+    "icon": "Broav",
+    "length": "Very Long",
+    "name": "While Guthix Sleeps",
+    "release": "10 July 2024",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "QP": 180,
+              "quests": [
+                "Defender of Varrock",
+                "The Path of Glouphrie",
+                "Fight Arena",
+                "Dream Mentor",
+                "The Hand in the Sand",
+                "Wanted!",
+                "Temple of the Eye",
+                "Tears of Guthix",
+                "Nature Spirit",
+                "A Tail of Two Cats"
+              ],
+              "skills": {
+                "all": {
+                  "Agility": 66,
+                  "Farming": 65,
+                  "Herblore": 65,
+                  "Hunter": 62,
+                  "Magic": 67,
+                  "Thieving": 72
+                }
+              }
+            },
+            {
+              "description": "Ability to enter the Warrior's Guild",
+              "required": [
+                {
+                  "skills": {
+                    "all": {
+                      "Attack": 65,
+                      "Strength": 65
+                    },
+                    "any": {
+                      "Attack": 99,
+                      "Strength": 99
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Obtain a saphire lantern",
+          "required": [
+            {
+              "combat": true,
+              "skills": {
+                "all": {
+                  "Slayer": 35
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Smithing": 49
+                }
+              }
+            },
+            {
+              "quests": ["Death to the Dorgeshuun"]
+            }
+          ]
+        },
+        {
+          "description": "Obtain an unpowered orb",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "quests": ["Death to the Dorgeshuun"],
+              "skills": {
+                "all": {
+                  "Thieving": 52
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 46
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 5,
+      "skills": {
+        "all": ["Herblore", "Hunter", "Farming", "Thieving"]
       }
     }
   },
