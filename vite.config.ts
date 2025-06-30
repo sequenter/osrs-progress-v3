@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/osrs-progress-v3',
   plugins: [react()],
   resolve: {
     alias: {
