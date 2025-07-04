@@ -11,17 +11,13 @@ declare module '@mui/material/styles' {
   interface Palette {
     neutral: Palette['primary'];
     summary: Record<Summary, SimplePaletteOptions>;
-    difficulty: {
-      achievements: Record<AchievementDifficulty | QuestDifficulty, string>;
-    };
+    difficulty: Record<AchievementDifficulty | QuestDifficulty, string>;
   }
 
   interface PaletteOptions {
     neutral?: PaletteOptions['primary'];
     summary?: Record<Summary, SimplePaletteOptions>;
-    difficulty?: {
-      achievements: Record<AchievementDifficulty | QuestDifficulty, string>;
-    };
+    difficulty?: Record<AchievementDifficulty | QuestDifficulty, string>;
   }
 }
 
@@ -57,7 +53,7 @@ export const themeDark: ThemeOptions = createTheme({
       paper: '#101319'
     },
     neutral: {
-      main: '#77797c'
+      main: '#888b93'
     },
     primary: {
       main: '#6CCFF6'
@@ -73,18 +69,16 @@ export const themeDark: ThemeOptions = createTheme({
       collections: { dark: '#F44336', light: '#EF9A9A' }
     },
     difficulty: {
-      achievements: {
-        Easy: '#4CAF50',
-        Medium: '#009688',
-        Hard: '#673AB7',
-        Elite: '#FFC107',
-        Novice: '#4CAF50',
-        Intermediate: '#009688',
-        Experienced: '#673AB7',
-        Master: '#FFC107',
-        Grandmaster: '#F44336',
-        Special: '#77797c'
-      }
+      Easy: '#4CAF50',
+      Medium: '#009688',
+      Hard: '#673AB7',
+      Elite: '#FFC107',
+      Novice: '#4CAF50',
+      Intermediate: '#009688',
+      Experienced: '#673AB7',
+      Master: '#FFC107',
+      Grandmaster: '#F44336',
+      Special: '#77797c'
     }
   },
   typography: {

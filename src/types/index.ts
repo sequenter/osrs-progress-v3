@@ -1,12 +1,21 @@
 import type {
+  ACHIEVEMENT,
   ACHIEVEMENT_DIARIES,
   ACHIEVEMENT_DIFFICULTY,
+  COLLECTION,
   COMBAT_SKILLS,
+  ITEM,
+  PET,
+  QUEST,
   QUEST_DIFFICULTY,
   QUEST_LENGTH,
+  REQUIREMENTS,
+  REWARDS,
   SKILLING_SKILLS,
+  SKILLS_REQUIREMENT,
   SUMMARY_ITEMS
-} from '@utils/constants';
+} from '@utils/schema';
+import type z from 'zod/v4';
 
 /* UNIONS */
 
@@ -15,38 +24,19 @@ export type AchievementDiary = (typeof ACHIEVEMENT_DIARIES)[number];
 export type QuestDifficulty = (typeof QUEST_DIFFICULTY)[number];
 export type QuestLength = (typeof QUEST_LENGTH)[number];
 
-export type Summary = (typeof SUMMARY_ITEMS)[number];
-
 export type CombatSkill = (typeof COMBAT_SKILLS)[number];
 export type SkillingSkill = (typeof SKILLING_SKILLS)[number];
 export type Skill = CombatSkill | SkillingSkill;
 
 export type Completion = 'unlocked' | 'locked' | 'completed';
 
+export type Summary = (typeof SUMMARY_ITEMS)[number];
+
 /* COMMON */
 
-export interface SkillsRequirement {
-  all?: Partial<Record<Skill, number>>;
-  any?: Partial<Record<Skill, number>>;
-}
+export type Requirements = z.infer<typeof REQUIREMENTS>;
 
-interface Required {
-  combat?: boolean;
-  combatLevel?: number;
-  QP?: number;
-  quests?: Array<string>;
-  skills?: SkillsRequirement;
-}
-
-export interface Requirement {
-  description?: string;
-  required: Array<Required>;
-}
-
-export interface Requirements {
-  main?: Array<Requirement>;
-  ironman?: Array<Requirement>;
-}
+export type SkillsRequirement = z.infer<typeof SKILLS_REQUIREMENT>;
 
 /* SKILLS */
 
@@ -61,12 +51,7 @@ export type PartialSkillState = Partial<Record<Skill, SkillDetail>>;
 
 /* ACHIEVEMENTS */
 
-export interface Achievement {
-  diary: AchievementDiary;
-  difficulty: AchievementDifficulty;
-  task: string;
-  requirements: Requirements;
-}
+export type Achievement = z.infer<typeof ACHIEVEMENT>;
 
 export interface AchievementState extends Achievement {
   isComplete: boolean;
@@ -76,25 +61,9 @@ export type AchievementsState = Array<AchievementState>;
 
 /* QUESTS */
 
-interface RewardSkills {
-  all?: Array<Skill>;
-  any?: Array<Skill>;
-}
+export type Rewards = z.infer<typeof REWARDS>;
 
-export interface Rewards {
-  QP: number;
-  skills: RewardSkills;
-}
-
-export interface Quest {
-  difficulty: QuestDifficulty;
-  icon: string;
-  length: QuestLength;
-  name: string;
-  release: string;
-  requirements: Requirements;
-  rewards: Rewards;
-}
+export type Quest = z.infer<typeof QUEST>;
 
 export interface QuestState extends Quest {
   isComplete: boolean;
@@ -104,12 +73,7 @@ export type QuestsState = Array<QuestState>;
 
 /* PETS */
 
-export interface Pet {
-  icon: string;
-  name: string;
-  recommended: Array<Requirement>;
-  requirements: Requirements;
-}
+export type Pet = z.infer<typeof PET>;
 
 export interface PetState extends Pet {
   isComplete: boolean;
@@ -119,20 +83,12 @@ export type PetsState = Array<PetState>;
 
 /* COLLECTIONS */
 
-export interface Item {
-  icon: string;
-  name: string;
-}
+type Item = z.infer<typeof ITEM>;
+
+export type Collection = z.infer<typeof COLLECTION>;
 
 export interface ItemState extends Item {
   isComplete: boolean;
-}
-
-export interface Collection {
-  icon: string;
-  items: Array<Item>;
-  name: string;
-  requirements: Requirements;
 }
 
 export interface CollectionState extends Omit<Collection, 'items'> {

@@ -7,7 +7,7 @@ import type {
   Skill,
   SkillsRequirement
 } from '@types';
-import { COMBAT_SKILLS } from './constants';
+import { COMBAT_SKILLS } from './schema';
 
 /* COMMON */
 

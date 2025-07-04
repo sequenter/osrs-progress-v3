@@ -16,6 +16,7 @@ import type { ActionCreatorWithPayload } from '@reduxjs/toolkit/react';
 import type { AchievementDifficulty, Completion, QuestDifficulty, Requirements, Rewards } from '@types';
 import { WIKI_IMAGES_ERROR } from '@utils/constants';
 import { memo, useCallback, useMemo, useState } from 'react';
+import RequirementsDialog from '../dialog/RequirementsDialog';
 
 interface SectionItemProps {
   completion: Completion;
@@ -55,6 +56,7 @@ const SectionItem = ({
   onCompletion
 }: SectionItemProps) => {
   const [iconSrc, setIconSrc] = useState(icon);
+  const [isOpen, setIsOpen] = useState(false);
 
   const dispatch = useStoreDispatch();
 
@@ -77,78 +79,97 @@ const SectionItem = ({
   );
 
   return (
-    <Grid component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
-      <Stack component={Paper} divider={<Divider />} direction="column" elevation={2} flexGrow={1} gap={1} padding={2}>
-        <Stack alignItems="center" direction="row" justifyContent="space-between">
-          <Stack alignItems="center" direction="row" gap={1}>
-            <Box component="img" height="1.5rem" width="1.5rem" src={iconSrc} onError={handleIconError} />
+    <>
+      <Grid component={Stack} size={{ xs: 12, md: 6, lg: 4 }}>
+        <Stack
+          component={Paper}
+          divider={<Divider />}
+          direction="column"
+          elevation={2}
+          flexGrow={1}
+          gap={1}
+          padding={2}
+        >
+          <Stack alignItems="center" direction="row" justifyContent="space-between">
+            <Stack alignItems="center" direction="row" gap={1}>
+              <Box component="img" height="1.5rem" width="1.5rem" src={iconSrc} onError={handleIconError} />
 
-            <Typography color="neutral" variant="h6">
-              {title}
-            </Typography>
+              <Typography color="secondary" variant="h6">
+                {title}
+              </Typography>
+            </Stack>
+
+            {difficulty && (
+              <Typography sx={(theme) => ({ color: theme.palette.difficulty[difficulty] })}>{difficulty}</Typography>
+            )}
           </Stack>
 
-          {difficulty && (
-            <Typography sx={(theme) => ({ color: theme.palette.difficulty.achievements[difficulty] })}>
-              {difficulty}
+          {description && (
+            <Typography color="neutral" component={Stack} flexGrow={1}>
+              {description}
             </Typography>
           )}
-        </Stack>
 
-        {description && (
-          <Typography color="secondary" component={Stack} flexGrow={1}>
-            {description}
-          </Typography>
-        )}
+          <Stack alignItems="center" direction="row" justifyContent={completion === 'locked' ? 'end' : 'space-between'}>
+            {completion === 'unlocked' && (
+              <Tooltip placement="top" title={<Typography>Mark as complete</Typography>} arrow>
+                <IconButton
+                  color="success"
+                  sx={{ padding: 0 }}
+                  onClick={() => {
+                    handleCompletion(true);
+                  }}
+                >
+                  <CheckCircle />
+                </IconButton>
+              </Tooltip>
+            )}
 
-        <Stack alignItems="center" direction="row" justifyContent={completion === 'locked' ? 'end' : 'space-between'}>
-          {completion === 'unlocked' && (
-            <Tooltip placement="top" title={<Typography>Mark as complete</Typography>} arrow>
-              <IconButton
-                color="success"
-                sx={{ padding: 0 }}
-                onClick={() => {
-                  handleCompletion(true);
-                }}
-              >
-                <CheckCircle />
-              </IconButton>
+            {completion === 'completed' && (
+              <Tooltip placement="top" title={<Typography>Mark as incomplete</Typography>} arrow>
+                <IconButton
+                  color="error"
+                  sx={{ padding: 0 }}
+                  onClick={() => {
+                    handleCompletion(false);
+                  }}
+                >
+                  <Cancel />
+                </IconButton>
+              </Tooltip>
+            )}
+
+            <Tooltip
+              placement="top"
+              title={<Typography>{`${!requirementsEnabled ? 'No ' : ''}Requirements`}</Typography>}
+              arrow
+            >
+              <span>
+                <IconButton
+                  color="neutral"
+                  disabled={!requirementsEnabled}
+                  sx={[{ padding: 0 }, !requirementsEnabled && { opacity: '20%' }]}
+                  onClick={() => setIsOpen(true)}
+                >
+                  <Info />
+                </IconButton>
+              </span>
             </Tooltip>
-          )}
-
-          {completion === 'completed' && (
-            <Tooltip placement="top" title={<Typography>Mark as incomplete</Typography>} arrow>
-              <IconButton
-                color="error"
-                sx={{ padding: 0 }}
-                onClick={() => {
-                  handleCompletion(false);
-                }}
-              >
-                <Cancel />
-              </IconButton>
-            </Tooltip>
-          )}
-
-          <Tooltip
-            placement="top"
-            title={<Typography>{`${!requirementsEnabled ? 'No ' : ''}Requirements`}</Typography>}
-            arrow
-          >
-            <span>
-              <IconButton
-                color="neutral"
-                disabled={!requirementsEnabled}
-                sx={[{ padding: 0 }, !requirementsEnabled && { opacity: '20%' }]}
-                onClick={() => {}}
-              >
-                <Info />
-              </IconButton>
-            </span>
-          </Tooltip>
+          </Stack>
         </Stack>
-      </Stack>
-    </Grid>
+      </Grid>
+
+      <RequirementsDialog
+        description={description}
+        difficulty={difficulty}
+        icon={icon}
+        isOpen={isOpen}
+        requirements={requirements}
+        rewards={rewards}
+        title={title}
+        onClose={() => setIsOpen(false)}
+      />
+    </>
   );
 };
 

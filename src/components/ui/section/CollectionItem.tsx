@@ -69,7 +69,7 @@ const CollectionItem = ({ completion, icon, items, requirements, title }: Collec
           <Stack alignItems="center" direction="row" gap={1}>
             <Box component="img" height="1.5rem" width="1.5rem" src={iconSrc} onError={handleIconError} />
 
-            <Typography color="neutral" variant="h6">
+            <Typography color="secondary" variant="h6">
               {title}
             </Typography>
           </Stack>
@@ -88,12 +88,20 @@ const CollectionItem = ({ completion, icon, items, requirements, title }: Collec
             <ListItem component={Paper} key={name}>
               <Stack alignItems="center" direction="row" gap={1} justifyContent="space-between" width="100%">
                 <Stack direction="row" gap={1} minWidth={0}>
-                  <Box component="img" height="1.5rem" width="1.5rem" src={wikiIcon(icon)} />
+                  <Box
+                    component="img"
+                    height="1.5rem"
+                    width="1.5rem"
+                    src={wikiIcon(icon)}
+                    sx={[isComplete && { filter: 'grayscale(80%)' }]}
+                  />
+
                   <Typography
-                    color={isComplete ? 'neutral' : 'secondary'}
+                    color="neutral"
                     overflow="hidden"
                     textOverflow="ellipsis"
                     whiteSpace="nowrap"
+                    sx={[isComplete && { opacity: '30%' }]}
                   >
                     {name}
                   </Typography>

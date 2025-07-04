@@ -1,5 +1,7 @@
 export { default as ActionProvider } from './provider/ActionProvider';
 
+export { default as RequirementsDialog } from './ui/dialog/RequirementsDialog';
+
 export { default as Header } from './ui/Header';
 
 export { default as CollectionItem } from './ui/section/CollectionItem';

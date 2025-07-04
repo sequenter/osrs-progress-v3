@@ -118,7 +118,7 @@ const SkillItem = ({ isLocked, level, maxLevel, minLevel, skill }: SkillItemProp
             {skill}
           </Typography>
 
-          <Box component="img" src={skillIconMap[skill]} height="4rem" width="4rem" />
+          <Box component="img" src={skillIconMap[skill]} height="3.5rem" width="3.5rem" />
         </Stack>
 
         <Stack alignItems="center" direction="row" gap={1}>

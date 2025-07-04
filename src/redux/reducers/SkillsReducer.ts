@@ -2,7 +2,7 @@ import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
 import type { Skill, SkillState } from '@types';
 import { isCombatSkill } from '@utils/common';
-import { SKILLS } from '@utils/constants';
+import { SKILLS } from '@utils/schema';
 
 const initialCombatState = {
   combat: false,

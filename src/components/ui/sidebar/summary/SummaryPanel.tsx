@@ -6,8 +6,9 @@ import Typography from '@mui/material/Typography';
 import { SummaryItem } from '@components';
 import { useActions } from '@hooks/useActions';
 import type { Summary } from '@types';
-import { ACHIEVEMENTS, COLLECTIONS, PETS, QUESTS, SKILLS } from '@utils/constants';
+import { ACHIEVEMENTS, COLLECTIONS, PETS, QUESTS } from '@utils/constants';
 import { ProgressIcon } from '@utils/icons';
+import { SKILLS } from '@utils/schema';
 import { useMemo } from 'react';
 
 interface SummaryItems {
